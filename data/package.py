@@ -32,7 +32,7 @@ pretty_name: Vector search in production (ESCI x Amazon Reviews 2023)
 # vector-search-ecom
 
 Data behind the talk *Lessons from deploying vector search in production* (London Search & AI
-User Group, 26 Nov 2026). Code: the accompanying GitHub repository.
+User Group, 26 Nov 2026). Code: https://github.com/simonhearne/prod-vector-search
 
 * ~448k US products: Amazon Shopping Queries (ESCI) product text joined to Amazon Reviews 2023
   metadata (price, rating, category, **image URL** - no image bytes are redistributed).
