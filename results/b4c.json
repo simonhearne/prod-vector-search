@@ -1,0 +1,4317 @@
+{
+  "payload": {
+    "variants": {
+      "strong": {
+        "n": 150,
+        "timed_out": 0,
+        "visible_p50": 0.1889752499992028,
+        "visible_p99": 0.41999921001493856,
+        "missing_share": 0.0,
+        "missing_p50": 0.0,
+        "missing_p99": 0.0,
+        "read": {
+          "consistency": "Strong",
+          "ignore_growing": false
+        },
+        "prep_s": 344.82314679108094,
+        "storm_rows": 45000,
+        "search_query_agree": true,
+        "events": [
+          {
+            "pid": "0739007173",
+            "t_write": 847497.785707208,
+            "t_visible": 847497.964130708,
+            "missing_s": 0.0,
+            "price": 100000.01
+          },
+          {
+            "pid": "B00OABJOAC",
+            "t_write": 847499.693216458,
+            "t_visible": 847499.765780125,
+            "missing_s": 0.0,
+            "price": 100001.01
+          },
+          {
+            "pid": "B009G5MDHI",
+            "t_write": 847501.721754833,
+            "t_visible": 847501.842265791,
+            "missing_s": 0.0,
+            "price": 100002.01
+          },
+          {
+            "pid": "B089F1TZ6B",
+            "t_write": 847503.701758916,
+            "t_visible": 847504.045487541,
+            "missing_s": 0.0,
+            "price": 100003.01
+          },
+          {
+            "pid": "B0038ZYWQM",
+            "t_write": 847505.699206333,
+            "t_visible": 847505.84368925,
+            "missing_s": 0.0,
+            "price": 100004.01
+          },
+          {
+            "pid": "140958304X",
+            "t_write": 847507.702039166,
+            "t_visible": 847508.044813916,
+            "missing_s": 0.0,
+            "price": 100005.01
+          },
+          {
+            "pid": "B07BPYBZFJ",
+            "t_write": 847509.724532541,
+            "t_visible": 847509.875823166,
+            "missing_s": 0.0,
+            "price": 100006.01
+          },
+          {
+            "pid": "B00JU8KTLI",
+            "t_write": 847511.698946833,
+            "t_visible": 847512.059627875,
+            "missing_s": 0.0,
+            "price": 100007.01
+          },
+          {
+            "pid": "B0811ZYKFN",
+            "t_write": 847513.700299125,
+            "t_visible": 847513.856500208,
+            "missing_s": 0.0,
+            "price": 100008.01
+          },
+          {
+            "pid": "B076N7WB8B",
+            "t_write": 847515.69896175,
+            "t_visible": 847516.064435625,
+            "missing_s": 0.0,
+            "price": 100009.01
+          },
+          {
+            "pid": "B07J4S3JVN",
+            "t_write": 847517.713656666,
+            "t_visible": 847517.862764083,
+            "missing_s": 0.0,
+            "price": 100010.01
+          },
+          {
+            "pid": "B0167HT05A",
+            "t_write": 847519.706550541,
+            "t_visible": 847520.044377291,
+            "missing_s": 0.0,
+            "price": 100011.01
+          },
+          {
+            "pid": "B06XKW711T",
+            "t_write": 847521.693694208,
+            "t_visible": 847521.876931458,
+            "missing_s": 0.0,
+            "price": 100012.01
+          },
+          {
+            "pid": "B09BCTBZCH",
+            "t_write": 847523.707958166,
+            "t_visible": 847524.000970125,
+            "missing_s": 0.0,
+            "price": 100013.01
+          },
+          {
+            "pid": "B078XNQG7J",
+            "t_write": 847525.702578833,
+            "t_visible": 847525.821573291,
+            "missing_s": 0.0,
+            "price": 100014.01
+          },
+          {
+            "pid": "B083XXM9W1",
+            "t_write": 847527.7167805,
+            "t_visible": 847527.891257125,
+            "missing_s": 0.0,
+            "price": 100015.01
+          },
+          {
+            "pid": "B0010PR7BO",
+            "t_write": 847529.7118055,
+            "t_visible": 847530.05753025,
+            "missing_s": 0.0,
+            "price": 100016.01
+          },
+          {
+            "pid": "B001TOARA4",
+            "t_write": 847531.719642291,
+            "t_visible": 847531.987652166,
+            "missing_s": 0.0,
+            "price": 100017.01
+          },
+          {
+            "pid": "0062815687",
+            "t_write": 847533.697944875,
+            "t_visible": 847533.809890291,
+            "missing_s": 0.0,
+            "price": 100018.01
+          },
+          {
+            "pid": "B084RN9FNQ",
+            "t_write": 847535.69973075,
+            "t_visible": 847535.872214583,
+            "missing_s": 0.0,
+            "price": 100019.01
+          },
+          {
+            "pid": "B07W1P5M5P",
+            "t_write": 847537.702790666,
+            "t_visible": 847538.045114666,
+            "missing_s": 0.0,
+            "price": 100020.01
+          },
+          {
+            "pid": "B0759H2YXC",
+            "t_write": 847539.693326083,
+            "t_visible": 847539.8565935,
+            "missing_s": 0.0,
+            "price": 100021.01
+          },
+          {
+            "pid": "B08CT4SBW8",
+            "t_write": 847541.699282625,
+            "t_visible": 847542.052826083,
+            "missing_s": 0.0,
+            "price": 100022.01
+          },
+          {
+            "pid": "B075JRLYL3",
+            "t_write": 847543.711695083,
+            "t_visible": 847543.885239166,
+            "missing_s": 0.0,
+            "price": 100023.01
+          },
+          {
+            "pid": "B07H5Q7W95",
+            "t_write": 847545.715391083,
+            "t_visible": 847545.948912583,
+            "missing_s": 0.0,
+            "price": 100024.01
+          },
+          {
+            "pid": "B092JF846T",
+            "t_write": 847547.722340666,
+            "t_visible": 847547.774562375,
+            "missing_s": 0.0,
+            "price": 100025.01
+          },
+          {
+            "pid": "B06X9VJK65",
+            "t_write": 847549.697394833,
+            "t_visible": 847549.883277125,
+            "missing_s": 0.0,
+            "price": 100026.01
+          },
+          {
+            "pid": "B00OLP9R8Q",
+            "t_write": 847551.697055083,
+            "t_visible": 847552.076371083,
+            "missing_s": 0.0,
+            "price": 100027.01
+          },
+          {
+            "pid": "B0043YQA6C",
+            "t_write": 847553.725867208,
+            "t_visible": 847553.875264958,
+            "missing_s": 0.0,
+            "price": 100028.01
+          },
+          {
+            "pid": "B07DGL41RD",
+            "t_write": 847555.702533458,
+            "t_visible": 847556.047504916,
+            "missing_s": 0.0,
+            "price": 100029.01
+          },
+          {
+            "pid": "B00FPKZHK8",
+            "t_write": 847557.70247375,
+            "t_visible": 847557.871405791,
+            "missing_s": 0.0,
+            "price": 100030.01
+          },
+          {
+            "pid": "B01LWQ33JM",
+            "t_write": 847559.697231166,
+            "t_visible": 847560.045152416,
+            "missing_s": 0.0,
+            "price": 100031.01
+          },
+          {
+            "pid": "B07HNNR1H5",
+            "t_write": 847561.705668916,
+            "t_visible": 847561.865726166,
+            "missing_s": 0.0,
+            "price": 100032.01
+          },
+          {
+            "pid": "B00DGY1402",
+            "t_write": 847563.697858875,
+            "t_visible": 847564.062845041,
+            "missing_s": 0.0,
+            "price": 100033.01
+          },
+          {
+            "pid": "B07H31XMNW",
+            "t_write": 847565.716862041,
+            "t_visible": 847565.868130666,
+            "missing_s": 0.0,
+            "price": 100034.01
+          },
+          {
+            "pid": "B01DLA4IJY",
+            "t_write": 847567.697913041,
+            "t_visible": 847568.046413666,
+            "missing_s": 0.0,
+            "price": 100035.01
+          },
+          {
+            "pid": "B00BYG6OB8",
+            "t_write": 847569.69963675,
+            "t_visible": 847569.880424625,
+            "missing_s": 0.0,
+            "price": 100036.01
+          },
+          {
+            "pid": "B0176PTKT8",
+            "t_write": 847571.701379041,
+            "t_visible": 847572.047700666,
+            "missing_s": 0.0,
+            "price": 100037.01
+          },
+          {
+            "pid": "B01BKL4ITQ",
+            "t_write": 847573.698707041,
+            "t_visible": 847573.88495175,
+            "missing_s": 0.0,
+            "price": 100038.01
+          },
+          {
+            "pid": "B07FPQ212B",
+            "t_write": 847575.70044475,
+            "t_visible": 847576.04589075,
+            "missing_s": 0.0,
+            "price": 100039.01
+          },
+          {
+            "pid": "B086WMSJKH",
+            "t_write": 847577.720105125,
+            "t_visible": 847577.88387125,
+            "missing_s": 0.0,
+            "price": 100040.01
+          },
+          {
+            "pid": "B0033PSGC8",
+            "t_write": 847579.697301375,
+            "t_visible": 847580.066572791,
+            "missing_s": 0.0,
+            "price": 100041.01
+          },
+          {
+            "pid": "B004L4PDE4",
+            "t_write": 847581.698924333,
+            "t_visible": 847581.885771875,
+            "missing_s": 0.0,
+            "price": 100042.01
+          },
+          {
+            "pid": "B07LC686S8",
+            "t_write": 847583.69668625,
+            "t_visible": 847584.042883333,
+            "missing_s": 0.0,
+            "price": 100043.01
+          },
+          {
+            "pid": "0394711831",
+            "t_write": 847585.701583541,
+            "t_visible": 847585.871079666,
+            "missing_s": 0.0,
+            "price": 100044.01
+          },
+          {
+            "pid": "B07KP9P6N1",
+            "t_write": 847587.690332333,
+            "t_visible": 847587.956461458,
+            "missing_s": 0.0,
+            "price": 100045.01
+          },
+          {
+            "pid": "B000M9R4RQ",
+            "t_write": 847589.689671083,
+            "t_visible": 847589.785870125,
+            "missing_s": 0.0,
+            "price": 100046.01
+          },
+          {
+            "pid": "B01BQ9S96A",
+            "t_write": 847591.692561166,
+            "t_visible": 847591.870672833,
+            "missing_s": 0.0,
+            "price": 100047.01
+          },
+          {
+            "pid": "B085B4BY4G",
+            "t_write": 847593.697218125,
+            "t_visible": 847594.042024416,
+            "missing_s": 0.0,
+            "price": 100048.01
+          },
+          {
+            "pid": "0801094364",
+            "t_write": 847595.687144083,
+            "t_visible": 847595.855121916,
+            "missing_s": 0.0,
+            "price": 100049.01
+          },
+          {
+            "pid": "B07BFDSWS2",
+            "t_write": 847597.6955825,
+            "t_visible": 847597.963600791,
+            "missing_s": 0.0,
+            "price": 100050.01
+          },
+          {
+            "pid": "B07FD4NY32",
+            "t_write": 847599.686210583,
+            "t_visible": 847599.773939875,
+            "missing_s": 0.0,
+            "price": 100051.01
+          },
+          {
+            "pid": "B0178GSAOQ",
+            "t_write": 847601.712855375,
+            "t_visible": 847601.852950583,
+            "missing_s": 0.0,
+            "price": 100052.01
+          },
+          {
+            "pid": "B07HCQ9S4L",
+            "t_write": 847603.695842583,
+            "t_visible": 847604.060938083,
+            "missing_s": 0.0,
+            "price": 100053.01
+          },
+          {
+            "pid": "B07VS4GBMF",
+            "t_write": 847605.708490541,
+            "t_visible": 847606.167577541,
+            "missing_s": 0.0,
+            "price": 100054.01
+          },
+          {
+            "pid": "B07L627348",
+            "t_write": 847607.694774458,
+            "t_visible": 847607.698736,
+            "missing_s": 0.0,
+            "price": 100055.01
+          },
+          {
+            "pid": "B0138OACAW",
+            "t_write": 847609.697128625,
+            "t_visible": 847609.762631625,
+            "missing_s": 0.0,
+            "price": 100056.01
+          },
+          {
+            "pid": "B07GTVW6TL",
+            "t_write": 847611.694693625,
+            "t_visible": 847611.93998275,
+            "missing_s": 0.0,
+            "price": 100057.01
+          },
+          {
+            "pid": "B07BKLPL6M",
+            "t_write": 847613.694480666,
+            "t_visible": 847613.761815625,
+            "missing_s": 0.0,
+            "price": 100058.01
+          },
+          {
+            "pid": "B0748F3DJ6",
+            "t_write": 847615.698074125,
+            "t_visible": 847615.862189625,
+            "missing_s": 0.0,
+            "price": 100059.01
+          },
+          {
+            "pid": "B015DJGECA",
+            "t_write": 847617.688799958,
+            "t_visible": 847618.042120916,
+            "missing_s": 0.0,
+            "price": 100060.01
+          },
+          {
+            "pid": "B07QMLHXH4",
+            "t_write": 847619.704249,
+            "t_visible": 847619.852056916,
+            "missing_s": 0.0,
+            "price": 100061.01
+          },
+          {
+            "pid": "B07T56P8GP",
+            "t_write": 847621.71668875,
+            "t_visible": 847621.90358125,
+            "missing_s": 0.0,
+            "price": 100062.01
+          },
+          {
+            "pid": "B083PTV2XZ",
+            "t_write": 847623.694068416,
+            "t_visible": 847623.71204125,
+            "missing_s": 0.0,
+            "price": 100063.01
+          },
+          {
+            "pid": "B087RMLH8N",
+            "t_write": 847625.695541291,
+            "t_visible": 847625.897191333,
+            "missing_s": 0.0,
+            "price": 100064.01
+          },
+          {
+            "pid": "B07J6NP6KF",
+            "t_write": 847627.709050083,
+            "t_visible": 847627.966155583,
+            "missing_s": 0.0,
+            "price": 100065.01
+          },
+          {
+            "pid": "B07YYNVWDG",
+            "t_write": 847629.691878666,
+            "t_visible": 847629.828562375,
+            "missing_s": 0.0,
+            "price": 100066.01
+          },
+          {
+            "pid": "B07K6D847H",
+            "t_write": 847631.70845425,
+            "t_visible": 847631.902080375,
+            "missing_s": 0.0,
+            "price": 100067.01
+          },
+          {
+            "pid": "B0007XDHG4",
+            "t_write": 847633.689789416,
+            "t_visible": 847633.704582291,
+            "missing_s": 0.0,
+            "price": 100068.01
+          },
+          {
+            "pid": "B00PRRUTHK",
+            "t_write": 847635.702485583,
+            "t_visible": 847635.79988525,
+            "missing_s": 0.0,
+            "price": 100069.01
+          },
+          {
+            "pid": "B004BNECZQ",
+            "t_write": 847637.694912083,
+            "t_visible": 847637.857207458,
+            "missing_s": 0.0,
+            "price": 100070.01
+          },
+          {
+            "pid": "B081YR9QGX",
+            "t_write": 847639.701067875,
+            "t_visible": 847640.0615315,
+            "missing_s": 0.0,
+            "price": 100071.01
+          },
+          {
+            "pid": "B08292WNKP",
+            "t_write": 847641.696299833,
+            "t_visible": 847641.917465666,
+            "missing_s": 0.0,
+            "price": 100072.01
+          },
+          {
+            "pid": "B082VWW9JJ",
+            "t_write": 847643.699251625,
+            "t_visible": 847643.725361208,
+            "missing_s": 0.0,
+            "price": 100073.01
+          },
+          {
+            "pid": "B07P6PWPLY",
+            "t_write": 847645.729127083,
+            "t_visible": 847645.913969291,
+            "missing_s": 0.0,
+            "price": 100074.01
+          },
+          {
+            "pid": "B08W55B8CF",
+            "t_write": 847647.700592666,
+            "t_visible": 847647.710283458,
+            "missing_s": 0.0,
+            "price": 100075.01
+          },
+          {
+            "pid": "B07F7JSSCB",
+            "t_write": 847649.700715625,
+            "t_visible": 847649.789293125,
+            "missing_s": 0.0,
+            "price": 100076.01
+          },
+          {
+            "pid": "B07BK9TMMT",
+            "t_write": 847651.703358875,
+            "t_visible": 847651.865104583,
+            "missing_s": 0.0,
+            "price": 100077.01
+          },
+          {
+            "pid": "0525572732",
+            "t_write": 847653.697613041,
+            "t_visible": 847654.045385708,
+            "missing_s": 0.0,
+            "price": 100078.01
+          },
+          {
+            "pid": "B07ZHYZRC6",
+            "t_write": 847655.699009083,
+            "t_visible": 847655.858129916,
+            "missing_s": 0.0,
+            "price": 100079.01
+          },
+          {
+            "pid": "B083LT8TKF",
+            "t_write": 847657.694267708,
+            "t_visible": 847658.070558916,
+            "missing_s": 0.0,
+            "price": 100080.01
+          },
+          {
+            "pid": "B0091XIBOE",
+            "t_write": 847659.723581,
+            "t_visible": 847659.8760035,
+            "missing_s": 0.0,
+            "price": 100081.01
+          },
+          {
+            "pid": "B0811DB63Y",
+            "t_write": 847661.711263333,
+            "t_visible": 847662.042050166,
+            "missing_s": 0.0,
+            "price": 100082.01
+          },
+          {
+            "pid": "B078G655N9",
+            "t_write": 847663.702343958,
+            "t_visible": 847663.878843083,
+            "missing_s": 0.0,
+            "price": 100083.01
+          },
+          {
+            "pid": "B01434DFYG",
+            "t_write": 847665.696540625,
+            "t_visible": 847666.059089041,
+            "missing_s": 0.0,
+            "price": 100084.01
+          },
+          {
+            "pid": "B08PBRF2VR",
+            "t_write": 847667.707181375,
+            "t_visible": 847667.886658583,
+            "missing_s": 0.0,
+            "price": 100085.01
+          },
+          {
+            "pid": "B07HJZK474",
+            "t_write": 847669.689812166,
+            "t_visible": 847670.065285083,
+            "missing_s": 0.0,
+            "price": 100086.01
+          },
+          {
+            "pid": "B00ACXVH8E",
+            "t_write": 847671.702134208,
+            "t_visible": 847671.892751208,
+            "missing_s": 0.0,
+            "price": 100087.01
+          },
+          {
+            "pid": "B073Q35KQD",
+            "t_write": 847673.694219541,
+            "t_visible": 847674.041804416,
+            "missing_s": 0.0,
+            "price": 100088.01
+          },
+          {
+            "pid": "B07LGFPVFB",
+            "t_write": 847675.863433083,
+            "t_visible": 847676.096994125,
+            "missing_s": 0.0,
+            "price": 100089.01
+          },
+          {
+            "pid": "B019FTN9MW",
+            "t_write": 847677.700465875,
+            "t_visible": 847678.042683375,
+            "missing_s": 0.0,
+            "price": 100090.01
+          },
+          {
+            "pid": "B0837QFK1K",
+            "t_write": 847679.701628958,
+            "t_visible": 847679.866882041,
+            "missing_s": 0.0,
+            "price": 100091.01
+          },
+          {
+            "pid": "B07Z7NTM7D",
+            "t_write": 847681.70355675,
+            "t_visible": 847682.056029625,
+            "missing_s": 0.0,
+            "price": 100092.01
+          },
+          {
+            "pid": "B00KMFVST0",
+            "t_write": 847683.694557333,
+            "t_visible": 847683.875387708,
+            "missing_s": 0.0,
+            "price": 100093.01
+          },
+          {
+            "pid": "B008U6SIM8",
+            "t_write": 847685.69413125,
+            "t_visible": 847686.041845083,
+            "missing_s": 0.0,
+            "price": 100094.01
+          },
+          {
+            "pid": "B00MKB6G8M",
+            "t_write": 847687.733061583,
+            "t_visible": 847687.900709833,
+            "missing_s": 0.0,
+            "price": 100095.01
+          },
+          {
+            "pid": "B07S86K91M",
+            "t_write": 847689.694802583,
+            "t_visible": 847690.043179125,
+            "missing_s": 0.0,
+            "price": 100096.01
+          },
+          {
+            "pid": "B075N83B9X",
+            "t_write": 847691.700456458,
+            "t_visible": 847691.966061083,
+            "missing_s": 0.0,
+            "price": 100097.01
+          },
+          {
+            "pid": "B074Y4C748",
+            "t_write": 847693.693743791,
+            "t_visible": 847693.744579666,
+            "missing_s": 0.0,
+            "price": 100098.01
+          },
+          {
+            "pid": "B084S3FL8L",
+            "t_write": 847695.70743625,
+            "t_visible": 847695.831349041,
+            "missing_s": 0.0,
+            "price": 100099.01
+          },
+          {
+            "pid": "B07YF3GZQ9",
+            "t_write": 847697.704117375,
+            "t_visible": 847698.062984791,
+            "missing_s": 0.0,
+            "price": 100100.01
+          },
+          {
+            "pid": "B06XCY86X5",
+            "t_write": 847699.761167541,
+            "t_visible": 847699.859079666,
+            "missing_s": 0.0,
+            "price": 100101.01
+          },
+          {
+            "pid": "B07GL6C9SP",
+            "t_write": 847701.716916208,
+            "t_visible": 847702.058623583,
+            "missing_s": 0.0,
+            "price": 100102.01
+          },
+          {
+            "pid": "1101934026",
+            "t_write": 847703.69923575,
+            "t_visible": 847703.895018041,
+            "missing_s": 0.0,
+            "price": 100103.01
+          },
+          {
+            "pid": "B079LFFV1P",
+            "t_write": 847705.703452916,
+            "t_visible": 847706.04153475,
+            "missing_s": 0.0,
+            "price": 100104.01
+          },
+          {
+            "pid": "B07MZDZBZ1",
+            "t_write": 847707.712610083,
+            "t_visible": 847707.889788375,
+            "missing_s": 0.0,
+            "price": 100105.01
+          },
+          {
+            "pid": "B081YN7NCX",
+            "t_write": 847709.718985041,
+            "t_visible": 847709.930045416,
+            "missing_s": 0.0,
+            "price": 100106.01
+          },
+          {
+            "pid": "B005OVE6ZK",
+            "t_write": 847711.698188541,
+            "t_visible": 847711.724036875,
+            "missing_s": 0.0,
+            "price": 100107.01
+          },
+          {
+            "pid": "B00B8QQU2M",
+            "t_write": 847713.716811791,
+            "t_visible": 847713.800333916,
+            "missing_s": 0.0,
+            "price": 100108.01
+          },
+          {
+            "pid": "B001588IUK",
+            "t_write": 847715.717691833,
+            "t_visible": 847715.868537,
+            "missing_s": 0.0,
+            "price": 100109.01
+          },
+          {
+            "pid": "B00COUR0NE",
+            "t_write": 847717.874364416,
+            "t_visible": 847717.965826375,
+            "missing_s": 0.0,
+            "price": 100110.01
+          },
+          {
+            "pid": "B00GIZZGLO",
+            "t_write": 847719.702191,
+            "t_visible": 847719.794280583,
+            "missing_s": 0.0,
+            "price": 100111.01
+          },
+          {
+            "pid": "B000KORDUG",
+            "t_write": 847721.692049083,
+            "t_visible": 847721.881018625,
+            "missing_s": 0.0,
+            "price": 100112.01
+          },
+          {
+            "pid": "B07X8X65NX",
+            "t_write": 847723.702774958,
+            "t_visible": 847724.043223833,
+            "missing_s": 0.0,
+            "price": 100113.01
+          },
+          {
+            "pid": "B004INR39G",
+            "t_write": 847725.6978565,
+            "t_visible": 847725.867459291,
+            "missing_s": 0.0,
+            "price": 100114.01
+          },
+          {
+            "pid": "1684620023",
+            "t_write": 847727.699818958,
+            "t_visible": 847728.064989291,
+            "missing_s": 0.0,
+            "price": 100115.01
+          },
+          {
+            "pid": "B07V5PTL8Q",
+            "t_write": 847729.692534791,
+            "t_visible": 847729.889140375,
+            "missing_s": 0.0,
+            "price": 100116.01
+          },
+          {
+            "pid": "B07CJ4Q1BY",
+            "t_write": 847731.702103166,
+            "t_visible": 847732.054173958,
+            "missing_s": 0.0,
+            "price": 100117.01
+          },
+          {
+            "pid": "B00IDCOA5I",
+            "t_write": 847733.704061791,
+            "t_visible": 847733.876036916,
+            "missing_s": 0.0,
+            "price": 100118.01
+          },
+          {
+            "pid": "B08JHBZGLG",
+            "t_write": 847735.703114166,
+            "t_visible": 847736.059319791,
+            "missing_s": 0.0,
+            "price": 100119.01
+          },
+          {
+            "pid": "B01JJCRDWC",
+            "t_write": 847737.700924666,
+            "t_visible": 847737.89073875,
+            "missing_s": 0.0,
+            "price": 100120.01
+          },
+          {
+            "pid": "B08956WJQH",
+            "t_write": 847739.704303666,
+            "t_visible": 847740.067937333,
+            "missing_s": 0.0,
+            "price": 100121.01
+          },
+          {
+            "pid": "B07CP21W4D",
+            "t_write": 847741.694274208,
+            "t_visible": 847741.872088666,
+            "missing_s": 0.0,
+            "price": 100122.01
+          },
+          {
+            "pid": "B07WR1YXT8",
+            "t_write": 847743.721217416,
+            "t_visible": 847743.961430375,
+            "missing_s": 0.0,
+            "price": 100123.01
+          },
+          {
+            "pid": "B09DZ5QSQC",
+            "t_write": 847745.712381583,
+            "t_visible": 847745.767015125,
+            "missing_s": 0.0,
+            "price": 100124.01
+          },
+          {
+            "pid": "B07HD3V7M8",
+            "t_write": 847747.692360166,
+            "t_visible": 847747.853880541,
+            "missing_s": 0.0,
+            "price": 100125.01
+          },
+          {
+            "pid": "B07P852TLL",
+            "t_write": 847749.701055583,
+            "t_visible": 847750.062841666,
+            "missing_s": 0.0,
+            "price": 100126.01
+          },
+          {
+            "pid": "1260026736",
+            "t_write": 847751.719407458,
+            "t_visible": 847751.8863285,
+            "missing_s": 0.0,
+            "price": 100127.01
+          },
+          {
+            "pid": "B0756NNJ3K",
+            "t_write": 847753.701518666,
+            "t_visible": 847754.373088333,
+            "missing_s": 0.0,
+            "price": 100128.01
+          },
+          {
+            "pid": "B07RFFVG6Y",
+            "t_write": 847755.705919666,
+            "t_visible": 847756.051158458,
+            "missing_s": 0.0,
+            "price": 100129.01
+          },
+          {
+            "pid": "B07P5FNJ8F",
+            "t_write": 847757.695363375,
+            "t_visible": 847757.889946625,
+            "missing_s": 0.0,
+            "price": 100130.01
+          },
+          {
+            "pid": "1734449705",
+            "t_write": 847759.693384666,
+            "t_visible": 847760.061900583,
+            "missing_s": 0.0,
+            "price": 100131.01
+          },
+          {
+            "pid": "B00MFCPURE",
+            "t_write": 847761.701273916,
+            "t_visible": 847761.879217083,
+            "missing_s": 0.0,
+            "price": 100132.01
+          },
+          {
+            "pid": "B088NBK21B",
+            "t_write": 847763.697987291,
+            "t_visible": 847764.06102225,
+            "missing_s": 0.0,
+            "price": 100133.01
+          },
+          {
+            "pid": "B01N27CR8T",
+            "t_write": 847765.707616541,
+            "t_visible": 847765.890269791,
+            "missing_s": 0.0,
+            "price": 100134.01
+          },
+          {
+            "pid": "B07WC33MYP",
+            "t_write": 847767.701092166,
+            "t_visible": 847768.064015041,
+            "missing_s": 0.0,
+            "price": 100135.01
+          },
+          {
+            "pid": "B07DLD3Y8R",
+            "t_write": 847769.697349458,
+            "t_visible": 847769.886330416,
+            "missing_s": 0.0,
+            "price": 100136.01
+          },
+          {
+            "pid": "1419742973",
+            "t_write": 847771.720488291,
+            "t_visible": 847772.008972291,
+            "missing_s": 0.0,
+            "price": 100137.01
+          },
+          {
+            "pid": "0451481089",
+            "t_write": 847773.689497041,
+            "t_visible": 847773.845051666,
+            "missing_s": 0.0,
+            "price": 100138.01
+          },
+          {
+            "pid": "B095MGJRPC",
+            "t_write": 847775.704408125,
+            "t_visible": 847776.045327791,
+            "missing_s": 0.0,
+            "price": 100139.01
+          },
+          {
+            "pid": "B07KFQYHRD",
+            "t_write": 847777.695891,
+            "t_visible": 847777.874889916,
+            "missing_s": 0.0,
+            "price": 100140.01
+          },
+          {
+            "pid": "B0030UHT3I",
+            "t_write": 847779.699395833,
+            "t_visible": 847780.054606541,
+            "missing_s": 0.0,
+            "price": 100141.01
+          },
+          {
+            "pid": "B003IYHACG",
+            "t_write": 847781.697128708,
+            "t_visible": 847781.89241975,
+            "missing_s": 0.0,
+            "price": 100142.01
+          },
+          {
+            "pid": "B07FZBP2WF",
+            "t_write": 847783.701504333,
+            "t_visible": 847784.042229708,
+            "missing_s": 0.0,
+            "price": 100143.01
+          },
+          {
+            "pid": "B01H4B6RAO",
+            "t_write": 847785.693394208,
+            "t_visible": 847785.875001458,
+            "missing_s": 0.0,
+            "price": 100144.01
+          },
+          {
+            "pid": "B075L971WR",
+            "t_write": 847787.701441,
+            "t_visible": 847787.969426833,
+            "missing_s": 0.0,
+            "price": 100145.01
+          },
+          {
+            "pid": "B08TRGD4QJ",
+            "t_write": 847789.695715375,
+            "t_visible": 847789.781004,
+            "missing_s": 0.0,
+            "price": 100146.01
+          },
+          {
+            "pid": "B07B3W1RPB",
+            "t_write": 847791.699486875,
+            "t_visible": 847791.984983625,
+            "missing_s": 0.0,
+            "price": 100147.01
+          },
+          {
+            "pid": "B0777JSPCX",
+            "t_write": 847793.696353083,
+            "t_visible": 847793.93057625,
+            "missing_s": 0.0,
+            "price": 100148.01
+          },
+          {
+            "pid": "B00J8OU8QK",
+            "t_write": 847795.723185791,
+            "t_visible": 847795.995898791,
+            "missing_s": 0.0,
+            "price": 100149.01
+          }
+        ],
+        "visible_p50_censored": false,
+        "visible_p99_censored": false,
+        "missing_p50_censored": false,
+        "missing_p99_censored": false
+      },
+      "bounded": {
+        "n": 150,
+        "timed_out": 0,
+        "visible_p50": 0.17424110398860648,
+        "visible_p99": 0.3000681148481089,
+        "missing_share": 0.0,
+        "missing_p50": 0.0,
+        "missing_p99": 0.0,
+        "read": {
+          "consistency": "Bounded",
+          "ignore_growing": false
+        },
+        "prep_s": 556.8652060000459,
+        "storm_rows": 45000,
+        "search_query_agree": true,
+        "events": [
+          {
+            "pid": "B078952J6W",
+            "t_write": 848380.843638416,
+            "t_visible": 848381.024871041,
+            "missing_s": 0.0,
+            "price": 100000.01
+          },
+          {
+            "pid": "B07K1HGJKD",
+            "t_write": 848382.771672666,
+            "t_visible": 848382.830193625,
+            "missing_s": 0.0,
+            "price": 100001.01
+          },
+          {
+            "pid": "B000H5MW2W",
+            "t_write": 848384.763402083,
+            "t_visible": 848384.878590333,
+            "missing_s": 0.0,
+            "price": 100002.01
+          },
+          {
+            "pid": "1519066627",
+            "t_write": 848386.758048583,
+            "t_visible": 848386.964486541,
+            "missing_s": 0.0,
+            "price": 100003.01
+          },
+          {
+            "pid": "B01MDNAMJ4",
+            "t_write": 848388.763267291,
+            "t_visible": 848389.016333833,
+            "missing_s": 0.0,
+            "price": 100004.01
+          },
+          {
+            "pid": "B000189UWU",
+            "t_write": 848390.756076333,
+            "t_visible": 848390.805871083,
+            "missing_s": 0.0,
+            "price": 100005.01
+          },
+          {
+            "pid": "B000SLTLT2",
+            "t_write": 848392.772001416,
+            "t_visible": 848392.959769375,
+            "missing_s": 0.0,
+            "price": 100006.01
+          },
+          {
+            "pid": "B07MDSFGQ6",
+            "t_write": 848394.763731416,
+            "t_visible": 848395.020762208,
+            "missing_s": 0.0,
+            "price": 100007.01
+          },
+          {
+            "pid": "B07L9X6NY9",
+            "t_write": 848396.774932916,
+            "t_visible": 848396.822275041,
+            "missing_s": 0.0,
+            "price": 100008.01
+          },
+          {
+            "pid": "B01M3MPI3O",
+            "t_write": 848398.759502666,
+            "t_visible": 848398.901205625,
+            "missing_s": 0.0,
+            "price": 100009.01
+          },
+          {
+            "pid": "B083N1MNPY",
+            "t_write": 848400.76368825,
+            "t_visible": 848400.960958208,
+            "missing_s": 0.0,
+            "price": 100010.01
+          },
+          {
+            "pid": "B00FJWETN8",
+            "t_write": 848402.783388041,
+            "t_visible": 848403.023322375,
+            "missing_s": 0.0,
+            "price": 100011.01
+          },
+          {
+            "pid": "B00Z7NRK08",
+            "t_write": 848404.756110791,
+            "t_visible": 848404.815882458,
+            "missing_s": 0.0,
+            "price": 100012.01
+          },
+          {
+            "pid": "163236655X",
+            "t_write": 848406.773498166,
+            "t_visible": 848406.862083125,
+            "missing_s": 0.0,
+            "price": 100013.01
+          },
+          {
+            "pid": "B0002AQX9U",
+            "t_write": 848408.753177583,
+            "t_visible": 848408.91209075,
+            "missing_s": 0.0,
+            "price": 100014.01
+          },
+          {
+            "pid": "B07F28LJ8F",
+            "t_write": 848410.771900208,
+            "t_visible": 848410.974210375,
+            "missing_s": 0.0,
+            "price": 100015.01
+          },
+          {
+            "pid": "B01ANKAEHK",
+            "t_write": 848412.757112833,
+            "t_visible": 848413.04458175,
+            "missing_s": 0.0,
+            "price": 100016.01
+          },
+          {
+            "pid": "B07WVVX2CG",
+            "t_write": 848414.761091958,
+            "t_visible": 848414.826256875,
+            "missing_s": 0.0,
+            "price": 100017.01
+          },
+          {
+            "pid": "0744019834",
+            "t_write": 848416.759766333,
+            "t_visible": 848416.892826708,
+            "missing_s": 0.0,
+            "price": 100018.01
+          },
+          {
+            "pid": "B07X96JDDZ",
+            "t_write": 848418.755640458,
+            "t_visible": 848418.955999875,
+            "missing_s": 0.0,
+            "price": 100019.01
+          },
+          {
+            "pid": "B07PQ2HP9N",
+            "t_write": 848420.763570833,
+            "t_visible": 848421.014443291,
+            "missing_s": 0.0,
+            "price": 100020.01
+          },
+          {
+            "pid": "B00QHEXXE8",
+            "t_write": 848422.772691375,
+            "t_visible": 848422.802349708,
+            "missing_s": 0.0,
+            "price": 100021.01
+          },
+          {
+            "pid": "B07D56VN8F",
+            "t_write": 848424.788372833,
+            "t_visible": 848424.859046291,
+            "missing_s": 0.0,
+            "price": 100022.01
+          },
+          {
+            "pid": "1532792948",
+            "t_write": 848426.769784708,
+            "t_visible": 848426.947064291,
+            "missing_s": 0.0,
+            "price": 100023.01
+          },
+          {
+            "pid": "B08816JRHK",
+            "t_write": 848428.793976666,
+            "t_visible": 848429.037154416,
+            "missing_s": 0.0,
+            "price": 100024.01
+          },
+          {
+            "pid": "B07GV4BV8D",
+            "t_write": 848430.765187333,
+            "t_visible": 848430.8372325,
+            "missing_s": 0.0,
+            "price": 100025.01
+          },
+          {
+            "pid": "B01LZVP7K4",
+            "t_write": 848432.761914833,
+            "t_visible": 848432.9045955,
+            "missing_s": 0.0,
+            "price": 100026.01
+          },
+          {
+            "pid": "B000BQWG6Y",
+            "t_write": 848434.767166916,
+            "t_visible": 848434.993116416,
+            "missing_s": 0.0,
+            "price": 100027.01
+          },
+          {
+            "pid": "B004PL44IY",
+            "t_write": 848436.776347083,
+            "t_visible": 848437.039613791,
+            "missing_s": 0.0,
+            "price": 100028.01
+          },
+          {
+            "pid": "B08979MTXH",
+            "t_write": 848438.754922041,
+            "t_visible": 848438.839625,
+            "missing_s": 0.0,
+            "price": 100029.01
+          },
+          {
+            "pid": "B07TPSL1T1",
+            "t_write": 848440.763720458,
+            "t_visible": 848440.892327666,
+            "missing_s": 0.0,
+            "price": 100030.01
+          },
+          {
+            "pid": "1411673360",
+            "t_write": 848442.759993291,
+            "t_visible": 848442.950931,
+            "missing_s": 0.0,
+            "price": 100031.01
+          },
+          {
+            "pid": "B074J87ZQZ",
+            "t_write": 848444.790285166,
+            "t_visible": 848444.996852416,
+            "missing_s": 0.0,
+            "price": 100032.01
+          },
+          {
+            "pid": "B00QPH5I5O",
+            "t_write": 848446.775200875,
+            "t_visible": 848446.812343833,
+            "missing_s": 0.0,
+            "price": 100033.01
+          },
+          {
+            "pid": "B0843QTGG9",
+            "t_write": 848448.766541666,
+            "t_visible": 848448.847434458,
+            "missing_s": 0.0,
+            "price": 100034.01
+          },
+          {
+            "pid": "B07WT1CYSJ",
+            "t_write": 848450.755661958,
+            "t_visible": 848450.909678625,
+            "missing_s": 0.0,
+            "price": 100035.01
+          },
+          {
+            "pid": "B07HYLTTWQ",
+            "t_write": 848452.774439458,
+            "t_visible": 848452.964055166,
+            "missing_s": 0.0,
+            "price": 100036.01
+          },
+          {
+            "pid": "B073WW761F",
+            "t_write": 848454.788968,
+            "t_visible": 848455.054370625,
+            "missing_s": 0.0,
+            "price": 100037.01
+          },
+          {
+            "pid": "B005OCTMHG",
+            "t_write": 848456.761640875,
+            "t_visible": 848456.8522465,
+            "missing_s": 0.0,
+            "price": 100038.01
+          },
+          {
+            "pid": "B000YI9UO0",
+            "t_write": 848458.7600225,
+            "t_visible": 848458.910007958,
+            "missing_s": 0.0,
+            "price": 100039.01
+          },
+          {
+            "pid": "B0851ZWB4L",
+            "t_write": 848460.761578416,
+            "t_visible": 848460.980092125,
+            "missing_s": 0.0,
+            "price": 100040.01
+          },
+          {
+            "pid": "B07D93RFK5",
+            "t_write": 848462.762156875,
+            "t_visible": 848463.02565125,
+            "missing_s": 0.0,
+            "price": 100041.01
+          },
+          {
+            "pid": "B077H2NH6R",
+            "t_write": 848464.863973375,
+            "t_visible": 848465.102263958,
+            "missing_s": 0.0,
+            "price": 100042.01
+          },
+          {
+            "pid": "B07SFSVWKG",
+            "t_write": 848466.751588041,
+            "t_visible": 848466.9015495,
+            "missing_s": 0.0,
+            "price": 100043.01
+          },
+          {
+            "pid": "B07DT6MNDM",
+            "t_write": 848468.760133583,
+            "t_visible": 848468.957939916,
+            "missing_s": 0.0,
+            "price": 100044.01
+          },
+          {
+            "pid": "B07P5R9851",
+            "t_write": 848470.776127166,
+            "t_visible": 848471.018604,
+            "missing_s": 0.0,
+            "price": 100045.01
+          },
+          {
+            "pid": "B0010OKMMG",
+            "t_write": 848472.755479416,
+            "t_visible": 848472.802921625,
+            "missing_s": 0.0,
+            "price": 100046.01
+          },
+          {
+            "pid": "B082NX7H8K",
+            "t_write": 848474.777114916,
+            "t_visible": 848474.855784458,
+            "missing_s": 0.0,
+            "price": 100047.01
+          },
+          {
+            "pid": "B01BNRIGEA",
+            "t_write": 848476.752230083,
+            "t_visible": 848476.905512291,
+            "missing_s": 0.0,
+            "price": 100048.01
+          },
+          {
+            "pid": "B07BK1DY9F",
+            "t_write": 848478.763920333,
+            "t_visible": 848478.959437333,
+            "missing_s": 0.0,
+            "price": 100049.01
+          },
+          {
+            "pid": "B0049IUSP6",
+            "t_write": 848480.774554916,
+            "t_visible": 848481.00413725,
+            "missing_s": 0.0,
+            "price": 100050.01
+          },
+          {
+            "pid": "B079VYFV1H",
+            "t_write": 848482.762053833,
+            "t_visible": 848482.810351375,
+            "missing_s": 0.0,
+            "price": 100051.01
+          },
+          {
+            "pid": "B000MOO21W",
+            "t_write": 848484.791832833,
+            "t_visible": 848484.855058833,
+            "missing_s": 0.0,
+            "price": 100052.01
+          },
+          {
+            "pid": "B0794V4HPP",
+            "t_write": 848486.769115833,
+            "t_visible": 848486.909729083,
+            "missing_s": 0.0,
+            "price": 100053.01
+          },
+          {
+            "pid": "B07L3QBS3S",
+            "t_write": 848488.755970708,
+            "t_visible": 848488.950484125,
+            "missing_s": 0.0,
+            "price": 100054.01
+          },
+          {
+            "pid": "B072MHV3MM",
+            "t_write": 848490.761627041,
+            "t_visible": 848491.012425958,
+            "missing_s": 0.0,
+            "price": 100055.01
+          },
+          {
+            "pid": "B004RBYXY2",
+            "t_write": 848492.765860875,
+            "t_visible": 848492.806390916,
+            "missing_s": 0.0,
+            "price": 100056.01
+          },
+          {
+            "pid": "B004L5E6GE",
+            "t_write": 848494.759208916,
+            "t_visible": 848494.861208166,
+            "missing_s": 0.0,
+            "price": 100057.01
+          },
+          {
+            "pid": "B003HLCSX6",
+            "t_write": 848496.753932958,
+            "t_visible": 848496.925135583,
+            "missing_s": 0.0,
+            "price": 100058.01
+          },
+          {
+            "pid": "B0874S6C1S",
+            "t_write": 848498.75612275,
+            "t_visible": 848498.973734041,
+            "missing_s": 0.0,
+            "price": 100059.01
+          },
+          {
+            "pid": "B00EZLS1D8",
+            "t_write": 848500.761209458,
+            "t_visible": 848501.039809291,
+            "missing_s": 0.0,
+            "price": 100060.01
+          },
+          {
+            "pid": "B07K5MJZSB",
+            "t_write": 848502.752780583,
+            "t_visible": 848502.83668475,
+            "missing_s": 0.0,
+            "price": 100061.01
+          },
+          {
+            "pid": "B07XDD3VXY",
+            "t_write": 848504.759012125,
+            "t_visible": 848504.91500725,
+            "missing_s": 0.0,
+            "price": 100062.01
+          },
+          {
+            "pid": "B07PGK9JFZ",
+            "t_write": 848506.762513416,
+            "t_visible": 848506.960274791,
+            "missing_s": 0.0,
+            "price": 100063.01
+          },
+          {
+            "pid": "B07C243JM1",
+            "t_write": 848508.758970458,
+            "t_visible": 848509.020388291,
+            "missing_s": 0.0,
+            "price": 100064.01
+          },
+          {
+            "pid": "B06XG38TL7",
+            "t_write": 848510.760137333,
+            "t_visible": 848510.806176291,
+            "missing_s": 0.0,
+            "price": 100065.01
+          },
+          {
+            "pid": "B00407RQEC",
+            "t_write": 848512.763646041,
+            "t_visible": 848512.946623875,
+            "missing_s": 0.0,
+            "price": 100066.01
+          },
+          {
+            "pid": "B017LKVCIK",
+            "t_write": 848514.776135208,
+            "t_visible": 848514.992840125,
+            "missing_s": 0.0,
+            "price": 100067.01
+          },
+          {
+            "pid": "B081QD32XB",
+            "t_write": 848516.763154375,
+            "t_visible": 848517.066374333,
+            "missing_s": 0.0,
+            "price": 100068.01
+          },
+          {
+            "pid": "B00UT9RV3G",
+            "t_write": 848518.755781708,
+            "t_visible": 848518.860333833,
+            "missing_s": 0.0,
+            "price": 100069.01
+          },
+          {
+            "pid": "B08K3WDV66",
+            "t_write": 848520.772123291,
+            "t_visible": 848520.903927458,
+            "missing_s": 0.0,
+            "price": 100070.01
+          },
+          {
+            "pid": "B07XQFB51Y",
+            "t_write": 848522.753363041,
+            "t_visible": 848522.980863416,
+            "missing_s": 0.0,
+            "price": 100071.01
+          },
+          {
+            "pid": "B07WDMDLPH",
+            "t_write": 848524.789737,
+            "t_visible": 848525.056971791,
+            "missing_s": 0.0,
+            "price": 100072.01
+          },
+          {
+            "pid": "B000005GXB",
+            "t_write": 848526.76676675,
+            "t_visible": 848526.886171,
+            "missing_s": 0.0,
+            "price": 100073.01
+          },
+          {
+            "pid": "B0957KKNBF",
+            "t_write": 848528.7649405,
+            "t_visible": 848528.965965125,
+            "missing_s": 0.0,
+            "price": 100074.01
+          },
+          {
+            "pid": "B097D99KT1",
+            "t_write": 848530.757495,
+            "t_visible": 848531.028995333,
+            "missing_s": 0.0,
+            "price": 100075.01
+          },
+          {
+            "pid": "B00TDEWV1A",
+            "t_write": 848532.774262625,
+            "t_visible": 848532.80724525,
+            "missing_s": 0.0,
+            "price": 100076.01
+          },
+          {
+            "pid": "B079JCZMMH",
+            "t_write": 848534.756136166,
+            "t_visible": 848534.885332166,
+            "missing_s": 0.0,
+            "price": 100077.01
+          },
+          {
+            "pid": "B00CBNICOK",
+            "t_write": 848536.756479875,
+            "t_visible": 848536.956997666,
+            "missing_s": 0.0,
+            "price": 100078.01
+          },
+          {
+            "pid": "B07F94PTCV",
+            "t_write": 848538.772940583,
+            "t_visible": 848539.018048583,
+            "missing_s": 0.0,
+            "price": 100079.01
+          },
+          {
+            "pid": "B07FDHRWP1",
+            "t_write": 848540.762758875,
+            "t_visible": 848540.816676583,
+            "missing_s": 0.0,
+            "price": 100080.01
+          },
+          {
+            "pid": "B0851CZQ37",
+            "t_write": 848542.762756875,
+            "t_visible": 848542.954257083,
+            "missing_s": 0.0,
+            "price": 100081.01
+          },
+          {
+            "pid": "B07DM5BDB2",
+            "t_write": 848544.782074583,
+            "t_visible": 848544.997278541,
+            "missing_s": 0.0,
+            "price": 100082.01
+          },
+          {
+            "pid": "B000ND3YY8",
+            "t_write": 848546.760313291,
+            "t_visible": 848547.049879541,
+            "missing_s": 0.0,
+            "price": 100083.01
+          },
+          {
+            "pid": "B00RU2IAIK",
+            "t_write": 848548.761446791,
+            "t_visible": 848548.847674125,
+            "missing_s": 0.0,
+            "price": 100084.01
+          },
+          {
+            "pid": "B078W22BQK",
+            "t_write": 848550.759559666,
+            "t_visible": 848550.898460083,
+            "missing_s": 0.0,
+            "price": 100085.01
+          },
+          {
+            "pid": "B01621NPD4",
+            "t_write": 848552.767707958,
+            "t_visible": 848552.960128583,
+            "missing_s": 0.0,
+            "price": 100086.01
+          },
+          {
+            "pid": "B085SWSCSQ",
+            "t_write": 848554.767991291,
+            "t_visible": 848555.023333625,
+            "missing_s": 0.0,
+            "price": 100087.01
+          },
+          {
+            "pid": "B085QNRGFM",
+            "t_write": 848556.761234833,
+            "t_visible": 848556.823720791,
+            "missing_s": 0.0,
+            "price": 100088.01
+          },
+          {
+            "pid": "B001FL7TLG",
+            "t_write": 848558.801708791,
+            "t_visible": 848558.875774333,
+            "missing_s": 0.0,
+            "price": 100089.01
+          },
+          {
+            "pid": "007140841X",
+            "t_write": 848560.755722083,
+            "t_visible": 848560.920774083,
+            "missing_s": 0.0,
+            "price": 100090.01
+          },
+          {
+            "pid": "B01CYLO8UK",
+            "t_write": 848562.766755333,
+            "t_visible": 848562.972171083,
+            "missing_s": 0.0,
+            "price": 100091.01
+          },
+          {
+            "pid": "B01F9W21W8",
+            "t_write": 848564.769083125,
+            "t_visible": 848565.032264875,
+            "missing_s": 0.0,
+            "price": 100092.01
+          },
+          {
+            "pid": "B07HCKCNZ8",
+            "t_write": 848566.752323916,
+            "t_visible": 848566.829607541,
+            "missing_s": 0.0,
+            "price": 100093.01
+          },
+          {
+            "pid": "B01M4NJ7R5",
+            "t_write": 848568.778312791,
+            "t_visible": 848568.88253425,
+            "missing_s": 0.0,
+            "price": 100094.01
+          },
+          {
+            "pid": "1978429878",
+            "t_write": 848570.757888541,
+            "t_visible": 848570.939460708,
+            "missing_s": 0.0,
+            "price": 100095.01
+          },
+          {
+            "pid": "B074QWD7V2",
+            "t_write": 848572.752316125,
+            "t_visible": 848572.992010333,
+            "missing_s": 0.0,
+            "price": 100096.01
+          },
+          {
+            "pid": "B074MS5C5K",
+            "t_write": 848574.753846083,
+            "t_visible": 848575.066052166,
+            "missing_s": 0.0,
+            "price": 100097.01
+          },
+          {
+            "pid": "B01D67ABXO",
+            "t_write": 848576.757998,
+            "t_visible": 848576.865347083,
+            "missing_s": 0.0,
+            "price": 100098.01
+          },
+          {
+            "pid": "B07H3B32JP",
+            "t_write": 848578.755916625,
+            "t_visible": 848578.900318958,
+            "missing_s": 0.0,
+            "price": 100099.01
+          },
+          {
+            "pid": "B00U5OFX4O",
+            "t_write": 848580.7614755,
+            "t_visible": 848580.97173125,
+            "missing_s": 0.0,
+            "price": 100100.01
+          },
+          {
+            "pid": "B07YQ4KGC7",
+            "t_write": 848582.770878541,
+            "t_visible": 848583.042243166,
+            "missing_s": 0.0,
+            "price": 100101.01
+          },
+          {
+            "pid": "B0027FGBD6",
+            "t_write": 848584.789644,
+            "t_visible": 848584.825101916,
+            "missing_s": 0.0,
+            "price": 100102.01
+          },
+          {
+            "pid": "B00WKW2ISI",
+            "t_write": 848586.752572875,
+            "t_visible": 848586.884659791,
+            "missing_s": 0.0,
+            "price": 100103.01
+          },
+          {
+            "pid": "B07L4TPKZ1",
+            "t_write": 848588.76890175,
+            "t_visible": 848588.935473666,
+            "missing_s": 0.0,
+            "price": 100104.01
+          },
+          {
+            "pid": "B00OUQ0HTY",
+            "t_write": 848590.760002041,
+            "t_visible": 848590.963073375,
+            "missing_s": 0.0,
+            "price": 100105.01
+          },
+          {
+            "pid": "B01LQ95MAG",
+            "t_write": 848592.750415375,
+            "t_visible": 848593.019332833,
+            "missing_s": 0.0,
+            "price": 100106.01
+          },
+          {
+            "pid": "B00FAVGQ4S",
+            "t_write": 848594.758925416,
+            "t_visible": 848594.8150965,
+            "missing_s": 0.0,
+            "price": 100107.01
+          },
+          {
+            "pid": "B08PS6R7JK",
+            "t_write": 848596.755643541,
+            "t_visible": 848596.869159291,
+            "missing_s": 0.0,
+            "price": 100108.01
+          },
+          {
+            "pid": "B07GG65HVG",
+            "t_write": 848599.102134958,
+            "t_visible": 848599.166199083,
+            "missing_s": 0.0,
+            "price": 100109.01
+          },
+          {
+            "pid": "B0837NQ7HH",
+            "t_write": 848600.774194583,
+            "t_visible": 848600.964105458,
+            "missing_s": 0.0,
+            "price": 100110.01
+          },
+          {
+            "pid": "B07GCRY8NC",
+            "t_write": 848602.75685625,
+            "t_visible": 848602.994847041,
+            "missing_s": 0.0,
+            "price": 100111.01
+          },
+          {
+            "pid": "B004SS1MJI",
+            "t_write": 848604.751489333,
+            "t_visible": 848605.044053833,
+            "missing_s": 0.0,
+            "price": 100112.01
+          },
+          {
+            "pid": "B01HAK3428",
+            "t_write": 848606.751435166,
+            "t_visible": 848606.849631416,
+            "missing_s": 0.0,
+            "price": 100113.01
+          },
+          {
+            "pid": "B07G7T8X8R",
+            "t_write": 848608.756691666,
+            "t_visible": 848608.887526458,
+            "missing_s": 0.0,
+            "price": 100114.01
+          },
+          {
+            "pid": "B07Y3YWH48",
+            "t_write": 848610.793585166,
+            "t_visible": 848610.922592708,
+            "missing_s": 0.0,
+            "price": 100115.01
+          },
+          {
+            "pid": "B08FHWSMJG",
+            "t_write": 848612.788504791,
+            "t_visible": 848612.989308375,
+            "missing_s": 0.0,
+            "price": 100116.01
+          },
+          {
+            "pid": "B07W61H2TC",
+            "t_write": 848614.762716958,
+            "t_visible": 848615.059504583,
+            "missing_s": 0.0,
+            "price": 100117.01
+          },
+          {
+            "pid": "B075TFP4JH",
+            "t_write": 848616.760919375,
+            "t_visible": 848616.854646708,
+            "missing_s": 0.0,
+            "price": 100118.01
+          },
+          {
+            "pid": "B010EEGZRI",
+            "t_write": 848618.752247958,
+            "t_visible": 848618.918477541,
+            "missing_s": 0.0,
+            "price": 100119.01
+          },
+          {
+            "pid": "B088KD2Q9L",
+            "t_write": 848620.764719708,
+            "t_visible": 848620.999668208,
+            "missing_s": 0.0,
+            "price": 100120.01
+          },
+          {
+            "pid": "B07QFZ1FRK",
+            "t_write": 848622.7778245,
+            "t_visible": 848623.052197208,
+            "missing_s": 0.0,
+            "price": 100121.01
+          },
+          {
+            "pid": "B07G9MXXTL",
+            "t_write": 848624.781400791,
+            "t_visible": 848624.879936583,
+            "missing_s": 0.0,
+            "price": 100122.01
+          },
+          {
+            "pid": "B07SPFJ3LY",
+            "t_write": 848626.773621875,
+            "t_visible": 848626.920140625,
+            "missing_s": 0.0,
+            "price": 100123.01
+          },
+          {
+            "pid": "B07F931FXQ",
+            "t_write": 848628.760790625,
+            "t_visible": 848628.993255125,
+            "missing_s": 0.0,
+            "price": 100124.01
+          },
+          {
+            "pid": "B01EI6JMUU",
+            "t_write": 848630.76962825,
+            "t_visible": 848630.796003333,
+            "missing_s": 0.0,
+            "price": 100125.01
+          },
+          {
+            "pid": "B001OC5UNK",
+            "t_write": 848632.786220708,
+            "t_visible": 848632.868657375,
+            "missing_s": 0.0,
+            "price": 100126.01
+          },
+          {
+            "pid": "B07VY2GCM6",
+            "t_write": 848634.759872625,
+            "t_visible": 848634.901779416,
+            "missing_s": 0.0,
+            "price": 100127.01
+          },
+          {
+            "pid": "B091FQ8H1K",
+            "t_write": 848636.75576925,
+            "t_visible": 848636.958691666,
+            "missing_s": 0.0,
+            "price": 100128.01
+          },
+          {
+            "pid": "B07Q3Y2YFD",
+            "t_write": 848638.75219425,
+            "t_visible": 848639.012335041,
+            "missing_s": 0.0,
+            "price": 100129.01
+          },
+          {
+            "pid": "B01HPCWUDK",
+            "t_write": 848640.760231833,
+            "t_visible": 848640.810790875,
+            "missing_s": 0.0,
+            "price": 100130.01
+          },
+          {
+            "pid": "B009GEOLM4",
+            "t_write": 848642.760166458,
+            "t_visible": 848642.88735175,
+            "missing_s": 0.0,
+            "price": 100131.01
+          },
+          {
+            "pid": "B001RJ1U6G",
+            "t_write": 848644.7530505,
+            "t_visible": 848644.942528041,
+            "missing_s": 0.0,
+            "price": 100132.01
+          },
+          {
+            "pid": "B07H9H4QCL",
+            "t_write": 848646.770589041,
+            "t_visible": 848646.991228208,
+            "missing_s": 0.0,
+            "price": 100133.01
+          },
+          {
+            "pid": "1524863785",
+            "t_write": 848648.75821625,
+            "t_visible": 848649.051817708,
+            "missing_s": 0.0,
+            "price": 100134.01
+          },
+          {
+            "pid": "B001132BTS",
+            "t_write": 848650.75970825,
+            "t_visible": 848650.850984166,
+            "missing_s": 0.0,
+            "price": 100135.01
+          },
+          {
+            "pid": "B01ATW6ETY",
+            "t_write": 848652.762136833,
+            "t_visible": 848652.880313583,
+            "missing_s": 0.0,
+            "price": 100136.01
+          },
+          {
+            "pid": "8809062655",
+            "t_write": 848654.761660208,
+            "t_visible": 848654.946746666,
+            "missing_s": 0.0,
+            "price": 100137.01
+          },
+          {
+            "pid": "B008DMN40U",
+            "t_write": 848656.759182958,
+            "t_visible": 848656.995065458,
+            "missing_s": 0.0,
+            "price": 100138.01
+          },
+          {
+            "pid": "B008O9DV78",
+            "t_write": 848658.759237125,
+            "t_visible": 848659.039691291,
+            "missing_s": 0.0,
+            "price": 100139.01
+          },
+          {
+            "pid": "B00VEIB1QY",
+            "t_write": 848660.759663458,
+            "t_visible": 848660.843445541,
+            "missing_s": 0.0,
+            "price": 100140.01
+          },
+          {
+            "pid": "B000GU5072",
+            "t_write": 848662.755363083,
+            "t_visible": 848662.897403166,
+            "missing_s": 0.0,
+            "price": 100141.01
+          },
+          {
+            "pid": "B08BJZHQW8",
+            "t_write": 848664.749970833,
+            "t_visible": 848664.958194458,
+            "missing_s": 0.0,
+            "price": 100142.01
+          },
+          {
+            "pid": "0226505650",
+            "t_write": 848666.751429083,
+            "t_visible": 848667.018006916,
+            "missing_s": 0.0,
+            "price": 100143.01
+          },
+          {
+            "pid": "B003ZW4TF2",
+            "t_write": 848668.761070541,
+            "t_visible": 848668.824296208,
+            "missing_s": 0.0,
+            "price": 100144.01
+          },
+          {
+            "pid": "B083NT3CR7",
+            "t_write": 848670.758276083,
+            "t_visible": 848670.860420375,
+            "missing_s": 0.0,
+            "price": 100145.01
+          },
+          {
+            "pid": "B01A9EZHK4",
+            "t_write": 848672.779303416,
+            "t_visible": 848672.900767916,
+            "missing_s": 0.0,
+            "price": 100146.01
+          },
+          {
+            "pid": "B07NTM7S7L",
+            "t_write": 848674.773036125,
+            "t_visible": 848674.962716833,
+            "missing_s": 0.0,
+            "price": 100147.01
+          },
+          {
+            "pid": "B00WUIKZIC",
+            "t_write": 848676.760618166,
+            "t_visible": 848677.011159625,
+            "missing_s": 0.0,
+            "price": 100148.01
+          },
+          {
+            "pid": "B078LHXW14",
+            "t_write": 848678.755619291,
+            "t_visible": 848678.808530041,
+            "missing_s": 0.0,
+            "price": 100149.01
+          }
+        ],
+        "visible_p50_censored": false,
+        "visible_p99_censored": false,
+        "missing_p50_censored": false,
+        "missing_p99_censored": false
+      },
+      "eventually": {
+        "n": 150,
+        "timed_out": 0,
+        "visible_p50": 0.20161135401576757,
+        "visible_p99": 0.4861954294471069,
+        "missing_share": 0.0,
+        "missing_p50": 0.0,
+        "missing_p99": 0.0,
+        "read": {
+          "consistency": "Eventually",
+          "ignore_growing": false
+        },
+        "prep_s": 659.8697288329713,
+        "storm_rows": 45000,
+        "search_query_agree": true,
+        "events": [
+          {
+            "pid": "B075VLJQDZ",
+            "t_write": 849363.620409375,
+            "t_visible": 849363.790767833,
+            "missing_s": 0.0,
+            "price": 100000.01
+          },
+          {
+            "pid": "B01GF81M5W",
+            "t_write": 849365.537696583,
+            "t_visible": 849365.58173125,
+            "missing_s": 0.0,
+            "price": 100001.01
+          },
+          {
+            "pid": "B08FRQRYL5",
+            "t_write": 849367.648999375,
+            "t_visible": 849367.897329958,
+            "missing_s": 0.0,
+            "price": 100002.01
+          },
+          {
+            "pid": "B01AXV2NPU",
+            "t_write": 849369.6529985,
+            "t_visible": 849369.952696583,
+            "missing_s": 0.0,
+            "price": 100003.01
+          },
+          {
+            "pid": "B07QYYJCBR",
+            "t_write": 849371.647385625,
+            "t_visible": 849372.013098958,
+            "missing_s": 0.0,
+            "price": 100004.01
+          },
+          {
+            "pid": "B07LB8W16F",
+            "t_write": 849373.648809833,
+            "t_visible": 849374.062481041,
+            "missing_s": 0.0,
+            "price": 100005.01
+          },
+          {
+            "pid": "B07DV53RTZ",
+            "t_write": 849375.659044125,
+            "t_visible": 849375.859431208,
+            "missing_s": 0.0,
+            "price": 100006.01
+          },
+          {
+            "pid": "B01LXFF31Q",
+            "t_write": 849377.673366083,
+            "t_visible": 849377.916322625,
+            "missing_s": 0.0,
+            "price": 100007.01
+          },
+          {
+            "pid": "B0164C4N82",
+            "t_write": 849379.648555416,
+            "t_visible": 849379.998464791,
+            "missing_s": 0.0,
+            "price": 100008.01
+          },
+          {
+            "pid": "B07NPN6L6D",
+            "t_write": 849381.532616333,
+            "t_visible": 849381.801676666,
+            "missing_s": 0.0,
+            "price": 100009.01
+          },
+          {
+            "pid": "B08XMK3227",
+            "t_write": 849383.647196208,
+            "t_visible": 849383.871984416,
+            "missing_s": 0.0,
+            "price": 100010.01
+          },
+          {
+            "pid": "B00HNQRJ94",
+            "t_write": 849385.668580041,
+            "t_visible": 849385.919787333,
+            "missing_s": 0.0,
+            "price": 100011.01
+          },
+          {
+            "pid": "B07F1LHZTM",
+            "t_write": 849387.648923208,
+            "t_visible": 849387.985362291,
+            "missing_s": 0.0,
+            "price": 100012.01
+          },
+          {
+            "pid": "B0000DDX30",
+            "t_write": 849389.531729666,
+            "t_visible": 849389.78973525,
+            "missing_s": 0.0,
+            "price": 100013.01
+          },
+          {
+            "pid": "B00B5ZYY38",
+            "t_write": 849391.669119708,
+            "t_visible": 849392.151237666,
+            "missing_s": 0.0,
+            "price": 100014.01
+          },
+          {
+            "pid": "1455805955",
+            "t_write": 849393.555703916,
+            "t_visible": 849393.764975666,
+            "missing_s": 0.0,
+            "price": 100015.01
+          },
+          {
+            "pid": "B01571Y6E2",
+            "t_write": 849395.526696166,
+            "t_visible": 849395.557861,
+            "missing_s": 0.0,
+            "price": 100016.01
+          },
+          {
+            "pid": "0452009308",
+            "t_write": 849397.526895375,
+            "t_visible": 849397.601450708,
+            "missing_s": 0.0,
+            "price": 100017.01
+          },
+          {
+            "pid": "B07ZJBVFCC",
+            "t_write": 849399.531151041,
+            "t_visible": 849399.66556875,
+            "missing_s": 0.0,
+            "price": 100018.01
+          },
+          {
+            "pid": "B00GQIFY7E",
+            "t_write": 849401.532364583,
+            "t_visible": 849401.700535166,
+            "missing_s": 0.0,
+            "price": 100019.01
+          },
+          {
+            "pid": "B083G5R9SX",
+            "t_write": 849403.529889791,
+            "t_visible": 849403.741061791,
+            "missing_s": 0.0,
+            "price": 100020.01
+          },
+          {
+            "pid": "B00II8UUP6",
+            "t_write": 849405.650779833,
+            "t_visible": 849406.084035291,
+            "missing_s": 0.0,
+            "price": 100021.01
+          },
+          {
+            "pid": "8189297813",
+            "t_write": 849407.531174416,
+            "t_visible": 849407.617606166,
+            "missing_s": 0.0,
+            "price": 100022.01
+          },
+          {
+            "pid": "B07TYCPMRD",
+            "t_write": 849409.670899333,
+            "t_visible": 849409.955252708,
+            "missing_s": 0.0,
+            "price": 100023.01
+          },
+          {
+            "pid": "B01JUFBPTU",
+            "t_write": 849411.650523125,
+            "t_visible": 849412.052242458,
+            "missing_s": 0.0,
+            "price": 100024.01
+          },
+          {
+            "pid": "B086Q9RXWZ",
+            "t_write": 849413.532628833,
+            "t_visible": 849413.584444,
+            "missing_s": 0.0,
+            "price": 100025.01
+          },
+          {
+            "pid": "B01G2FVPEG",
+            "t_write": 849415.666706291,
+            "t_visible": 849415.891177333,
+            "missing_s": 0.0,
+            "price": 100026.01
+          },
+          {
+            "pid": "B019RTJ366",
+            "t_write": 849417.666269708,
+            "t_visible": 849417.962160541,
+            "missing_s": 0.0,
+            "price": 100027.01
+          },
+          {
+            "pid": "B00MA5TSNI",
+            "t_write": 849419.528374291,
+            "t_visible": 849419.762217083,
+            "missing_s": 0.0,
+            "price": 100028.01
+          },
+          {
+            "pid": "B078QWQ78P",
+            "t_write": 849421.673500791,
+            "t_visible": 849422.163613791,
+            "missing_s": 0.0,
+            "price": 100029.01
+          },
+          {
+            "pid": "B083HCCH64",
+            "t_write": 849423.533476,
+            "t_visible": 849423.703783791,
+            "missing_s": 0.0,
+            "price": 100030.01
+          },
+          {
+            "pid": "B08GFBQS3X",
+            "t_write": 849425.52632625,
+            "t_visible": 849425.757665208,
+            "missing_s": 0.0,
+            "price": 100031.01
+          },
+          {
+            "pid": "B008ZPG826",
+            "t_write": 849427.527218,
+            "t_visible": 849427.560042791,
+            "missing_s": 0.0,
+            "price": 100032.01
+          },
+          {
+            "pid": "B08VL6H6WM",
+            "t_write": 849429.6719465,
+            "t_visible": 849429.854955875,
+            "missing_s": 0.0,
+            "price": 100033.01
+          },
+          {
+            "pid": "B08255ZS9S",
+            "t_write": 849431.534618833,
+            "t_visible": 849431.662972333,
+            "missing_s": 0.0,
+            "price": 100034.01
+          },
+          {
+            "pid": "B07N5HBMSW",
+            "t_write": 849433.532290875,
+            "t_visible": 849433.733904083,
+            "missing_s": 0.0,
+            "price": 100035.01
+          },
+          {
+            "pid": "B00X39XK9I",
+            "t_write": 849435.525448458,
+            "t_visible": 849435.800447333,
+            "missing_s": 0.0,
+            "price": 100036.01
+          },
+          {
+            "pid": "B0969QRV7Y",
+            "t_write": 849437.530476958,
+            "t_visible": 849437.605500125,
+            "missing_s": 0.0,
+            "price": 100037.01
+          },
+          {
+            "pid": "B07FBLQW37",
+            "t_write": 849439.534632958,
+            "t_visible": 849439.673935166,
+            "missing_s": 0.0,
+            "price": 100038.01
+          },
+          {
+            "pid": "B000Y09Y0S",
+            "t_write": 849441.526440416,
+            "t_visible": 849441.752354958,
+            "missing_s": 0.0,
+            "price": 100039.01
+          },
+          {
+            "pid": "B0027U4VRE",
+            "t_write": 849443.532160541,
+            "t_visible": 849443.549275583,
+            "missing_s": 0.0,
+            "price": 100040.01
+          },
+          {
+            "pid": "B015ZZJLOU",
+            "t_write": 849445.530429166,
+            "t_visible": 849445.600341958,
+            "missing_s": 0.0,
+            "price": 100041.01
+          },
+          {
+            "pid": "B07415Y39J",
+            "t_write": 849447.647282083,
+            "t_visible": 849447.890912875,
+            "missing_s": 0.0,
+            "price": 100042.01
+          },
+          {
+            "pid": "B07DYKL1HK",
+            "t_write": 849449.532064625,
+            "t_visible": 849449.700409333,
+            "missing_s": 0.0,
+            "price": 100043.01
+          },
+          {
+            "pid": "B00JIMSRR4",
+            "t_write": 849451.521497041,
+            "t_visible": 849451.767596458,
+            "missing_s": 0.0,
+            "price": 100044.01
+          },
+          {
+            "pid": "B01LXUP64B",
+            "t_write": 849453.529125625,
+            "t_visible": 849453.5685055,
+            "missing_s": 0.0,
+            "price": 100045.01
+          },
+          {
+            "pid": "B005QBNKL4",
+            "t_write": 849455.5316525,
+            "t_visible": 849455.600313625,
+            "missing_s": 0.0,
+            "price": 100046.01
+          },
+          {
+            "pid": "B07VSRTNPL",
+            "t_write": 849457.659259291,
+            "t_visible": 849457.902363666,
+            "missing_s": 0.0,
+            "price": 100047.01
+          },
+          {
+            "pid": "B00HM8X4TC",
+            "t_write": 849459.528879375,
+            "t_visible": 849459.693716416,
+            "missing_s": 0.0,
+            "price": 100048.01
+          },
+          {
+            "pid": "B087N1KP74",
+            "t_write": 849461.588246041,
+            "t_visible": 849461.738140583,
+            "missing_s": 0.0,
+            "price": 100049.01
+          },
+          {
+            "pid": "B08QMJ99R8",
+            "t_write": 849463.533038333,
+            "t_visible": 849463.79330225,
+            "missing_s": 0.0,
+            "price": 100050.01
+          },
+          {
+            "pid": "B07J1RSD5R",
+            "t_write": 849465.521567541,
+            "t_visible": 849465.590636,
+            "missing_s": 0.0,
+            "price": 100051.01
+          },
+          {
+            "pid": "B07JCF9HW3",
+            "t_write": 849467.53003175,
+            "t_visible": 849467.660051416,
+            "missing_s": 0.0,
+            "price": 100052.01
+          },
+          {
+            "pid": "B008J2U7TA",
+            "t_write": 849469.535407166,
+            "t_visible": 849469.76041425,
+            "missing_s": 0.0,
+            "price": 100053.01
+          },
+          {
+            "pid": "B07ZV769VX",
+            "t_write": 849471.529369083,
+            "t_visible": 849471.564996291,
+            "missing_s": 0.0,
+            "price": 100054.01
+          },
+          {
+            "pid": "B00EAZO3P4",
+            "t_write": 849473.520257916,
+            "t_visible": 849473.618141208,
+            "missing_s": 0.0,
+            "price": 100055.01
+          },
+          {
+            "pid": "B081Q1ZGVR",
+            "t_write": 849475.668080166,
+            "t_visible": 849475.915474166,
+            "missing_s": 0.0,
+            "price": 100056.01
+          },
+          {
+            "pid": "B075QY7FG3",
+            "t_write": 849477.524736791,
+            "t_visible": 849477.769837666,
+            "missing_s": 0.0,
+            "price": 100057.01
+          },
+          {
+            "pid": "B083Q6DTFR",
+            "t_write": 849479.527556416,
+            "t_visible": 849479.567991583,
+            "missing_s": 0.0,
+            "price": 100058.01
+          },
+          {
+            "pid": "B0826V5FMQ",
+            "t_write": 849481.525610375,
+            "t_visible": 849481.594341708,
+            "missing_s": 0.0,
+            "price": 100059.01
+          },
+          {
+            "pid": "B07B4CV2MH",
+            "t_write": 849483.647621416,
+            "t_visible": 849483.896086708,
+            "missing_s": 0.0,
+            "price": 100060.01
+          },
+          {
+            "pid": "B073FT983F",
+            "t_write": 849485.530818416,
+            "t_visible": 849485.759721458,
+            "missing_s": 0.0,
+            "price": 100061.01
+          },
+          {
+            "pid": "B07T54BXZ2",
+            "t_write": 849487.528099125,
+            "t_visible": 849487.550351458,
+            "missing_s": 0.0,
+            "price": 100062.01
+          },
+          {
+            "pid": "B005D6G5N2",
+            "t_write": 849489.534024958,
+            "t_visible": 849489.871184958,
+            "missing_s": 0.0,
+            "price": 100063.01
+          },
+          {
+            "pid": "B07XS96H4K",
+            "t_write": 849491.533621666,
+            "t_visible": 849491.668395,
+            "missing_s": 0.0,
+            "price": 100064.01
+          },
+          {
+            "pid": "B085B44T6F",
+            "t_write": 849493.5311405,
+            "t_visible": 849493.713013166,
+            "missing_s": 0.0,
+            "price": 100065.01
+          },
+          {
+            "pid": "B097RN9LKL",
+            "t_write": 849495.524765916,
+            "t_visible": 849495.769856125,
+            "missing_s": 0.0,
+            "price": 100066.01
+          },
+          {
+            "pid": "B087V7BDL1",
+            "t_write": 849497.532298791,
+            "t_visible": 849497.570419458,
+            "missing_s": 0.0,
+            "price": 100067.01
+          },
+          {
+            "pid": "1546370269",
+            "t_write": 849499.540257666,
+            "t_visible": 849499.884353,
+            "missing_s": 0.0,
+            "price": 100068.01
+          },
+          {
+            "pid": "B07B42XVN4",
+            "t_write": 849501.530924958,
+            "t_visible": 849501.672239958,
+            "missing_s": 0.0,
+            "price": 100069.01
+          },
+          {
+            "pid": "B07Y57DHW1",
+            "t_write": 849503.530854541,
+            "t_visible": 849503.73033925,
+            "missing_s": 0.0,
+            "price": 100070.01
+          },
+          {
+            "pid": "B077Z19TD8",
+            "t_write": 849505.52464075,
+            "t_visible": 849505.796767958,
+            "missing_s": 0.0,
+            "price": 100071.01
+          },
+          {
+            "pid": "B00HNMNJZG",
+            "t_write": 849507.658435958,
+            "t_visible": 849508.165647333,
+            "missing_s": 0.0,
+            "price": 100072.01
+          },
+          {
+            "pid": "B000CD01I6",
+            "t_write": 849509.528998375,
+            "t_visible": 849509.730607875,
+            "missing_s": 0.0,
+            "price": 100073.01
+          },
+          {
+            "pid": "B07VYK6K6Y",
+            "t_write": 849511.674621208,
+            "t_visible": 849512.045009458,
+            "missing_s": 0.0,
+            "price": 100074.01
+          },
+          {
+            "pid": "B0049B781U",
+            "t_write": 849513.517996541,
+            "t_visible": 849513.582503625,
+            "missing_s": 0.0,
+            "price": 100075.01
+          },
+          {
+            "pid": "B005G6LHA0",
+            "t_write": 849515.531239833,
+            "t_visible": 849515.752263083,
+            "missing_s": 0.0,
+            "price": 100076.01
+          },
+          {
+            "pid": "B07DW3VTJX",
+            "t_write": 849517.53093175,
+            "t_visible": 849517.793757208,
+            "missing_s": 0.0,
+            "price": 100077.01
+          },
+          {
+            "pid": "B07N5J4XC6",
+            "t_write": 849519.648645916,
+            "t_visible": 849519.855946333,
+            "missing_s": 0.0,
+            "price": 100078.01
+          },
+          {
+            "pid": "B0787RJV1X",
+            "t_write": 849521.526533208,
+            "t_visible": 849521.655193958,
+            "missing_s": 0.0,
+            "price": 100079.01
+          },
+          {
+            "pid": "B07X32ZLM5",
+            "t_write": 849523.531140291,
+            "t_visible": 849523.697266,
+            "missing_s": 0.0,
+            "price": 100080.01
+          },
+          {
+            "pid": "B004XLDVCQ",
+            "t_write": 849525.530168083,
+            "t_visible": 849525.749198625,
+            "missing_s": 0.0,
+            "price": 100081.01
+          },
+          {
+            "pid": "B019G9XYSK",
+            "t_write": 849527.527869833,
+            "t_visible": 849527.547825125,
+            "missing_s": 0.0,
+            "price": 100082.01
+          },
+          {
+            "pid": "B07G1YZJP9",
+            "t_write": 849529.528456125,
+            "t_visible": 849529.605371583,
+            "missing_s": 0.0,
+            "price": 100083.01
+          },
+          {
+            "pid": "B07L8HDP5D",
+            "t_write": 849531.52331325,
+            "t_visible": 849531.65503225,
+            "missing_s": 0.0,
+            "price": 100084.01
+          },
+          {
+            "pid": "B083J3RSZK",
+            "t_write": 849533.530865666,
+            "t_visible": 849533.707736791,
+            "missing_s": 0.0,
+            "price": 100085.01
+          },
+          {
+            "pid": "B07C2QQGM3",
+            "t_write": 849535.520934333,
+            "t_visible": 849535.756642583,
+            "missing_s": 0.0,
+            "price": 100086.01
+          },
+          {
+            "pid": "B07G8KDS5T",
+            "t_write": 849537.525798708,
+            "t_visible": 849537.559457875,
+            "missing_s": 0.0,
+            "price": 100087.01
+          },
+          {
+            "pid": "B00724OR4M",
+            "t_write": 849539.573800208,
+            "t_visible": 849539.893820833,
+            "missing_s": 0.0,
+            "price": 100088.01
+          },
+          {
+            "pid": "B0007NOMBI",
+            "t_write": 849541.66820475,
+            "t_visible": 849541.951962875,
+            "missing_s": 0.0,
+            "price": 100089.01
+          },
+          {
+            "pid": "B00K9PWND8",
+            "t_write": 849543.530165541,
+            "t_visible": 849543.756409916,
+            "missing_s": 0.0,
+            "price": 100090.01
+          },
+          {
+            "pid": "B08RJ5BC68",
+            "t_write": 849545.551269708,
+            "t_visible": 849545.829003166,
+            "missing_s": 0.0,
+            "price": 100091.01
+          },
+          {
+            "pid": "B07VCGCBWX",
+            "t_write": 849547.533248208,
+            "t_visible": 849547.6335785,
+            "missing_s": 0.0,
+            "price": 100092.01
+          },
+          {
+            "pid": "B07XH52CTN",
+            "t_write": 849549.53354425,
+            "t_visible": 849549.753504875,
+            "missing_s": 0.0,
+            "price": 100093.01
+          },
+          {
+            "pid": "B001KPILLE",
+            "t_write": 849551.536662875,
+            "t_visible": 849551.824228333,
+            "missing_s": 0.0,
+            "price": 100094.01
+          },
+          {
+            "pid": "B07G78WJWK",
+            "t_write": 849553.524577583,
+            "t_visible": 849553.62353925,
+            "missing_s": 0.0,
+            "price": 100095.01
+          },
+          {
+            "pid": "B071JC9D43",
+            "t_write": 849555.546811125,
+            "t_visible": 849555.688015875,
+            "missing_s": 0.0,
+            "price": 100096.01
+          },
+          {
+            "pid": "B089P262P2",
+            "t_write": 849557.523487541,
+            "t_visible": 849557.741900666,
+            "missing_s": 0.0,
+            "price": 100097.01
+          },
+          {
+            "pid": "B01G3MZWBU",
+            "t_write": 849559.532274458,
+            "t_visible": 849559.799391583,
+            "missing_s": 0.0,
+            "price": 100098.01
+          },
+          {
+            "pid": "B07Y26S97W",
+            "t_write": 849561.5300125,
+            "t_visible": 849561.587357166,
+            "missing_s": 0.0,
+            "price": 100099.01
+          },
+          {
+            "pid": "B01KYQ0A3G",
+            "t_write": 849563.529412416,
+            "t_visible": 849563.640859666,
+            "missing_s": 0.0,
+            "price": 100100.01
+          },
+          {
+            "pid": "B00I84H5BM",
+            "t_write": 849565.657048166,
+            "t_visible": 849565.97197075,
+            "missing_s": 0.0,
+            "price": 100101.01
+          },
+          {
+            "pid": "B00ERNEJ44",
+            "t_write": 849567.526196125,
+            "t_visible": 849567.769440416,
+            "missing_s": 0.0,
+            "price": 100102.01
+          },
+          {
+            "pid": "B008A0P8JU",
+            "t_write": 849569.658509166,
+            "t_visible": 849570.073750166,
+            "missing_s": 0.0,
+            "price": 100103.01
+          },
+          {
+            "pid": "B000XDJ7P8",
+            "t_write": 849571.53309425,
+            "t_visible": 849571.89150275,
+            "missing_s": 0.0,
+            "price": 100104.01
+          },
+          {
+            "pid": "B099PCP8LP",
+            "t_write": 849573.534780791,
+            "t_visible": 849573.692336666,
+            "missing_s": 0.0,
+            "price": 100105.01
+          },
+          {
+            "pid": "B0798N8KQ3",
+            "t_write": 849575.524893041,
+            "t_visible": 849575.763701416,
+            "missing_s": 0.0,
+            "price": 100106.01
+          },
+          {
+            "pid": "B08JTV5GXK",
+            "t_write": 849577.526457458,
+            "t_visible": 849577.551134791,
+            "missing_s": 0.0,
+            "price": 100107.01
+          },
+          {
+            "pid": "B004KAAT3O",
+            "t_write": 849579.529857666,
+            "t_visible": 849579.613164583,
+            "missing_s": 0.0,
+            "price": 100108.01
+          },
+          {
+            "pid": "B075NFTGNR",
+            "t_write": 849581.527522291,
+            "t_visible": 849581.6760985,
+            "missing_s": 0.0,
+            "price": 100109.01
+          },
+          {
+            "pid": "B08M44JBMJ",
+            "t_write": 849583.5353745,
+            "t_visible": 849583.748769541,
+            "missing_s": 0.0,
+            "price": 100110.01
+          },
+          {
+            "pid": "B07DQRM6WQ",
+            "t_write": 849585.534202416,
+            "t_visible": 849585.55671475,
+            "missing_s": 0.0,
+            "price": 100111.01
+          },
+          {
+            "pid": "B08MW24NHT",
+            "t_write": 849587.53180525,
+            "t_visible": 849587.617159583,
+            "missing_s": 0.0,
+            "price": 100112.01
+          },
+          {
+            "pid": "0988496690",
+            "t_write": 849589.674011916,
+            "t_visible": 849589.932366208,
+            "missing_s": 0.0,
+            "price": 100113.01
+          },
+          {
+            "pid": "B085QLNZVL",
+            "t_write": 849591.524331416,
+            "t_visible": 849591.747145958,
+            "missing_s": 0.0,
+            "price": 100114.01
+          },
+          {
+            "pid": "B01HTET42Y",
+            "t_write": 849593.529323333,
+            "t_visible": 849593.54764875,
+            "missing_s": 0.0,
+            "price": 100115.01
+          },
+          {
+            "pid": "B000QJ1NS8",
+            "t_write": 849595.524430958,
+            "t_visible": 849595.614206333,
+            "missing_s": 0.0,
+            "price": 100116.01
+          },
+          {
+            "pid": "B01J93HDNK",
+            "t_write": 849597.529309041,
+            "t_visible": 849597.669208708,
+            "missing_s": 0.0,
+            "price": 100117.01
+          },
+          {
+            "pid": "B084L4BMKC",
+            "t_write": 849599.5292105,
+            "t_visible": 849599.729009,
+            "missing_s": 0.0,
+            "price": 100118.01
+          },
+          {
+            "pid": "B07DWHNFKZ",
+            "t_write": 849601.527123333,
+            "t_visible": 849601.784043416,
+            "missing_s": 0.0,
+            "price": 100119.01
+          },
+          {
+            "pid": "B08GXBGW65",
+            "t_write": 849603.526314833,
+            "t_visible": 849603.581489333,
+            "missing_s": 0.0,
+            "price": 100120.01
+          },
+          {
+            "pid": "1976127580",
+            "t_write": 849605.528871083,
+            "t_visible": 849605.635276416,
+            "missing_s": 0.0,
+            "price": 100121.01
+          },
+          {
+            "pid": "B07XDZX1B5",
+            "t_write": 849607.5310615,
+            "t_visible": 849607.68903675,
+            "missing_s": 0.0,
+            "price": 100122.01
+          },
+          {
+            "pid": "B07TC79MHX",
+            "t_write": 849609.528060791,
+            "t_visible": 849609.765007208,
+            "missing_s": 0.0,
+            "price": 100123.01
+          },
+          {
+            "pid": "B071Z16TXL",
+            "t_write": 849611.529517916,
+            "t_visible": 849611.572554916,
+            "missing_s": 0.0,
+            "price": 100124.01
+          },
+          {
+            "pid": "B07GNCB53G",
+            "t_write": 849613.525280958,
+            "t_visible": 849613.630140416,
+            "missing_s": 0.0,
+            "price": 100125.01
+          },
+          {
+            "pid": "B007CNCSUI",
+            "t_write": 849615.676884416,
+            "t_visible": 849615.935032833,
+            "missing_s": 0.0,
+            "price": 100126.01
+          },
+          {
+            "pid": "B07L9TN1T9",
+            "t_write": 849617.533514875,
+            "t_visible": 849617.753102666,
+            "missing_s": 0.0,
+            "price": 100127.01
+          },
+          {
+            "pid": "B07HQBWB6S",
+            "t_write": 849619.531339,
+            "t_visible": 849619.5491445,
+            "missing_s": 0.0,
+            "price": 100128.01
+          },
+          {
+            "pid": "B074BC9FT9",
+            "t_write": 849621.66850225,
+            "t_visible": 849621.889910458,
+            "missing_s": 0.0,
+            "price": 100129.01
+          },
+          {
+            "pid": "B0714NNQ7F",
+            "t_write": 849623.530864708,
+            "t_visible": 849623.691238875,
+            "missing_s": 0.0,
+            "price": 100130.01
+          },
+          {
+            "pid": "B07D55QKKN",
+            "t_write": 849625.528735041,
+            "t_visible": 849625.76133375,
+            "missing_s": 0.0,
+            "price": 100131.01
+          },
+          {
+            "pid": "1612437613",
+            "t_write": 849627.521693333,
+            "t_visible": 849627.561897333,
+            "missing_s": 0.0,
+            "price": 100132.01
+          },
+          {
+            "pid": "B006MIX7QI",
+            "t_write": 849629.523708083,
+            "t_visible": 849629.599999625,
+            "missing_s": 0.0,
+            "price": 100133.01
+          },
+          {
+            "pid": "B074VB7D7T",
+            "t_write": 849631.528541416,
+            "t_visible": 849631.666483791,
+            "missing_s": 0.0,
+            "price": 100134.01
+          },
+          {
+            "pid": "B07JK6C44Z",
+            "t_write": 849633.529628541,
+            "t_visible": 849633.743777875,
+            "missing_s": 0.0,
+            "price": 100135.01
+          },
+          {
+            "pid": "B07XL8X7XB",
+            "t_write": 849635.530666083,
+            "t_visible": 849635.807355541,
+            "missing_s": 0.0,
+            "price": 100136.01
+          },
+          {
+            "pid": "B07FKSS2DJ",
+            "t_write": 849637.5298205,
+            "t_visible": 849637.604934041,
+            "missing_s": 0.0,
+            "price": 100137.01
+          },
+          {
+            "pid": "1621064301",
+            "t_write": 849639.533750083,
+            "t_visible": 849639.671461291,
+            "missing_s": 0.0,
+            "price": 100138.01
+          },
+          {
+            "pid": "B071J46SCT",
+            "t_write": 849641.528905333,
+            "t_visible": 849641.750168,
+            "missing_s": 0.0,
+            "price": 100139.01
+          },
+          {
+            "pid": "B004466E4M",
+            "t_write": 849643.52693625,
+            "t_visible": 849643.544512666,
+            "missing_s": 0.0,
+            "price": 100140.01
+          },
+          {
+            "pid": "B073PWV6M1",
+            "t_write": 849645.532764875,
+            "t_visible": 849645.603429625,
+            "missing_s": 0.0,
+            "price": 100141.01
+          },
+          {
+            "pid": "B006VOWGZ6",
+            "t_write": 849647.525224458,
+            "t_visible": 849647.661092125,
+            "missing_s": 0.0,
+            "price": 100142.01
+          },
+          {
+            "pid": "B079M4YN2S",
+            "t_write": 849649.520656208,
+            "t_visible": 849649.714362208,
+            "missing_s": 0.0,
+            "price": 100143.01
+          },
+          {
+            "pid": "B07S4HBFTN",
+            "t_write": 849651.530904333,
+            "t_visible": 849651.754288,
+            "missing_s": 0.0,
+            "price": 100144.01
+          },
+          {
+            "pid": "B08LJRQV2N",
+            "t_write": 849653.570034375,
+            "t_visible": 849653.810767791,
+            "missing_s": 0.0,
+            "price": 100145.01
+          },
+          {
+            "pid": "B00Z7J0SOW",
+            "t_write": 849655.533541625,
+            "t_visible": 849655.885657291,
+            "missing_s": 0.0,
+            "price": 100146.01
+          },
+          {
+            "pid": "B07NSGYDMZ",
+            "t_write": 849657.528969291,
+            "t_visible": 849657.681925416,
+            "missing_s": 0.0,
+            "price": 100147.01
+          },
+          {
+            "pid": "B00AY0AS4O",
+            "t_write": 849659.530515916,
+            "t_visible": 849659.742510666,
+            "missing_s": 0.0,
+            "price": 100148.01
+          },
+          {
+            "pid": "B08LYVWJNK",
+            "t_write": 849661.672276375,
+            "t_visible": 849662.064251291,
+            "missing_s": 0.0,
+            "price": 100149.01
+          }
+        ],
+        "visible_p50_censored": false,
+        "visible_p99_censored": false,
+        "missing_p50_censored": false,
+        "missing_p99_censored": false
+      },
+      "ignore_growing": {
+        "n": 150,
+        "timed_out": 25,
+        "visible_p50": 799.5174186250078,
+        "visible_p99": 900.0,
+        "missing_share": 1.0,
+        "missing_p50": 747.25,
+        "missing_p99": 842.3775,
+        "read": {
+          "consistency": "Bounded",
+          "ignore_growing": true
+        },
+        "prep_s": 522.252796042012,
+        "storm_rows": 45000,
+        "search_query_agree": true,
+        "events": [
+          {
+            "pid": "B01E1PT8A2",
+            "t_write": 850213.215328958,
+            "t_visible": null,
+            "missing_s": 842.5,
+            "price": 100000.01
+          },
+          {
+            "pid": "B008J0TMCA",
+            "t_write": 850215.0223485,
+            "t_visible": null,
+            "missing_s": 842.5,
+            "price": 100001.01
+          },
+          {
+            "pid": "B00VDYPUEI",
+            "t_write": 850217.013765041,
+            "t_visible": null,
+            "missing_s": 842.25,
+            "price": 100002.01
+          },
+          {
+            "pid": "B07N86NW4X",
+            "t_write": 850219.030419333,
+            "t_visible": null,
+            "missing_s": 842.25,
+            "price": 100003.01
+          },
+          {
+            "pid": "B0131WWXF8",
+            "t_write": 850221.016353916,
+            "t_visible": null,
+            "missing_s": 842.25,
+            "price": 100004.01
+          },
+          {
+            "pid": "B00005IBXK",
+            "t_write": 850223.009869958,
+            "t_visible": null,
+            "missing_s": 842.0,
+            "price": 100005.01
+          },
+          {
+            "pid": "B01H2JDDBE",
+            "t_write": 850225.039751291,
+            "t_visible": null,
+            "missing_s": 842.25,
+            "price": 100006.01
+          },
+          {
+            "pid": "B08112P4ZV",
+            "t_write": 850227.017208916,
+            "t_visible": null,
+            "missing_s": 842.0,
+            "price": 100007.01
+          },
+          {
+            "pid": "B00L3EOB0C",
+            "t_write": 850229.045613791,
+            "t_visible": null,
+            "missing_s": 842.0,
+            "price": 100008.01
+          },
+          {
+            "pid": "B07CML5QCJ",
+            "t_write": 850231.010895541,
+            "t_visible": null,
+            "missing_s": 842.25,
+            "price": 100009.01
+          },
+          {
+            "pid": "B0914ZHDDX",
+            "t_write": 850233.017180958,
+            "t_visible": null,
+            "missing_s": 842.25,
+            "price": 100010.01
+          },
+          {
+            "pid": "B07TSFTRHD",
+            "t_write": 850235.037698083,
+            "t_visible": null,
+            "missing_s": 842.25,
+            "price": 100011.01
+          },
+          {
+            "pid": "B07FPWNCZM",
+            "t_write": 850237.017446291,
+            "t_visible": null,
+            "missing_s": 842.0,
+            "price": 100012.01
+          },
+          {
+            "pid": "B00S7JCXH4",
+            "t_write": 850239.009741291,
+            "t_visible": null,
+            "missing_s": 842.25,
+            "price": 100013.01
+          },
+          {
+            "pid": "B00944D5OG",
+            "t_write": 850241.016195166,
+            "t_visible": null,
+            "missing_s": 842.25,
+            "price": 100014.01
+          },
+          {
+            "pid": "B08JD27ZGR",
+            "t_write": 850243.021240458,
+            "t_visible": 851140.453502916,
+            "missing_s": 839.75,
+            "price": 100015.01
+          },
+          {
+            "pid": "B01IP395RC",
+            "t_write": 850245.014955666,
+            "t_visible": null,
+            "missing_s": 842.25,
+            "price": 100016.01
+          },
+          {
+            "pid": "B097N63ZKM",
+            "t_write": 850247.066349458,
+            "t_visible": 851140.453502916,
+            "missing_s": 835.75,
+            "price": 100017.01
+          },
+          {
+            "pid": "B07WQF4SGB",
+            "t_write": 850249.009436666,
+            "t_visible": 851140.453502916,
+            "missing_s": 834.0,
+            "price": 100018.01
+          },
+          {
+            "pid": "B07DD8XXWQ",
+            "t_write": 850251.058785791,
+            "t_visible": 851140.453502916,
+            "missing_s": 832.0,
+            "price": 100019.01
+          },
+          {
+            "pid": "B07YWRMQ9N",
+            "t_write": 850253.035107833,
+            "t_visible": 851150.606929291,
+            "missing_s": 839.75,
+            "price": 100020.01
+          },
+          {
+            "pid": "B00FRK2BIW",
+            "t_write": 850255.055679375,
+            "t_visible": 851140.453502916,
+            "missing_s": 828.25,
+            "price": 100021.01
+          },
+          {
+            "pid": "B00WIF5CJE",
+            "t_write": 850257.016052291,
+            "t_visible": 851140.453502916,
+            "missing_s": 826.5,
+            "price": 100022.01
+          },
+          {
+            "pid": "B083TD1412",
+            "t_write": 850259.056384166,
+            "t_visible": 851150.606929291,
+            "missing_s": 833.75,
+            "price": 100023.01
+          },
+          {
+            "pid": "B00F5ESE7C",
+            "t_write": 850261.016007875,
+            "t_visible": 851140.453502916,
+            "missing_s": 822.75,
+            "price": 100024.01
+          },
+          {
+            "pid": "B07XFQB6RM",
+            "t_write": 850263.049346,
+            "t_visible": 851140.453502916,
+            "missing_s": 820.5,
+            "price": 100025.01
+          },
+          {
+            "pid": "0785116311",
+            "t_write": 850265.02047275,
+            "t_visible": 851140.453502916,
+            "missing_s": 819.0,
+            "price": 100026.01
+          },
+          {
+            "pid": "B00NFS8KLK",
+            "t_write": 850267.015068791,
+            "t_visible": 851140.453502916,
+            "missing_s": 817.0,
+            "price": 100027.01
+          },
+          {
+            "pid": "B08BNJT83C",
+            "t_write": 850269.050725875,
+            "t_visible": 851140.453502916,
+            "missing_s": 815.0,
+            "price": 100028.01
+          },
+          {
+            "pid": "B076HTZQR3",
+            "t_write": 850271.020826833,
+            "t_visible": 851140.453502916,
+            "missing_s": 813.25,
+            "price": 100029.01
+          },
+          {
+            "pid": "B08175R4HZ",
+            "t_write": 850273.063402791,
+            "t_visible": 851140.453502916,
+            "missing_s": 811.25,
+            "price": 100030.01
+          },
+          {
+            "pid": "B07484KB97",
+            "t_write": 850275.013992416,
+            "t_visible": 851140.453502916,
+            "missing_s": 809.5,
+            "price": 100031.01
+          },
+          {
+            "pid": "B08B5T3XL9",
+            "t_write": 850277.054652791,
+            "t_visible": 851150.606929291,
+            "missing_s": 817.0,
+            "price": 100032.01
+          },
+          {
+            "pid": "B0069F4HR2",
+            "t_write": 850279.018662458,
+            "t_visible": 851150.606929291,
+            "missing_s": 815.25,
+            "price": 100033.01
+          },
+          {
+            "pid": "B00FEWCG9C",
+            "t_write": 850281.054901791,
+            "t_visible": 851140.453502916,
+            "missing_s": 803.75,
+            "price": 100034.01
+          },
+          {
+            "pid": "B0727M6SJG",
+            "t_write": 850283.012028791,
+            "t_visible": 851140.453502916,
+            "missing_s": 802.0,
+            "price": 100035.01
+          },
+          {
+            "pid": "B07VD58671",
+            "t_write": 850285.041603791,
+            "t_visible": 851150.606929291,
+            "missing_s": 809.5,
+            "price": 100036.01
+          },
+          {
+            "pid": "B08FL1L61G",
+            "t_write": 850287.010393166,
+            "t_visible": 851150.606929291,
+            "missing_s": 807.75,
+            "price": 100037.01
+          },
+          {
+            "pid": "B0796CRCNF",
+            "t_write": 850289.065924416,
+            "t_visible": 851140.453502916,
+            "missing_s": 796.25,
+            "price": 100038.01
+          },
+          {
+            "pid": "B088Y7C9N1",
+            "t_write": 850291.053161125,
+            "t_visible": 851150.606929291,
+            "missing_s": 803.75,
+            "price": 100039.01
+          },
+          {
+            "pid": "B003X82CWK",
+            "t_write": 850293.011295625,
+            "t_visible": 851140.453502916,
+            "missing_s": 792.5,
+            "price": 100040.01
+          },
+          {
+            "pid": "B07VGBGBZ7",
+            "t_write": 850295.059961791,
+            "t_visible": 851140.453502916,
+            "missing_s": 790.5,
+            "price": 100041.01
+          },
+          {
+            "pid": "B07QGX87RH",
+            "t_write": 850297.012894541,
+            "t_visible": 851140.453502916,
+            "missing_s": 788.75,
+            "price": 100042.01
+          },
+          {
+            "pid": "B078NDMMTH",
+            "t_write": 850299.044837625,
+            "t_visible": 851140.453502916,
+            "missing_s": 786.75,
+            "price": 100043.01
+          },
+          {
+            "pid": "B07XFJ8C1X",
+            "t_write": 850301.014972333,
+            "t_visible": 851140.453502916,
+            "missing_s": 785.0,
+            "price": 100044.01
+          },
+          {
+            "pid": "B0768LYG66",
+            "t_write": 850303.038659666,
+            "t_visible": 851140.453502916,
+            "missing_s": 783.25,
+            "price": 100045.01
+          },
+          {
+            "pid": "B01BVQO30Y",
+            "t_write": 850305.062296125,
+            "t_visible": 851140.453502916,
+            "missing_s": 781.0,
+            "price": 100046.01
+          },
+          {
+            "pid": "B00JYX1WEW",
+            "t_write": 850307.03297825,
+            "t_visible": 851150.606929291,
+            "missing_s": 788.75,
+            "price": 100047.01
+          },
+          {
+            "pid": "0999516523",
+            "t_write": 850309.020793958,
+            "t_visible": 851140.453502916,
+            "missing_s": 777.5,
+            "price": 100048.01
+          },
+          {
+            "pid": "B0199RFNC4",
+            "t_write": 850311.020473875,
+            "t_visible": 851140.453502916,
+            "missing_s": 775.75,
+            "price": 100049.01
+          },
+          {
+            "pid": "B01C6M8XEO",
+            "t_write": 850313.017027791,
+            "t_visible": 851140.453502916,
+            "missing_s": 773.75,
+            "price": 100050.01
+          },
+          {
+            "pid": "1493038842",
+            "t_write": 850315.092516541,
+            "t_visible": 851140.453502916,
+            "missing_s": 771.75,
+            "price": 100051.01
+          },
+          {
+            "pid": "B07XHQ68ZS",
+            "t_write": 850317.010262875,
+            "t_visible": 851140.453502916,
+            "missing_s": 770.0,
+            "price": 100052.01
+          },
+          {
+            "pid": "B075V4HJPP",
+            "t_write": 850319.020636208,
+            "t_visible": 851140.453502916,
+            "missing_s": 768.0,
+            "price": 100053.01
+          },
+          {
+            "pid": "B08LKH1ZV6",
+            "t_write": 850321.007966958,
+            "t_visible": 851140.453502916,
+            "missing_s": 766.25,
+            "price": 100054.01
+          },
+          {
+            "pid": "B017XKJ4GU",
+            "t_write": 850323.062784916,
+            "t_visible": 851140.453502916,
+            "missing_s": 764.0,
+            "price": 100055.01
+          },
+          {
+            "pid": "B07NJNWJ5S",
+            "t_write": 850325.017484041,
+            "t_visible": 851140.453502916,
+            "missing_s": 762.5,
+            "price": 100056.01
+          },
+          {
+            "pid": "B01DGN1BCI",
+            "t_write": 850327.015541083,
+            "t_visible": 851140.453502916,
+            "missing_s": 760.5,
+            "price": 100057.01
+          },
+          {
+            "pid": "B01J2A8NK2",
+            "t_write": 850329.054720166,
+            "t_visible": 851140.453502916,
+            "missing_s": 758.5,
+            "price": 100058.01
+          },
+          {
+            "pid": "B07D4R4JHS",
+            "t_write": 850331.013108041,
+            "t_visible": 851140.453502916,
+            "missing_s": 756.75,
+            "price": 100059.01
+          },
+          {
+            "pid": "B01E82X5WU",
+            "t_write": 850333.056426166,
+            "t_visible": 851150.606929291,
+            "missing_s": 764.25,
+            "price": 100060.01
+          },
+          {
+            "pid": "B07N1SK6DX",
+            "t_write": 850335.01129525,
+            "t_visible": 851140.453502916,
+            "missing_s": 753.0,
+            "price": 100061.01
+          },
+          {
+            "pid": "B07WG7RK6J",
+            "t_write": 850337.047071,
+            "t_visible": 851140.453502916,
+            "missing_s": 751.0,
+            "price": 100062.01
+          },
+          {
+            "pid": "B00DDIRAR2",
+            "t_write": 850339.0243685,
+            "t_visible": 851140.453502916,
+            "missing_s": 749.25,
+            "price": 100063.01
+          },
+          {
+            "pid": "B00JGU53RU",
+            "t_write": 850341.006616416,
+            "t_visible": 851140.453502916,
+            "missing_s": 747.25,
+            "price": 100064.01
+          },
+          {
+            "pid": "B081S56GP7",
+            "t_write": 850343.069899708,
+            "t_visible": 851140.453502916,
+            "missing_s": 745.25,
+            "price": 100065.01
+          },
+          {
+            "pid": "B07W4Z8SGC",
+            "t_write": 850345.0084335,
+            "t_visible": 851140.453502916,
+            "missing_s": 743.5,
+            "price": 100066.01
+          },
+          {
+            "pid": "B084YRFX5R",
+            "t_write": 850347.04645975,
+            "t_visible": 851150.606929291,
+            "missing_s": 751.0,
+            "price": 100067.01
+          },
+          {
+            "pid": "B01MZXE0OV",
+            "t_write": 850349.01039125,
+            "t_visible": 851140.453502916,
+            "missing_s": 739.75,
+            "price": 100068.01
+          },
+          {
+            "pid": "B0099TX7O4",
+            "t_write": 850351.018978541,
+            "t_visible": 851150.606929291,
+            "missing_s": 747.25,
+            "price": 100069.01
+          },
+          {
+            "pid": "B00FY3SIKC",
+            "t_write": 850353.011407583,
+            "t_visible": null,
+            "missing_s": 841.0,
+            "price": 100070.01
+          },
+          {
+            "pid": "B07TSQS4QZ",
+            "t_write": 850355.174723208,
+            "t_visible": 851150.606929291,
+            "missing_s": 743.5,
+            "price": 100071.01
+          },
+          {
+            "pid": "B01CQAU8GW",
+            "t_write": 850357.010210583,
+            "t_visible": 851140.453502916,
+            "missing_s": 732.25,
+            "price": 100072.01
+          },
+          {
+            "pid": "B07GH8Y7SF",
+            "t_write": 850359.050173958,
+            "t_visible": null,
+            "missing_s": 841.0,
+            "price": 100073.01
+          },
+          {
+            "pid": "B07DYP79BM",
+            "t_write": 850361.05626175,
+            "t_visible": 851140.453502916,
+            "missing_s": 728.25,
+            "price": 100074.01
+          },
+          {
+            "pid": "B000WZEZFY",
+            "t_write": 850363.018385416,
+            "t_visible": 851140.453502916,
+            "missing_s": 726.5,
+            "price": 100075.01
+          },
+          {
+            "pid": "B01KTGHYOE",
+            "t_write": 850365.051936708,
+            "t_visible": 851140.453502916,
+            "missing_s": 724.5,
+            "price": 100076.01
+          },
+          {
+            "pid": "B083QL45TY",
+            "t_write": 850367.012615208,
+            "t_visible": 851140.453502916,
+            "missing_s": 722.75,
+            "price": 100077.01
+          },
+          {
+            "pid": "B08HLZXX4D",
+            "t_write": 850369.038970541,
+            "t_visible": 851140.453502916,
+            "missing_s": 720.75,
+            "price": 100078.01
+          },
+          {
+            "pid": "1423148436",
+            "t_write": 850371.010690041,
+            "t_visible": 851140.453502916,
+            "missing_s": 719.0,
+            "price": 100079.01
+          },
+          {
+            "pid": "0762491671",
+            "t_write": 850373.056186791,
+            "t_visible": 851140.453502916,
+            "missing_s": 717.0,
+            "price": 100080.01
+          },
+          {
+            "pid": "B00200K9LS",
+            "t_write": 850375.007384125,
+            "t_visible": 851140.453502916,
+            "missing_s": 715.25,
+            "price": 100081.01
+          },
+          {
+            "pid": "B01D02YXIY",
+            "t_write": 850377.008120083,
+            "t_visible": 851140.453502916,
+            "missing_s": 713.25,
+            "price": 100082.01
+          },
+          {
+            "pid": "B00E0MRFC0",
+            "t_write": 850379.011613458,
+            "t_visible": 851140.453502916,
+            "missing_s": 711.5,
+            "price": 100083.01
+          },
+          {
+            "pid": "B079JL35M7",
+            "t_write": 850381.067060625,
+            "t_visible": 851140.453502916,
+            "missing_s": 709.25,
+            "price": 100084.01
+          },
+          {
+            "pid": "B088ND8VLL",
+            "t_write": 850383.071488791,
+            "t_visible": 851140.453502916,
+            "missing_s": 707.5,
+            "price": 100085.01
+          },
+          {
+            "pid": "0764146602",
+            "t_write": 850385.29369575,
+            "t_visible": 851140.453502916,
+            "missing_s": 705.5,
+            "price": 100086.01
+          },
+          {
+            "pid": "B07NLHZVLN",
+            "t_write": 850387.056347916,
+            "t_visible": 851140.453502916,
+            "missing_s": 703.75,
+            "price": 100087.01
+          },
+          {
+            "pid": "1473676886",
+            "t_write": 850389.01844675,
+            "t_visible": 851140.453502916,
+            "missing_s": 702.0,
+            "price": 100088.01
+          },
+          {
+            "pid": "B083RFZRMF",
+            "t_write": 850391.007727375,
+            "t_visible": 851140.453502916,
+            "missing_s": 700.0,
+            "price": 100089.01
+          },
+          {
+            "pid": "B000U1RQRO",
+            "t_write": 850393.013427916,
+            "t_visible": 851150.606929291,
+            "missing_s": 707.75,
+            "price": 100090.01
+          },
+          {
+            "pid": "B06XT6YGDW",
+            "t_write": 850395.064804958,
+            "t_visible": 851140.453502916,
+            "missing_s": 696.25,
+            "price": 100091.01
+          },
+          {
+            "pid": "B00OX2KTN4",
+            "t_write": 850397.012307291,
+            "t_visible": null,
+            "missing_s": 840.25,
+            "price": 100092.01
+          },
+          {
+            "pid": "B000C8Z8QQ",
+            "t_write": 850399.01586475,
+            "t_visible": 851150.606929291,
+            "missing_s": 702.25,
+            "price": 100093.01
+          },
+          {
+            "pid": "B01I92T754",
+            "t_write": 850401.010150708,
+            "t_visible": 851150.606929291,
+            "missing_s": 700.25,
+            "price": 100094.01
+          },
+          {
+            "pid": "B079ZMGWFZ",
+            "t_write": 850403.044809375,
+            "t_visible": 851140.453502916,
+            "missing_s": 688.75,
+            "price": 100095.01
+          },
+          {
+            "pid": "B0829YLB1V",
+            "t_write": 850405.064978291,
+            "t_visible": 851140.453502916,
+            "missing_s": 686.75,
+            "price": 100096.01
+          },
+          {
+            "pid": "B0762F411B",
+            "t_write": 850407.010227208,
+            "t_visible": 851140.453502916,
+            "missing_s": 685.0,
+            "price": 100097.01
+          },
+          {
+            "pid": "B01B5BIUEU",
+            "t_write": 850409.024674875,
+            "t_visible": 851140.453502916,
+            "missing_s": 683.25,
+            "price": 100098.01
+          },
+          {
+            "pid": "B07PBBC76F",
+            "t_write": 850411.008246083,
+            "t_visible": 851140.453502916,
+            "missing_s": 681.25,
+            "price": 100099.01
+          },
+          {
+            "pid": "B004JTOBB2",
+            "t_write": 850413.167046208,
+            "t_visible": 851140.453502916,
+            "missing_s": 679.25,
+            "price": 100100.01
+          },
+          {
+            "pid": "B019XFKM6E",
+            "t_write": 850415.008198875,
+            "t_visible": 851140.453502916,
+            "missing_s": 677.5,
+            "price": 100101.01
+          },
+          {
+            "pid": "B07DSC2BNC",
+            "t_write": 850417.063147166,
+            "t_visible": 851140.453502916,
+            "missing_s": 675.5,
+            "price": 100102.01
+          },
+          {
+            "pid": "B008GDSGTK",
+            "t_write": 850419.05133825,
+            "t_visible": 851140.453502916,
+            "missing_s": 673.5,
+            "price": 100103.01
+          },
+          {
+            "pid": "B081639JNQ",
+            "t_write": 850421.017083541,
+            "t_visible": null,
+            "missing_s": 840.25,
+            "price": 100104.01
+          },
+          {
+            "pid": "B0087XAENA",
+            "t_write": 850423.057468833,
+            "t_visible": 851140.453502916,
+            "missing_s": 669.75,
+            "price": 100105.01
+          },
+          {
+            "pid": "B01HCMKZXU",
+            "t_write": 850425.02593825,
+            "t_visible": 851150.606929291,
+            "missing_s": 677.5,
+            "price": 100106.01
+          },
+          {
+            "pid": "B0721RMT7M",
+            "t_write": 850427.034716125,
+            "t_visible": null,
+            "missing_s": 840.0,
+            "price": 100107.01
+          },
+          {
+            "pid": "B0791YBJGZ",
+            "t_write": 850429.013099666,
+            "t_visible": 851150.606929291,
+            "missing_s": 673.75,
+            "price": 100108.01
+          },
+          {
+            "pid": "B078HQMXBS",
+            "t_write": 850431.044952708,
+            "t_visible": 851140.453502916,
+            "missing_s": 662.25,
+            "price": 100109.01
+          },
+          {
+            "pid": "B0081EC08M",
+            "t_write": 850433.060838083,
+            "t_visible": 851150.606929291,
+            "missing_s": 669.75,
+            "price": 100110.01
+          },
+          {
+            "pid": "B077HJBXB4",
+            "t_write": 850435.0070675,
+            "t_visible": 851140.453502916,
+            "missing_s": 658.5,
+            "price": 100111.01
+          },
+          {
+            "pid": "B087F724LH",
+            "t_write": 850437.046799041,
+            "t_visible": 851150.606929291,
+            "missing_s": 666.0,
+            "price": 100112.01
+          },
+          {
+            "pid": "B014SXTCAS",
+            "t_write": 850439.008837083,
+            "t_visible": 851140.453502916,
+            "missing_s": 654.75,
+            "price": 100113.01
+          },
+          {
+            "pid": "B07X2YW4TQ",
+            "t_write": 850441.008270833,
+            "t_visible": 851140.453502916,
+            "missing_s": 653.0,
+            "price": 100114.01
+          },
+          {
+            "pid": "B08127JM2L",
+            "t_write": 850443.019278208,
+            "t_visible": 851140.453502916,
+            "missing_s": 651.0,
+            "price": 100115.01
+          },
+          {
+            "pid": "B01NBKFU9Z",
+            "t_write": 850445.0131,
+            "t_visible": 851140.453502916,
+            "missing_s": 649.25,
+            "price": 100116.01
+          },
+          {
+            "pid": "B07FW2NS3V",
+            "t_write": 850447.056180541,
+            "t_visible": 851140.453502916,
+            "missing_s": 647.0,
+            "price": 100117.01
+          },
+          {
+            "pid": "B079FRFT9G",
+            "t_write": 850449.023655875,
+            "t_visible": 851140.453502916,
+            "missing_s": 645.5,
+            "price": 100118.01
+          },
+          {
+            "pid": "B08VFK6131",
+            "t_write": 850451.006572625,
+            "t_visible": 851140.453502916,
+            "missing_s": 643.5,
+            "price": 100119.01
+          },
+          {
+            "pid": "0985203293",
+            "t_write": 850453.00863425,
+            "t_visible": 851140.453502916,
+            "missing_s": 641.5,
+            "price": 100120.01
+          },
+          {
+            "pid": "B01FKM79OC",
+            "t_write": 850455.064768833,
+            "t_visible": 851140.453502916,
+            "missing_s": 639.5,
+            "price": 100121.01
+          },
+          {
+            "pid": "B081RW5ZC4",
+            "t_write": 850457.006333916,
+            "t_visible": 851140.453502916,
+            "missing_s": 637.75,
+            "price": 100122.01
+          },
+          {
+            "pid": "B07DJ2VFGP",
+            "t_write": 850459.17060975,
+            "t_visible": 851140.453502916,
+            "missing_s": 635.75,
+            "price": 100123.01
+          },
+          {
+            "pid": "B07R7M7S8F",
+            "t_write": 850461.011226166,
+            "t_visible": 851140.453502916,
+            "missing_s": 634.0,
+            "price": 100124.01
+          },
+          {
+            "pid": "B07B8XGX95",
+            "t_write": 850463.018825458,
+            "t_visible": 851140.453502916,
+            "missing_s": 632.0,
+            "price": 100125.01
+          },
+          {
+            "pid": "B01HMXV0UQ",
+            "t_write": 850465.159920416,
+            "t_visible": 851140.453502916,
+            "missing_s": 630.0,
+            "price": 100126.01
+          },
+          {
+            "pid": "B087ZQDHJX",
+            "t_write": 850467.019046625,
+            "t_visible": 851140.453502916,
+            "missing_s": 628.25,
+            "price": 100127.01
+          },
+          {
+            "pid": "B07TP457TY",
+            "t_write": 850469.049588291,
+            "t_visible": 851140.453502916,
+            "missing_s": 626.25,
+            "price": 100128.01
+          },
+          {
+            "pid": "B07YWGVYQK",
+            "t_write": 850471.008122125,
+            "t_visible": 851140.453502916,
+            "missing_s": 624.5,
+            "price": 100129.01
+          },
+          {
+            "pid": "B07QRSZ6YZ",
+            "t_write": 850473.009150833,
+            "t_visible": 851140.453502916,
+            "missing_s": 622.75,
+            "price": 100130.01
+          },
+          {
+            "pid": "B001NCDE5W",
+            "t_write": 850475.018046833,
+            "t_visible": 851140.453502916,
+            "missing_s": 620.75,
+            "price": 100131.01
+          },
+          {
+            "pid": "B01MUFAG0Y",
+            "t_write": 850477.029356125,
+            "t_visible": null,
+            "missing_s": 839.0,
+            "price": 100132.01
+          },
+          {
+            "pid": "B01L10PC0U",
+            "t_write": 850479.03099775,
+            "t_visible": 851150.606929291,
+            "missing_s": 626.5,
+            "price": 100133.01
+          },
+          {
+            "pid": "B00V9F5RK8",
+            "t_write": 850481.025578916,
+            "t_visible": 851140.453502916,
+            "missing_s": 615.0,
+            "price": 100134.01
+          },
+          {
+            "pid": "1509536450",
+            "t_write": 850483.016741666,
+            "t_visible": 851140.453502916,
+            "missing_s": 613.25,
+            "price": 100135.01
+          },
+          {
+            "pid": "B00MEOHGPW",
+            "t_write": 850485.0690255,
+            "t_visible": null,
+            "missing_s": 839.25,
+            "price": 100136.01
+          },
+          {
+            "pid": "B0063CW3IQ",
+            "t_write": 850487.0099495,
+            "t_visible": 851140.453502916,
+            "missing_s": 609.5,
+            "price": 100137.01
+          },
+          {
+            "pid": "B00F6G3FTG",
+            "t_write": 850489.020160125,
+            "t_visible": 851140.453502916,
+            "missing_s": 607.5,
+            "price": 100138.01
+          },
+          {
+            "pid": "B089QWGM4K",
+            "t_write": 850491.0083325,
+            "t_visible": 851140.453502916,
+            "missing_s": 605.75,
+            "price": 100139.01
+          },
+          {
+            "pid": "B01153AQH2",
+            "t_write": 850493.012203125,
+            "t_visible": 851140.453502916,
+            "missing_s": 603.75,
+            "price": 100140.01
+          },
+          {
+            "pid": "B07YDJGPCN",
+            "t_write": 850495.050654208,
+            "t_visible": 851150.606929291,
+            "missing_s": 611.25,
+            "price": 100141.01
+          },
+          {
+            "pid": "B081FKGDNR",
+            "t_write": 850497.0068495,
+            "t_visible": 851150.606929291,
+            "missing_s": 609.5,
+            "price": 100142.01
+          },
+          {
+            "pid": "B074SV9VZ6",
+            "t_write": 850499.154223458,
+            "t_visible": 851140.453502916,
+            "missing_s": 598.0,
+            "price": 100143.01
+          },
+          {
+            "pid": "B01KYJAFTW",
+            "t_write": 850501.0112105,
+            "t_visible": 851140.453502916,
+            "missing_s": 596.25,
+            "price": 100144.01
+          },
+          {
+            "pid": "B00005AQCC",
+            "t_write": 850503.069572458,
+            "t_visible": null,
+            "missing_s": 839.25,
+            "price": 100145.01
+          },
+          {
+            "pid": "B00MGV1CP8",
+            "t_write": 850505.007464291,
+            "t_visible": 851150.606929291,
+            "missing_s": 602.0,
+            "price": 100146.01
+          },
+          {
+            "pid": "B07VD6MND9",
+            "t_write": 850507.069396333,
+            "t_visible": 851140.453502916,
+            "missing_s": 590.5,
+            "price": 100147.01
+          },
+          {
+            "pid": "B0128NKS4Y",
+            "t_write": 850509.0122165,
+            "t_visible": null,
+            "missing_s": 839.5,
+            "price": 100148.01
+          },
+          {
+            "pid": "B07HD55T81",
+            "t_write": 850511.063742875,
+            "t_visible": 851140.453502916,
+            "missing_s": 586.75,
+            "price": 100149.01
+          }
+        ],
+        "visible_p50_censored": false,
+        "visible_p99_censored": true,
+        "missing_p50_censored": false,
+        "missing_p99_censored": true
+      }
+    },
+    "storm_rows_per_s": 150,
+    "storm_s": 300,
+    "marker_every_s": 2.0,
+    "poll_s": 0.25,
+    "timeout_s": 900,
+    "search_query_agree": true,
+    "sample": false,
+    "measured": {
+      "timestamp_utc": "2026-11-17T02:35:48Z",
+      "git_sha": "7825380ec02e8aa6bba4c9be5cd07c6b1661e971",
+      "milvus_version": "3.0.3"
+    }
+  },
+  "meta": {
+    "git_sha": "fcabe2705ee91380128d232218c9a176d5e1311b",
+    "git_dirty": true,
+    "milvus_version": null,
+    "python": "3.13.13",
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "cpu": "Apple M5",
+    "mem_gb": 34.4,
+    "timestamp_utc": "2026-11-25T12:41:37Z",
+    "sample": false
+  }
+}

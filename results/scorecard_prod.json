@@ -1,0 +1,29 @@
+{
+  "payload": {
+    "ndcg@10": 0.3563735958498717,
+    "judged@10": 0.23959999999999998,
+    "recall@10": 0.9955999999999999,
+    "latency": {
+      "p50": 3.3112080418504775,
+      "p95": 6.540991703514008,
+      "p99": 8.553249130491157,
+      "mean": 3.65206137963105,
+      "n": 1000
+    },
+    "ef": 192,
+    "collection": "prod_naive",
+    "queries": "eval5k + filter mix (equal weight per bucket)",
+    "sample": false
+  },
+  "meta": {
+    "git_sha": "bc7a64aa52a812f2c5266e368e405f37d544f087",
+    "git_dirty": true,
+    "milvus_version": "3.0.3",
+    "python": "3.13.13",
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "cpu": "Apple M5",
+    "mem_gb": 34.4,
+    "timestamp_utc": "2026-11-16T17:01:07Z",
+    "sample": false
+  }
+}

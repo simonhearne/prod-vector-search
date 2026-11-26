@@ -1,0 +1,932 @@
+{
+  "payload": {
+    "synthetic": true,
+    "ef": 512,
+    "n": 1000,
+    "campaign_share": 0.05017861927301956,
+    "hidden_share": 0.050379565955166565,
+    "margin_cut": 0.4,
+    "m1": {
+      "rows": [
+        {
+          "collection": "prod_merch",
+          "weight": 1.05,
+          "limit": 10,
+          "reach": 0.5195195195195195,
+          "campaign_slots": 0.1038,
+          "p50_rel": 1.0240149154520042,
+          "p99_rel": 0.8799437097160274,
+          "ndcg@10": 0.633187708564581,
+          "ndcg@10_ci95": [
+            0.6144476416642588,
+            0.6516846194090327
+          ],
+          "judged@10": 1.0
+        },
+        {
+          "collection": "prod_merch",
+          "weight": 1.05,
+          "limit": 50,
+          "reach": 0.5865865865865866,
+          "campaign_slots": 0.1298,
+          "p50_rel": 1.0321619892940186,
+          "p99_rel": 0.8408981818755684
+        },
+        {
+          "collection": "prod_merch",
+          "weight": 1.05,
+          "limit": 100,
+          "reach": 0.5865865865865866,
+          "campaign_slots": 0.1298,
+          "p50_rel": 1.0780961213744509,
+          "p99_rel": 0.8720296415847616
+        },
+        {
+          "collection": "prod_merch",
+          "weight": 1.05,
+          "limit": 200,
+          "reach": 0.5865865865865866,
+          "campaign_slots": 0.1298,
+          "p50_rel": 1.1616931109670452,
+          "p99_rel": 0.9637859819422135,
+          "ndcg@10": 0.6320820723369637,
+          "ndcg@10_ci95": [
+            0.6134243420274562,
+            0.6508855176115963
+          ],
+          "judged@10": 1.0
+        },
+        {
+          "collection": "prod_merch",
+          "weight": 1.05,
+          "limit": 500,
+          "reach": 0.5865865865865866,
+          "campaign_slots": 0.1298,
+          "p50_rel": 1.4000081857548734,
+          "p99_rel": 1.1964445310147027
+        },
+        {
+          "collection": "prod_merch",
+          "weight": 1.1,
+          "limit": 10,
+          "reach": 0.6006006006006006,
+          "campaign_slots": 0.1311,
+          "p50_rel": 1.0496641365296402,
+          "p99_rel": 1.4662421750956955,
+          "ndcg@10": 0.6245988353206094,
+          "ndcg@10_ci95": [
+            0.6067411408649933,
+            0.6432753525966939
+          ],
+          "judged@10": 1.0
+        },
+        {
+          "collection": "prod_merch",
+          "weight": 1.1,
+          "limit": 50,
+          "reach": 0.7757757757757757,
+          "campaign_slots": 0.2464,
+          "p50_rel": 1.046591205060033,
+          "p99_rel": 0.8766047709914213
+        },
+        {
+          "collection": "prod_merch",
+          "weight": 1.1,
+          "limit": 100,
+          "reach": 0.7797797797797797,
+          "campaign_slots": 0.2524,
+          "p50_rel": 1.0736199406824958,
+          "p99_rel": 0.8641507613236228
+        },
+        {
+          "collection": "prod_merch",
+          "weight": 1.1,
+          "limit": 200,
+          "reach": 0.7797797797797797,
+          "campaign_slots": 0.253,
+          "p50_rel": 1.1781471213609975,
+          "p99_rel": 1.7847269758994109,
+          "ndcg@10": 0.6136721900954699,
+          "ndcg@10_ci95": [
+            0.5950699226702597,
+            0.6322781514564738
+          ],
+          "judged@10": 1.0
+        },
+        {
+          "collection": "prod_merch",
+          "weight": 1.1,
+          "limit": 500,
+          "reach": 0.7797797797797797,
+          "campaign_slots": 0.253,
+          "p50_rel": 1.3760167134148278,
+          "p99_rel": 1.0844726233296862
+        },
+        {
+          "collection": "prod_merch",
+          "weight": 1.2,
+          "limit": 10,
+          "reach": 0.6426426426426426,
+          "campaign_slots": 0.1472,
+          "p50_rel": 1.0134934805505897,
+          "p99_rel": 1.2624931518232032,
+          "ndcg@10": 0.6058383782141422,
+          "ndcg@10_ci95": [
+            0.5879118033439513,
+            0.6246400831750337
+          ],
+          "judged@10": 1.0
+        },
+        {
+          "collection": "prod_merch",
+          "weight": 1.2,
+          "limit": 50,
+          "reach": 0.923923923923924,
+          "campaign_slots": 0.4453,
+          "p50_rel": 1.1005955327945645,
+          "p99_rel": 1.3090041857596653
+        },
+        {
+          "collection": "prod_merch",
+          "weight": 1.2,
+          "limit": 100,
+          "reach": 0.9319319319319319,
+          "campaign_slots": 0.51,
+          "p50_rel": 1.1663467765088298,
+          "p99_rel": 1.5656302365239267
+        },
+        {
+          "collection": "prod_merch",
+          "weight": 1.2,
+          "limit": 200,
+          "reach": 0.9359359359359359,
+          "campaign_slots": 0.5195,
+          "p50_rel": 1.1877271406881136,
+          "p99_rel": 0.9778836180522561,
+          "ndcg@10": 0.5272524187818447,
+          "ndcg@10_ci95": [
+            0.5098703022021921,
+            0.5462279074567096
+          ],
+          "judged@10": 1.0
+        },
+        {
+          "collection": "prod_merch",
+          "weight": 1.2,
+          "limit": 500,
+          "reach": 0.9359359359359359,
+          "campaign_slots": 0.5211,
+          "p50_rel": 1.46363970853816,
+          "p99_rel": 2.48550297820304
+        },
+        {
+          "collection": "prod_merch",
+          "weight": 1.5,
+          "limit": 10,
+          "reach": 0.6546546546546547,
+          "campaign_slots": 0.1534,
+          "p50_rel": 1.045116906893186,
+          "p99_rel": 0.8392245061661788,
+          "ndcg@10": 0.5812549380013481,
+          "ndcg@10_ci95": [
+            0.5637028585886816,
+            0.6000058011080639
+          ],
+          "judged@10": 1.0
+        },
+        {
+          "collection": "prod_merch",
+          "weight": 1.5,
+          "limit": 50,
+          "reach": 0.983983983983984,
+          "campaign_slots": 0.6437,
+          "p50_rel": 1.0645195136208327,
+          "p99_rel": 0.9125796303022885
+        },
+        {
+          "collection": "prod_merch",
+          "weight": 1.5,
+          "limit": 100,
+          "reach": 0.996996996996997,
+          "campaign_slots": 0.8811,
+          "p50_rel": 1.093034482987652,
+          "p99_rel": 0.9038300466280318
+        },
+        {
+          "collection": "prod_merch",
+          "weight": 1.5,
+          "limit": 200,
+          "reach": 0.998998998998999,
+          "campaign_slots": 0.9307,
+          "p50_rel": 1.1642863116258608,
+          "p99_rel": 0.891216206989592,
+          "ndcg@10": 0.26250701591267306,
+          "ndcg@10_ci95": [
+            0.2458052485306717,
+            0.27816904667450026
+          ],
+          "judged@10": 1.0
+        },
+        {
+          "collection": "prod_merch",
+          "weight": 1.5,
+          "limit": 500,
+          "reach": 0.998998998998999,
+          "campaign_slots": 0.9411,
+          "p50_rel": 1.4268888515639016,
+          "p99_rel": 1.8322325144355758
+        },
+        {
+          "collection": "prod_merch",
+          "weight": 2.0,
+          "limit": 10,
+          "reach": 0.6546546546546547,
+          "campaign_slots": 0.1535,
+          "p50_rel": 1.076160136376256,
+          "p99_rel": 1.0257829258179252,
+          "ndcg@10": 0.580283819631114,
+          "ndcg@10_ci95": [
+            0.5627514886129757,
+            0.5991212472396837
+          ],
+          "judged@10": 1.0
+        },
+        {
+          "collection": "prod_merch",
+          "weight": 2.0,
+          "limit": 50,
+          "reach": 0.984984984984985,
+          "campaign_slots": 0.6578,
+          "p50_rel": 1.1606154184758017,
+          "p99_rel": 1.3491450539344385
+        },
+        {
+          "collection": "prod_merch",
+          "weight": 2.0,
+          "limit": 100,
+          "reach": 0.997997997997998,
+          "campaign_slots": 0.9277,
+          "p50_rel": 1.1482526374493518,
+          "p99_rel": 0.9865905422591403
+        },
+        {
+          "collection": "prod_merch",
+          "weight": 2.0,
+          "limit": 200,
+          "reach": 1.0,
+          "campaign_slots": 0.9903,
+          "p50_rel": 1.2208188994766431,
+          "p99_rel": 1.265270450600186,
+          "ndcg@10": 0.20873906765080985,
+          "ndcg@10_ci95": [
+            0.1933300453101467,
+            0.2242459613225433
+          ],
+          "judged@10": 1.0
+        },
+        {
+          "collection": "prod_merch",
+          "weight": 2.0,
+          "limit": 500,
+          "reach": 1.0,
+          "campaign_slots": 0.9991,
+          "p50_rel": 1.5330086998242496,
+          "p99_rel": 2.064747926471842
+        },
+        {
+          "collection": "prod_merch_pk",
+          "weight": 1.05,
+          "limit": 10,
+          "reach": 0.4344344344344344,
+          "campaign_slots": 0.0814,
+          "p50_rel": 1.0275952327507956,
+          "p99_rel": 1.1770298338747798
+        },
+        {
+          "collection": "prod_merch_pk",
+          "weight": 1.05,
+          "limit": 50,
+          "reach": 0.5855855855855856,
+          "campaign_slots": 0.1286,
+          "p50_rel": 1.0560210039326687,
+          "p99_rel": 1.0211554633947695
+        },
+        {
+          "collection": "prod_merch_pk",
+          "weight": 1.05,
+          "limit": 100,
+          "reach": 0.5865865865865866,
+          "campaign_slots": 0.1294,
+          "p50_rel": 1.079917899132785,
+          "p99_rel": 0.883323170580418
+        },
+        {
+          "collection": "prod_merch_pk",
+          "weight": 1.05,
+          "limit": 200,
+          "reach": 0.5865865865865866,
+          "campaign_slots": 0.1294,
+          "p50_rel": 1.1263820444998653,
+          "p99_rel": 0.8799697773482915
+        },
+        {
+          "collection": "prod_merch_pk",
+          "weight": 1.05,
+          "limit": 500,
+          "reach": 0.5865865865865866,
+          "campaign_slots": 0.1294,
+          "p50_rel": 1.2459290178956541,
+          "p99_rel": 1.088024182503398
+        },
+        {
+          "collection": "prod_merch_pk",
+          "weight": 1.1,
+          "limit": 10,
+          "reach": 0.5495495495495496,
+          "campaign_slots": 0.1143,
+          "p50_rel": 1.038443372226005,
+          "p99_rel": 0.8731261414698047
+        },
+        {
+          "collection": "prod_merch_pk",
+          "weight": 1.1,
+          "limit": 50,
+          "reach": 0.7577577577577578,
+          "campaign_slots": 0.225,
+          "p50_rel": 1.0673154287222824,
+          "p99_rel": 1.172776159989632
+        },
+        {
+          "collection": "prod_merch_pk",
+          "weight": 1.1,
+          "limit": 100,
+          "reach": 0.7767767767767768,
+          "campaign_slots": 0.2488,
+          "p50_rel": 1.0944475561266247,
+          "p99_rel": 0.8269581887685439
+        },
+        {
+          "collection": "prod_merch_pk",
+          "weight": 1.1,
+          "limit": 200,
+          "reach": 0.7787787787787788,
+          "campaign_slots": 0.253,
+          "p50_rel": 1.1350941371352978,
+          "p99_rel": 1.1356259470319603
+        },
+        {
+          "collection": "prod_merch_pk",
+          "weight": 1.1,
+          "limit": 500,
+          "reach": 0.7787787787787788,
+          "campaign_slots": 0.253,
+          "p50_rel": 1.2434641879188195,
+          "p99_rel": 1.0618413597777072
+        },
+        {
+          "collection": "prod_merch_pk",
+          "weight": 1.2,
+          "limit": 10,
+          "reach": 0.7027027027027027,
+          "campaign_slots": 0.1908,
+          "p50_rel": 1.0369193852886898,
+          "p99_rel": 0.8498026643525443
+        },
+        {
+          "collection": "prod_merch_pk",
+          "weight": 1.2,
+          "limit": 50,
+          "reach": 0.8978978978978979,
+          "campaign_slots": 0.4001,
+          "p50_rel": 1.0678434504908287,
+          "p99_rel": 0.9621493095361098
+        },
+        {
+          "collection": "prod_merch_pk",
+          "weight": 1.2,
+          "limit": 100,
+          "reach": 0.9319319319319319,
+          "campaign_slots": 0.4737,
+          "p50_rel": 1.0880803127520464,
+          "p99_rel": 0.8315843274783362
+        },
+        {
+          "collection": "prod_merch_pk",
+          "weight": 1.2,
+          "limit": 200,
+          "reach": 0.933933933933934,
+          "campaign_slots": 0.517,
+          "p50_rel": 1.131803667131098,
+          "p99_rel": 1.0174418210970724
+        },
+        {
+          "collection": "prod_merch_pk",
+          "weight": 1.2,
+          "limit": 500,
+          "reach": 0.933933933933934,
+          "campaign_slots": 0.5216,
+          "p50_rel": 1.2454970154011094,
+          "p99_rel": 0.9678856247183111
+        },
+        {
+          "collection": "prod_merch_pk",
+          "weight": 1.5,
+          "limit": 10,
+          "reach": 0.9479479479479479,
+          "campaign_slots": 0.463,
+          "p50_rel": 1.044474577059259,
+          "p99_rel": 0.7754377045619577
+        },
+        {
+          "collection": "prod_merch_pk",
+          "weight": 1.5,
+          "limit": 50,
+          "reach": 0.993993993993994,
+          "campaign_slots": 0.8151,
+          "p50_rel": 1.0641930358241067,
+          "p99_rel": 0.7945922917372286
+        },
+        {
+          "collection": "prod_merch_pk",
+          "weight": 1.5,
+          "limit": 100,
+          "reach": 0.997997997997998,
+          "campaign_slots": 0.8827,
+          "p50_rel": 1.083772275652234,
+          "p99_rel": 0.9429732199139755
+        },
+        {
+          "collection": "prod_merch_pk",
+          "weight": 1.5,
+          "limit": 200,
+          "reach": 0.998998998998999,
+          "campaign_slots": 0.9258,
+          "p50_rel": 1.1224076302672674,
+          "p99_rel": 0.8837720996137227
+        },
+        {
+          "collection": "prod_merch_pk",
+          "weight": 1.5,
+          "limit": 500,
+          "reach": 0.998998998998999,
+          "campaign_slots": 0.9412,
+          "p50_rel": 1.2409297786485962,
+          "p99_rel": 1.026774753020434
+        },
+        {
+          "collection": "prod_merch_pk",
+          "weight": 2.0,
+          "limit": 10,
+          "reach": 0.993993993993994,
+          "campaign_slots": 0.6378,
+          "p50_rel": 1.041025820889104,
+          "p99_rel": 1.1630917738123483
+        },
+        {
+          "collection": "prod_merch_pk",
+          "weight": 2.0,
+          "limit": 50,
+          "reach": 1.0,
+          "campaign_slots": 0.9931,
+          "p50_rel": 1.0603482214178592,
+          "p99_rel": 0.8622659356560196
+        },
+        {
+          "collection": "prod_merch_pk",
+          "weight": 2.0,
+          "limit": 100,
+          "reach": 1.0,
+          "campaign_slots": 0.9969,
+          "p50_rel": 1.0861842851795924,
+          "p99_rel": 0.8891476871320162
+        },
+        {
+          "collection": "prod_merch_pk",
+          "weight": 2.0,
+          "limit": 200,
+          "reach": 1.0,
+          "campaign_slots": 0.9981,
+          "p50_rel": 1.1240372555889542,
+          "p99_rel": 0.9026876309807984
+        },
+        {
+          "collection": "prod_merch_pk",
+          "weight": 2.0,
+          "limit": 500,
+          "reach": 1.0,
+          "campaign_slots": 0.9991,
+          "p50_rel": 1.2433394261462383,
+          "p99_rel": 0.9382482071620958
+        }
+      ],
+      "segments": {
+        "prod_merch": 3,
+        "prod_merch_pk": 14
+      },
+      "level_quiet": {
+        "prod_merch": true,
+        "prod_merch_pk": true
+      },
+      "n_eligible": {
+        "prod_merch": 999,
+        "prod_merch_pk": 999
+      },
+      "base_reach": {
+        "prod_merch": 0.3283283283283283,
+        "prod_merch_pk": 0.32732732732732733
+      },
+      "base_campaign_slots": {
+        "prod_merch": 0.055,
+        "prod_merch_pk": 0.0554
+      },
+      "base_drift_p50": {
+        "prod_merch": 0.9712480064411424,
+        "prod_merch_pk": 0.9914559274734233
+      }
+    },
+    "m2": {
+      "base": {
+        "margin@10": 0.33014219148680124,
+        "ndcg@10": 0.6367991317993265,
+        "ndcg@10_ci95": [
+          0.6174883400642048,
+          0.6551186588939344
+        ],
+        "judged@10": 1.0
+      },
+      "rows": [
+        {
+          "mode": "Multiply",
+          "weight": 1.02,
+          "margin@10": 0.3460595184143262,
+          "ndcg@10": 0.6354693894427917,
+          "ndcg@10_ci95": [
+            0.6171198409213429,
+            0.653278623653272
+          ],
+          "judged@10": 1.0
+        },
+        {
+          "mode": "Multiply",
+          "weight": 1.05,
+          "margin@10": 0.367676075831533,
+          "ndcg@10": 0.6268886325176847,
+          "ndcg@10_ci95": [
+            0.6080573959766772,
+            0.6442486110183507
+          ],
+          "judged@10": 1.0
+        },
+        {
+          "mode": "Multiply",
+          "weight": 1.1,
+          "margin@10": 0.3985587056081796,
+          "ndcg@10": 0.5997304913576272,
+          "ndcg@10_ci95": [
+            0.5820880931247763,
+            0.6175432886892435
+          ],
+          "judged@10": 1.0
+        },
+        {
+          "mode": "Multiply",
+          "weight": 1.2,
+          "margin@10": 0.4403780279313549,
+          "ndcg@10": 0.5378505234675602,
+          "ndcg@10_ci95": [
+            0.5189769322989077,
+            0.5563589412263323
+          ],
+          "judged@10": 1.0
+        },
+        {
+          "mode": "Multiply",
+          "weight": 1.5,
+          "margin@10": 0.48019068139965065,
+          "ndcg@10": 0.4275593099952979,
+          "ndcg@10_ci95": [
+            0.4082421722808303,
+            0.446356893978787
+          ],
+          "judged@10": 1.0
+        },
+        {
+          "mode": "Sum",
+          "weight": 0.005,
+          "margin@10": 0.3370805675867326,
+          "ndcg@10": 0.636548301258116,
+          "ndcg@10_ci95": [
+            0.6175316595978991,
+            0.6547915705534855
+          ],
+          "judged@10": 1.0
+        },
+        {
+          "mode": "Sum",
+          "weight": 0.01,
+          "margin@10": 0.3439863956683972,
+          "ndcg@10": 0.6368353513538232,
+          "ndcg@10_ci95": [
+            0.6177846936210568,
+            0.6547224519954349
+          ],
+          "judged@10": 1.0
+        },
+        {
+          "mode": "Sum",
+          "weight": 0.02,
+          "margin@10": 0.3580206502037771,
+          "ndcg@10": 0.6325497786736451,
+          "ndcg@10_ci95": [
+            0.6135056696299281,
+            0.6506490155389761
+          ],
+          "judged@10": 1.0
+        },
+        {
+          "mode": "Sum",
+          "weight": 0.05,
+          "margin@10": 0.3942303277263213,
+          "ndcg@10": 0.6066501657729364,
+          "ndcg@10_ci95": [
+            0.5886569763131285,
+            0.6247770107435252
+          ],
+          "judged@10": 1.0
+        },
+        {
+          "mode": "Sum",
+          "weight": 0.1,
+          "margin@10": 0.4379232382380207,
+          "ndcg@10": 0.5474229911902466,
+          "ndcg@10_ci95": [
+            0.5292853700657091,
+            0.5653576267140589
+          ],
+          "judged@10": 1.0
+        },
+        {
+          "mode": "proportional",
+          "weight": 0.02,
+          "margin@10": 0.34056245605934726,
+          "ndcg@10": 0.637232337860227,
+          "ndcg@10_ci95": [
+            0.6182395337572832,
+            0.65538802629329
+          ],
+          "judged@10": 1.0
+        },
+        {
+          "mode": "proportional",
+          "weight": 0.05,
+          "margin@10": 0.35687244192477485,
+          "ndcg@10": 0.6354440969203347,
+          "ndcg@10_ci95": [
+            0.6171443208019001,
+            0.6529587520816887
+          ],
+          "judged@10": 1.0
+        },
+        {
+          "mode": "proportional",
+          "weight": 0.1,
+          "margin@10": 0.3828984823868167,
+          "ndcg@10": 0.6280598475295608,
+          "ndcg@10_ci95": [
+            0.6094200891355763,
+            0.6458684547775011
+          ],
+          "judged@10": 1.0
+        },
+        {
+          "mode": "proportional",
+          "weight": 0.2,
+          "margin@10": 0.4310130590472627,
+          "ndcg@10": 0.5973983103636336,
+          "ndcg@10_ci95": [
+            0.5788273372025691,
+            0.6159941288901224
+          ],
+          "judged@10": 1.0
+        },
+        {
+          "mode": "proportional",
+          "weight": 0.5,
+          "margin@10": 0.5393869390601036,
+          "ndcg@10": 0.449395542460565,
+          "ndcg@10_ci95": [
+            0.431168113848429,
+            0.4672946828331184
+          ],
+          "judged@10": 1.0
+        }
+      ]
+    },
+    "m3": {
+      "base": {
+        "leak": 0.389
+      },
+      "bury": [
+        {
+          "weight": 0.9,
+          "limit": 10,
+          "leak": 0.073,
+          "p50_rel": 1.024447189314798,
+          "p99_rel": 0.8434023082541158
+        },
+        {
+          "weight": 0.9,
+          "limit": 100,
+          "leak": 0.072,
+          "p50_rel": 1.085378934920759,
+          "p99_rel": 0.8892584382193359
+        },
+        {
+          "weight": 0.7,
+          "limit": 10,
+          "leak": 0.001,
+          "p50_rel": 1.0043279681975008,
+          "p99_rel": 0.8164471881688341
+        },
+        {
+          "weight": 0.7,
+          "limit": 100,
+          "leak": 0.0,
+          "p50_rel": 1.1186720517819777,
+          "p99_rel": 0.8710389887212646
+        },
+        {
+          "weight": 0.5,
+          "limit": 10,
+          "leak": 0.0,
+          "p50_rel": 1.0101127571708037,
+          "p99_rel": 0.8025228587664294
+        },
+        {
+          "weight": 0.5,
+          "limit": 100,
+          "leak": 0.0,
+          "p50_rel": 1.0896655525043553,
+          "p99_rel": 0.9173181064029245
+        }
+      ],
+      "hide": [
+        {
+          "kind": "flag",
+          "n_hidden": 22564,
+          "leak": 0.0,
+          "page_fill": 1.0,
+          "p50_rel": 0.9720650868795278,
+          "p99_rel": 0.8199490160235005
+        },
+        {
+          "kind": "ids10",
+          "n_hidden": 10,
+          "leak": 0.0,
+          "page_fill": 1.0,
+          "p50_rel": 0.9905798475184894,
+          "p99_rel": 0.8530735819319818
+        },
+        {
+          "kind": "ids1000",
+          "n_hidden": 1000,
+          "leak": 0.0,
+          "page_fill": 1.0,
+          "p50_rel": 1.2423767464379156,
+          "p99_rel": 1.0027697522040742
+        },
+        {
+          "kind": "ids10000",
+          "n_hidden": 10000,
+          "leak": 0.0,
+          "page_fill": 1.0,
+          "p50_rel": 3.4121869496221815,
+          "p99_rel": 2.55092584381464
+        }
+      ]
+    },
+    "m4": {
+      "configs": {
+        "dense_text": {
+          "off": {
+            "ndcg@10": 0.6367991317993265,
+            "ndcg@10_ci95": [
+              0.6174883400642048,
+              0.6551186588939344
+            ],
+            "judged@10": 1.0,
+            "margin@10": 0.33014219148680124,
+            "reach": 0.328,
+            "campaign_slots": 0.055
+          },
+          "on": {
+            "ndcg@10": 0.5181707106636929,
+            "ndcg@10_ci95": [
+              0.5011916765896292,
+              0.5354638874186955
+            ],
+            "judged@10": 1.0,
+            "margin@10": 0.3833812721581805,
+            "reach": 0.928,
+            "campaign_slots": 0.4605
+          }
+        },
+        "hybrid_rrf": {
+          "off": {
+            "ndcg@10": 0.667790245377667,
+            "ndcg@10_ci95": [
+              0.6496553328458645,
+              0.6855483389972106
+            ],
+            "judged@10": 1.0,
+            "margin@10": 0.33213036239329413,
+            "reach": 0.327,
+            "campaign_slots": 0.0556
+          },
+          "on": {
+            "ndcg@10": 0.6531097445046201,
+            "ndcg@10_ci95": [
+              0.635102693751197,
+              0.6703317966158991
+            ],
+            "judged@10": 1.0,
+            "margin@10": 0.3491980437986479,
+            "reach": 0.53,
+            "campaign_slots": 0.1072
+          }
+        }
+      },
+      "on_minus_off": {
+        "dense_text": [
+          -0.11862842113563354,
+          0.010178674115688721
+        ],
+        "hybrid_rrf": [
+          -0.014680500873046768,
+          0.004225815991770647
+        ]
+      },
+      "hybrid_minus_dense": {
+        "off": [
+          0.030991113578340414,
+          0.010122489105836128
+        ],
+        "on": [
+          0.1349390338409272,
+          0.012913225091199184
+        ]
+      },
+      "order_off": [
+        "hybrid_rrf",
+        "dense_text"
+      ],
+      "order_on": [
+        "hybrid_rrf",
+        "dense_text"
+      ],
+      "flip": false,
+      "score_rank100_over_rank1": {
+        "dense_text": 0.7700730304807067,
+        "hybrid_rrf": 0.3023212405363524
+      },
+      "rules": {
+        "campaign": 1.2,
+        "high_margin": 1.1
+      }
+    },
+    "fill": {
+      "pairs": 29825,
+      "submitted": 17702,
+      "batch": "msgbatch_01NDA4hPrwMAubr8qorry2ch",
+      "counts": {
+        "succeeded": 17702,
+        "errored": 0,
+        "expired": 0,
+        "canceled": 0,
+        "truncated": 0
+      }
+    },
+    "judgments": {
+      "rows": 49267,
+      "sha": "955696df0b6a",
+      "prompt": "esci-v1"
+    },
+    "sample": false,
+    "measured": {
+      "timestamp_utc": "2026-11-24T12:43:14Z",
+      "git_sha": "f7470bc7c0bb207078a729bee16857474fdec4b3",
+      "milvus_version": "3.0.3"
+    }
+  },
+  "meta": {
+    "git_sha": "fcabe2705ee91380128d232218c9a176d5e1311b",
+    "git_dirty": true,
+    "milvus_version": null,
+    "python": "3.13.13",
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "cpu": "Apple M5",
+    "mem_gb": 34.4,
+    "timestamp_utc": "2026-11-25T12:41:43Z",
+    "sample": false
+  }
+}

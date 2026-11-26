@@ -1,0 +1,14 @@
+# Overrides for the bench stack (mounted as /milvus/configs/user.yaml).
+# Benchmarks build and drop dozens of 450k-row collections; the defaults keep dropped
+# segments and the WAL for hours to days, which filled a laptop disk in one B3a run.
+dataCoord:
+  gc:
+    interval: 600          # s between GC passes
+    missingTolerance: 600  # s
+    dropTolerance: 600     # s before a dropped collection's files are removed
+rocksmq:
+  # retentionSizeInMB is per topic (one per DML channel), so 4096 did not cap the total; and acked
+  # messages only leave disk when RocksDB compacts (default every 86400 s). rdb_data hit 36 GB on 3 Nov.
+  retentionTimeInMinutes: 10
+  retentionSizeInMB: 256
+  compactionInterval: 600  # s

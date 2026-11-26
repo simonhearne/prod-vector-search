@@ -1,0 +1,80 @@
+{
+  "payload": {
+    "a2c_keys": 35393189,
+    "by_locale": {
+      "es": {
+        "products": 260011,
+        "covered": 18874,
+        "share": 0.07258923660922038
+      },
+      "jp": {
+        "products": 339059,
+        "covered": 10709,
+        "share": 0.031584473498712615
+      },
+      "us": {
+        "products": 1215854,
+        "covered": 447880,
+        "share": 0.3683665966472948
+      }
+    },
+    "us_judgments": 1818825,
+    "us_judgment_coverage_by_label": {
+      "C": 0.42902444505480786,
+      "E": 0.3433684045150606,
+      "I": 0.3774559155060066,
+      "S": 0.35467476097510786
+    },
+    "us_queries": 97345,
+    "us_queries_ge1_exact": 83285,
+    "us_queries_ge3_exact": 57180,
+    "us_queries_ge80pct_covered": 5724,
+    "us_covered_by_category": {
+      "Home and Kitchen": 56155,
+      "Books": 37872,
+      "Clothing Shoes and Jewelry": 35527,
+      "Toys and Games": 32720,
+      "Electronics": 30220,
+      "Tools and Home Improvement": 26277,
+      "Health and Household": 24184,
+      "Beauty and Personal Care": 23893,
+      "Sports and Outdoors": 23213,
+      "Automotive": 20975,
+      "Movies and TV": 14974,
+      "Patio Lawn and Garden": 14890,
+      "Grocery and Gourmet Food": 14238,
+      "Office Products": 13630,
+      "Arts Crafts and Sewing": 13332,
+      "Cell Phones and Accessories": 11447,
+      "Kindle Store": 10901,
+      "Pet Supplies": 7431,
+      "Industrial and Scientific": 6502,
+      "Baby Products": 5752,
+      "Video Games": 4447,
+      "Musical Instruments": 3932,
+      "CDs and Vinyl": 2996,
+      "Amazon Fashion": 2719,
+      "Unknown": 1807,
+      "Appliances": 1767,
+      "Handmade Products": 1694,
+      "All Beauty": 1547,
+      "Software": 1442,
+      "Health and Personal Care": 1021,
+      "Digital Music": 209,
+      "Magazine Subscriptions": 98,
+      "Gift Cards": 59,
+      "Subscription Boxes": 9
+    }
+  },
+  "meta": {
+    "git_sha": "738cfcd2b28754633ddcd5a50e20af01b65bf570",
+    "git_dirty": true,
+    "milvus_version": null,
+    "python": "3.13.13",
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "cpu": "Apple M5",
+    "mem_gb": 34.4,
+    "timestamp_utc": "2026-11-02T18:13:23Z",
+    "sample": false
+  }
+}

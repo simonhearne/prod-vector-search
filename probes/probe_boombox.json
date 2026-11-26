@@ -1,0 +1,230 @@
+{
+ "ef": 256,
+ "collections": [
+  "poc_20k",
+  "prod_naive"
+ ],
+ "mode": "dense_text",
+ "poc_category": "Electronics",
+ "rows": [
+  {
+   "query_id": "18462",
+   "query": "boombox",
+   "top_category": "Electronics",
+   "poc": {
+    "ndcg@10": 1.0,
+    "judged@10": 1.0,
+    "returned": 10,
+    "results": [
+     {
+      "product_id": "B089HPRCDB",
+      "title": "Bumpboxx Bluetooth Boombox Flare6 Carbon Fiber | Retro Boombox with Bluetooth Speaker | Rechargeable Bluetooth Speaker",
+      "brand": "Bumpboxx",
+      "category": "Electronics",
+      "price": null,
+      "label": "E",
+      "label_source": "judge",
+      "image": "data/work/images/DB/B089HPRCDB.jpg"
+     },
+     {
+      "product_id": "B075DGBBJ5",
+      "title": "RipTunes CD player Boombox- Portable silver Aux-In CD Boombox, AM/FM Radio For Assured Amusement",
+      "brand": "Riptunes",
+      "category": "Electronics",
+      "price": 32.97,
+      "label": "E",
+      "label_source": "esci",
+      "image": "data/work/images/J5/B075DGBBJ5.jpg"
+     },
+     {
+      "product_id": "B075FTYGQK",
+      "title": "Riptunes Portable CD Player with AM FM Radio Potable radios Boom Box with Aux Line-in, Black",
+      "brand": "Riptunes",
+      "category": "Electronics",
+      "price": 32.97,
+      "label": "E",
+      "label_source": "judge",
+      "image": "data/work/images/QK/B075FTYGQK.jpg"
+     },
+     {
+      "product_id": "B075DHMSKQ",
+      "title": "Riptunes Portable CD Player with AM FM Radio Potable radios Boom Box with Aux Line-in, Pink",
+      "brand": "Riptunes",
+      "category": "Electronics",
+      "price": 32.97,
+      "label": "E",
+      "label_source": "judge",
+      "image": "data/work/images/KQ/B075DHMSKQ.jpg"
+     },
+     {
+      "product_id": "B083V8CKKD",
+      "title": "Wireless Portable Bluetooth Boombox Speaker - 300 Watt Rechargeable Boom Box Speaker Portable Music Barrel Loud Stereo System with AUX Input, MP3/USB Port, Fm Radio, 2.5\" Tweeter - Pyle PBMSPRG4",
+      "brand": "Pyle",
+      "category": "Electronics",
+      "price": 29.48,
+      "label": "E",
+      "label_source": "judge",
+      "image": "data/work/images/KD/B083V8CKKD.jpg"
+     },
+     {
+      "product_id": "B09882XXQ6",
+      "title": "Sony Portable Bluetooth CD Player Boombox Digital Tuner AM/FM Radio Mega Bass Reflex Stereo Sound System with AUX 3.5 to 3.5 Male Wire",
+      "brand": "CRYSTAL FLASH SALES",
+      "category": "Electronics",
+      "price": null,
+      "label": "E",
+      "label_source": "judge",
+      "image": "data/work/images/Q6/B09882XXQ6.jpg"
+     },
+     {
+      "product_id": "B08F667HL3",
+      "title": "Magnavox MD6924-PL Portable Top Loading CD Boombox with AM/FM Stereo Radio in Purple | CD-R/CD-RW Compatible | LED Display | AUX Port Supported | Programmable CD Player |",
+      "brand": "Magnavox",
+      "category": "Electronics",
+      "price": 33.95,
+      "label": "E",
+      "label_source": "judge",
+      "image": "data/work/images/L3/B08F667HL3.jpg"
+     },
+     {
+      "product_id": "B083V8MY3L",
+      "title": "Wireless Portable Bluetooth Boombox Speaker - 500W Rechargeable Boom Box Speaker Portable Barrel Loud Stereo System With AUX Input, USB/SD, 1/4\" In, Fm Radio, 4\" Subwoofer, DJ Lights - Pyle PBMKRG155",
+      "brand": "Pyle",
+      "category": "Electronics",
+      "price": 77.6,
+      "label": "E",
+      "label_source": "judge",
+      "image": "data/work/images/3L/B083V8MY3L.jpg"
+     },
+     {
+      "product_id": "B019G2B61E",
+      "title": "Sony Bluetooth NFC CD Player MP3 Boombox Combo Portable MEGA BASS Stereo| for Home Radio Use or at The Beach or Woods | Digital Radio AM/FM Tuner USB Playback Auxiliary Cable Cleaning Cloth",
+      "brand": "HeroFiber",
+      "category": "Electronics",
+      "price": null,
+      "label": "E",
+      "label_source": "judge",
+      "image": "data/work/images/1E/B019G2B61E.jpg"
+     },
+     {
+      "product_id": "B07JDS2D2R",
+      "title": "Victrola 1980s Retro Bluetooth Boombox with Cassette Player and AM/FM Radio, Wired and Wireless Streaming, Classic 80s Style with Modern Technology, Silver",
+      "brand": "Victrola",
+      "category": "Electronics",
+      "price": null,
+      "label": "E",
+      "label_source": "esci",
+      "image": "data/work/images/2R/B07JDS2D2R.jpg"
+     }
+    ]
+   },
+   "prod": {
+    "ndcg@10": 0.719571102891697,
+    "judged@10": 1.0,
+    "returned": 10,
+    "results": [
+     {
+      "product_id": "B089HPRCDB",
+      "title": "Bumpboxx Bluetooth Boombox Flare6 Carbon Fiber | Retro Boombox with Bluetooth Speaker | Rechargeable Bluetooth Speaker",
+      "brand": "Bumpboxx",
+      "category": "Electronics",
+      "price": null,
+      "label": "E",
+      "label_source": "judge",
+      "image": "data/work/images/DB/B089HPRCDB.jpg"
+     },
+     {
+      "product_id": "B075DGBBJ5",
+      "title": "RipTunes CD player Boombox- Portable silver Aux-In CD Boombox, AM/FM Radio For Assured Amusement",
+      "brand": "Riptunes",
+      "category": "Electronics",
+      "price": 32.97,
+      "label": "E",
+      "label_source": "esci",
+      "image": "data/work/images/J5/B075DGBBJ5.jpg"
+     },
+     {
+      "product_id": "B075FTYGQK",
+      "title": "Riptunes Portable CD Player with AM FM Radio Potable radios Boom Box with Aux Line-in, Black",
+      "brand": "Riptunes",
+      "category": "Electronics",
+      "price": 32.97,
+      "label": "E",
+      "label_source": "judge",
+      "image": "data/work/images/QK/B075FTYGQK.jpg"
+     },
+     {
+      "product_id": "B075DHMSKQ",
+      "title": "Riptunes Portable CD Player with AM FM Radio Potable radios Boom Box with Aux Line-in, Pink",
+      "brand": "Riptunes",
+      "category": "Electronics",
+      "price": 32.97,
+      "label": "E",
+      "label_source": "judge",
+      "image": "data/work/images/KQ/B075DHMSKQ.jpg"
+     },
+     {
+      "product_id": "B000GYZ4BK",
+      "title": "Bible Boomers Volume 1 w/ CD",
+      "brand": "Boomwhackers",
+      "category": "Toys and Games",
+      "price": null,
+      "label": "I",
+      "label_source": "judge",
+      "image": "data/work/images/BK/B000GYZ4BK.jpg"
+     },
+     {
+      "product_id": "B0002F6MCI",
+      "title": "BOOMWHACKERS Boomwhackers Tubes Treble Extension Set,Set of 7",
+      "brand": "Boomwhackers",
+      "category": "Toys and Games",
+      "price": null,
+      "label": "I",
+      "label_source": "judge",
+      "image": "data/work/images/CI/B0002F6MCI.jpg"
+     },
+     {
+      "product_id": "B0823DWTLL",
+      "title": "Kids CD Boombox Portable Audio CD Player, LONPOO FM Stereo Radio CD MP3 Player with AUX-IN\u4e28USB Input\u4e28Headphone Jack, AC\u4e28Battery Powered (White)",
+      "brand": "LONPOO",
+      "category": "Electronics",
+      "price": null,
+      "label": "E",
+      "label_source": "judge",
+      "image": "data/work/images/LL/B0823DWTLL.jpg"
+     },
+     {
+      "product_id": "B083V8CKKD",
+      "title": "Wireless Portable Bluetooth Boombox Speaker - 300 Watt Rechargeable Boom Box Speaker Portable Music Barrel Loud Stereo System with AUX Input, MP3/USB Port, Fm Radio, 2.5\" Tweeter - Pyle PBMSPRG4",
+      "brand": "Pyle",
+      "category": "Electronics",
+      "price": 29.48,
+      "label": "E",
+      "label_source": "judge",
+      "image": "data/work/images/KD/B083V8CKKD.jpg"
+     },
+     {
+      "product_id": "B01F99FC54",
+      "title": "T.J. Wiseman Remote Controlled Fart Machine No. 2 - Pack of 2",
+      "brand": "Forum Novelties",
+      "category": "Health and Personal Care",
+      "price": 29.95,
+      "label": "S",
+      "label_source": "judge",
+      "image": "data/work/images/54/B01F99FC54.jpg"
+     },
+     {
+      "product_id": "B07VRCGJHG",
+      "title": "Gejoy 2 Pieces Inflatable Radio Boombox Inflatable Mobile Phone Props for 80s 90s Party Decorations",
+      "brand": "Gejoy",
+      "category": "Toys and Games",
+      "price": 7.99,
+      "label": "S",
+      "label_source": "judge",
+      "image": "data/work/images/HG/B07VRCGJHG.jpg"
+     }
+    ]
+   }
+  }
+ ]
+}

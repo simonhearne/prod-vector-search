@@ -1,0 +1,140 @@
+{
+  "payload": {
+    "n_calibration": 1000,
+    "kappa_4class": 0.4120000000000001,
+    "kappa_binary_E": 0.5675675675675674,
+    "confusion_esci_by_llm": {
+      "C": {
+        "C": 97,
+        "E": 7,
+        "I": 18,
+        "S": 14
+      },
+      "E": {
+        "C": 30,
+        "E": 165,
+        "I": 8,
+        "S": 37
+      },
+      "I": {
+        "C": 46,
+        "E": 9,
+        "I": 156,
+        "S": 58
+      },
+      "S": {
+        "C": 77,
+        "E": 69,
+        "I": 68,
+        "S": 141
+      }
+    },
+    "spotcheck_n": 200,
+    "spotcheck_kappa_haiku_vs_opus": 0.5065113091158328,
+    "kappa_opus_vs_esci": 0.5193284137837655,
+    "batches": {
+      "msgbatch_0174sA7C7vCgqEB3owA4x4DS": {
+        "succeeded": 46,
+        "errored": 0,
+        "expired": 0,
+        "canceled": 0,
+        "truncated": 0
+      },
+      "msgbatch_01LQ4Nbu9itVpxx1Nkk9Qvcb": {
+        "succeeded": 5,
+        "errored": 0,
+        "expired": 0,
+        "canceled": 0,
+        "truncated": 0
+      }
+    },
+    "judgments": {
+      "rows": 49267,
+      "sha": "955696df0b6a",
+      "prompt": "esci-v1"
+    },
+    "filled": {
+      "dense_text": {
+        "before": {
+          "ndcg@10": 0.3679987867156776,
+          "ndcg@10_ci95": [
+            0.3489421367002734,
+            0.38651922861969057
+          ],
+          "judged@10": 0.2532,
+          "n_queries": 1000
+        },
+        "after": {
+          "ndcg@10": 0.634402363532026,
+          "ndcg@10_ci95": [
+            0.615745155459795,
+            0.6524821801350571
+          ],
+          "judged@10": 1.0,
+          "n_queries": 1000
+        }
+      },
+      "dense_image": {
+        "before": {
+          "ndcg@10": 0.4037496536410613,
+          "ndcg@10_ci95": [
+            0.38440671752354855,
+            0.42179809161011617
+          ],
+          "judged@10": 0.2833,
+          "n_queries": 1000
+        },
+        "after": {
+          "ndcg@10": 0.6579050182761474,
+          "ndcg@10_ci95": [
+            0.6394039903934382,
+            0.6737986094131001
+          ],
+          "judged@10": 1.0,
+          "n_queries": 1000
+        }
+      },
+      "hybrid_rrf": {
+        "before": {
+          "ndcg@10": 0.40073760022186034,
+          "ndcg@10_ci95": [
+            0.380718695356389,
+            0.41993844165435024
+          ],
+          "judged@10": 0.274,
+          "n_queries": 1000
+        },
+        "after": {
+          "ndcg@10": 0.652738249387169,
+          "ndcg@10_ci95": [
+            0.6357598683807553,
+            0.6700415922550758
+          ],
+          "judged@10": 1.0,
+          "n_queries": 1000
+        }
+      }
+    },
+    "rank_before": [
+      "dense_image",
+      "hybrid_rrf",
+      "dense_text"
+    ],
+    "rank_after": [
+      "dense_image",
+      "hybrid_rrf",
+      "dense_text"
+    ]
+  },
+  "meta": {
+    "git_sha": "fcabe2705ee91380128d232218c9a176d5e1311b",
+    "git_dirty": true,
+    "milvus_version": null,
+    "python": "3.13.13",
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "cpu": "Apple M5",
+    "mem_gb": 34.4,
+    "timestamp_utc": "2026-11-25T12:43:15Z",
+    "sample": false
+  }
+}

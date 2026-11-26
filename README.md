@@ -1,0 +1,186 @@
+# Lessons from deploying vector search in production
+
+Setup, data build, benchmarks and the committed results behind the talk at the London Search & AI
+User Group (26 November 2026), plus a pre-launch checklist for vector search.
+
+**Scope and affiliation.** The author works at Zilliz, the company behind Milvus. Every benchmark here
+runs on Milvus 3.0.3 standalone on one laptop, so the numbers show what can go wrong and how to check
+for it, not how any engine performs in production. The checklist is written to work on any engine.
+
+## Setup
+
+```bash
+cp .env.example .env          # Milvus on 127.0.0.1:19540, metrics on :9095
+docker compose up -d          # Milvus 3.0.3 standalone (12 GB / 4 CPU limit)
+uv sync
+uv run pytest                 # integration tests skip if Milvus is down
+```
+
+Allocate at least 16 GB to Docker. Benchmarks load one collection at a time.
+
+## Data
+
+| | count |
+|---|---|
+| Products (ESCI US × Amazon Reviews 2023 parent ASINs) | 447,880 |
+| …with a price | 53.6% (46.4% have none; price filters only ever match priced products) |
+| …with an image URL | 95.7% |
+| ESCI US queries touching the corpus / judgments | 91,374 / 637,652 |
+| Eligible eval queries (≥3 covered Exact products) | 57,180 (`eval5k` = seeded 5,000 sample) |
+
+The PoC-style query set (`data/curated_queries.jsonl`) is 50 paraphrases of sampled ESCI queries written by
+Claude Opus 5.5. They are used as drafted: none was edited or reviewed by hand (`approved` is false throughout).
+
+## AR23 metadata (~101 GB streamed)
+
+`uv run python -m data.ar23_meta` streams every needed `raw/meta_categories/meta_<Category>.jsonl`
+from the Amazon Reviews 2023 Hugging Face dataset, keeps only the ~448k covered products, and writes
+`data/work/ar23_meta/<Category>.parquet` (a few hundred MB in total). Nothing else is stored. It is
+resumable per category. Run it overnight locally, or on a `t3.large` in eu-west-2 and copy
+`data/work/ar23_meta/` back.
+
+## Build from source
+
+Only needed to change the data: step 1 of Reproduce downloads the published result of these steps.
+
+```bash
+uv run python -m data.esci            # ESCI + AR23 ASIN index -> data/work/covered_ids.parquet
+uv run python -m data.ar23_meta       # the ~101 GB stream above
+uv run python -m data.build_products  # -> data/work/products.parquet
+uv run python -m data.queries         # queries, qrels, eval5k
+uv run python -m data.images          # resumable; resized to <= 384 px
+uv run python -m data.embed --text    # Qwen3-Embedding-0.6B
+uv run python -m data.embed --images  # SigLIP; about 7.5 h on the M5's GPU (16.6 images/s)
+uv run python -m data.embed --queries # queries + the curated set
+```
+
+`data/curated_queries.jsonl` and `data/poc_sets.json` are committed; `data.paraphrase --regenerate` and
+`data.poc_sets` rebuild them. LLM judgments are bought as the benchmarks run (see below).
+
+## Reproduce
+
+Times are from the 16–17 Nov runs on an Apple M5 (34 GB), with Docker's Milvus capped at 12 GB / 4 CPU.
+Every Milvus job runs alone: start the next only when the previous one has exited.
+
+**1. Data, from the published dataset (no GPU, no AR23 download).**
+
+```bash
+uv run python -m data.fetch     # ~4.3 GB from huggingface.co/datasets/simonhearne/vector-search-ecom, sha256-verified
+```
+
+The fetch takes 2–3 min on a home connection (1 min 43 s to 2 min 44 s over three fresh-clone runs, 17–18 Nov).
+
+`bench/` and `vsearch/` read `data/dataset/` whenever `data/work/` is absent, including the LLM
+judgments, so filled nDCG reproduces at the published pool (`955696df0b6a`, which every committed
+result except B6 is scored at; check with
+`uv run python -c "from vsearch.judge import fingerprint; print(fingerprint())"`). To build the
+data yourself instead, see [Build from source](#build-from-source).
+
+**2. Benchmarks.** Each writes `results/<name>.json`; collections are built on first use.
+
+| Step | Command | Time |
+|---|---|---|
+| B1a eval sets (1.1) | `uv run python -m bench.b1a_eval_sets` | 32 min |
+| B1b recall vs nDCG (1.2) | `uv run python -m bench.b1b_recall_vs_ndcg` | not logged |
+| B2 filters + unfiltered tax (2.1, 2.2) | `uv run python -m bench.b2_filters` | 55 min |
+| B2c facets (2.3) | `uv run python -m bench.b2c_facets` | 12 min |
+| PoC tune, B1c judge, B3a/b/c, B4b, charts | `bash bench/run_full.sh` | 44 min (judgments cached) |
+| B4a stacked write storms (4.1) | `uv run python -m bench.b4a_write_storm --design stacking` | 5 h |
+| B4c freshness (4.4) | `uv run python -m bench.b4c_freshness` | 72 min |
+| B4a update paths (4.2) | `uv run python -m bench.b4a_write_storm --design paths` | 2.5 h |
+| B4d one write operation per pass (4.1) | `uv run python -m bench.b4d_single_ops`, then `uv run python -m bench.b4d_report --id b4d_single_ops --events` | 10 h 53 min (14 passes) |
+| B4d blue/green memory check (4.3): build a second copy of `prod_tuned` beside it, measure, drop it | `uv run python -m bench.b4d_bluegreen --fit-check` | 9 min |
+| B4b isolated alias swap (4.3): build and load generator in separate processes, one pass | `uv run python -m bench.b4b_isolated` | 30 min |
+| B1b monitor run (1.4) | `uv run python -m bench.b1b_recall_vs_ndcg --monitor` | ~1 min |
+| Showcase: per-query examples for the slides (§1, 2.1, R5) | `uv run python -m bench.showcase` | 13 min (judgments cached) |
+| B5 merchandising (2.4) | `uv run python -m bench.b5_merch` | ~35 min (collections already built, judging included) |
+| B6 personalisation (R11) | `uv run python -I -c "import sys; sys.path.insert(0, '.'); from data.histories import main; main()"` (3.2 GB download), then `uv run python -m bench.b6_perso` | ~20 min (collection already built) plus judging |
+| Re-score filled nDCG at the current pool | `uv run python -m bench.rescore` | seconds |
+
+Run detached, e.g. `nohup uv run python -m bench.b4c_freshness > logs/b4c.log 2>&1 &`. Add
+`--sample 20` to any benchmark for a minutes-long smoke run. B1a, B1b, B3a, B5 and B1c `fill` buy LLM
+judgments for unjudged results by default (`ANTHROPIC_API_KEY`; skip with `--no-fill`), capped at
+30k pairs per run (`--max-pairs`). Against the published pool the canonical runs should find few new
+pairs to judge (a fresh HNSW build ranks a little differently). After any new judging in the main pool, run `bench.rescore` and the B1c report so every filled number
+shares one pool. B6 judges into its own pool (`data/work/judgments_b6.parquet`, 7,067 rows, fingerprint `afc504fd2cd6`), on queries no other result uses, so the published pool is unchanged; neither that pool nor the review histories (pseudonymous user IDs) are published. One-off follow-ups live in `probes/` (script + JSON side by side).
+
+## Results
+
+Full runs, 16–26 Nov 2026 (most on 16–17 Nov; B1a rerun 25 Nov with 100 candidates per hybrid arm; B4d and the isolated B4b 25–26 Nov), on Milvus 3.0.3 standalone (12 GB / 4 CPU) on an Apple M5 laptop. Latency is only ever shown relative to another config on the same machine. nDCG is judge-filled (judged@10 = 1.00) unless marked raw, and every filled number except B6's and the 17 Nov monitor runs (1.4) is scored at the same judgment pool (fingerprint `955696df0b6a`, recorded in each JSON that reports filled nDCG, and published with the dataset); the judge is Claude Haiku 5.5, measured against ESCI's human labels (κ 0.41). Charts are in [`results/charts/`](results/charts/). Each JSON's `meta` records the commit and machine it ran on; the commits are from the development history, which isn't published, and `git_dirty` is true whenever any file was uncommitted at the time.
+
+| Chart | What it shows | Result |
+|---|---|---|
+| `b1a_power` | 1.1: can 50 queries pick your winner? | Over 1,000 real queries, text + BM25 (RRF, 100 candidates per arm) and image differ by +0.006 ± 0.018 nDCG: not separable. Random 50-query sets pick the 1,000-query winner **53%** of the time and the full order 29%. PoC-style paraphrases of the same queries shift the image−text gap by **−0.080 ± 0.060**. **That 53% is for close candidates:** adding text + image (RRF, 100 per arm) as a fourth, +0.045 ± 0.012 over image, 50-query sets pick it **88%** of the time and 200-query sets 99.9%. ([b1a](results/b1a.json); fourth candidate, fused offline, in [probes/](probes/probe_text_image.json)) |
+| — | §1: when you need vectors | BM25 alone vs B1a's text vectors and hybrid, exact matches in the top 5, on the 979 of 1,000 real queries whose top 5s are fully labelled: BM25 **2.85**, text vectors **2.98**, hybrid **3.15** (hybrid vs BM25 +0.30 ± 0.07). Queries with no exact match in the top 5: **13.7%**, 12.9%, **10.7%**. BM25 and vectors miss about as often, on different queries: hybrid finds an exact match for 54 of the 134 BM25 misses and loses 25. The slide's queries are picked for contrast, and all hold under exact vector search: BM25 0 and vectors ≥ 3 on **24** queries, the reverse on **12**. Against HNSW's results the reverse is 17: mean recall is high, but a few queries are near-total misses, so check lopsided examples against exact search first. ([probes/](probes/probe_bm25.json)) |
+| — | §1: hybrid's settings | RRF sees only ranks. With 10 candidates per arm it alternates lists that don't overlap (13% of queries share nothing in the top 10): "chromebooks laptops" reads `CECEC`, and `EEEEE` at 100 per arm. On 966 queries, exact matches in the top 5: RRF 10 **3.11**, RRF 100 **3.18** (+0.07 ± 0.04), Milvus `WeightedRanker` at 0.3 dense 3.20; hybrid beats both arms on 5%, 11% and 9%. Differences in queries with no exact match are small (RRF 10 9.4%, RRF 100 10.1%, within noise). Depth is no cure: "radios de comunicacion" drops from 2 to 1 exact. Always picking the better arm would reach 3.44. B1a used 10 per arm until 25 Nov 2026. ([probes/](probes/probe_fusion.json)) |
+| `b1b_recall_ndcg` | 1.2: recall is not relevance | Across HNSW ef 10→256, recall@10 rises **+15 pts** (0.83→0.98) while nDCG@10 rises **+4 pts** (0.595→0.636). ([b1b](results/b1b.json)) |
+| `b1c_kappa` | 1.3: measure the judge | Haiku vs ESCI κ 0.41 (4-class), 0.57 (Exact vs not). Filling holes raises nDCG by about two-thirds (0.37→0.63 for text) but leaves B1c's order of configs unchanged (image > hybrid > text; B1c's hybrid predates B1a's 100-per-arm rerun). ([b1c](results/b1c.json)) |
+| — | Showcase (§1, 2.1, R5): per-query examples | **§1:** on the PoC collection's own category (5 of the 50 PoC queries), the PoC's filled nDCG lands both above and below prod's (0.44 vs 0.30; 0.33 vs 0.72). Across all 50 it is 0.06 vs 0.64, mostly because the 20k slice lacks the other categories. **2.1:** in the < 0.1% bucket, 73 of 200 filters come back short on IVF_RABITQ (nprobe 8) and full on HNSW; 22 return **0 of 10**. **R5:** embedding the query is **81%** of application-side latency at p50 (33 of 41 ms), with the embedding model running on the same laptop; the search call, timed in the client, is the rest. Two hand-picked slide examples: "boombox" on the PoC and production catalogues, and "xbox one x" under B5's campaign boost. ([showcase](results/showcase.json); [boombox](probes/probe_boombox.json), [xbox one x](probes/probe_campaign.json)) |
+| `b2_buckets` | 2.1: do narrow filters return full pages? | For filters matching < 0.1% of products, IVF_RABITQ returns fewer than 10 results for **36.5%** of queries at nprobe 8 (15.5% at nprobe 64) though ≥ 10 match; HNSW returns full pages. ([b2](results/b2.json)) |
+| — | 2.2: does the tuned layout tax other queries? | On compacted, fully indexed collections, the partition-key layout makes unfiltered queries **~2× slower at p50** than the plain layout (both ef 32 and 192, replicated in reverse order), for +0.3–2 pts of recall. ([b2](results/b2.json) `unfiltered_tax`; reverse-order replication in [probes/](probes/probe_b2_tax_reversed.json)) The cost, and the small recall gain, appear to come from segments, not the key itself: after compaction, 16 partitions left 18 segments against the plain layout's 4 (compaction seems not to merge across partitions). With 4 partitions the partition-key layout is as fast as plain, and a plain layout left at 24 segments is as slow as 16 partitions. ([segment probe](probes/probe_b2_segments.json)) |
+| `b2c_facets` | 2.3: what do facets cost? | Exact facet counts (group-by over all matches) cost **4.4× search p99**. Facets derived from the top 100 cost 1.6× at p99. The exact counts use only the filter, not the query, so unfiltered queries all get the same list. The stored top-5 agreement (category 80%, brand 18%) isn't a quality measure: it tracks the share of queries where the two have to agree (those filtering on one category, or on one brand), and the exact brand list is 20 groups fetched without a sort. ([b2c](results/b2c.json)) |
+| `b3a_frontier` | 3.1, 3.2: RAM vs relevance | fp16 halves RAM for −0.6 pts (within the per-config intervals). IVF_RABITQ at 1024 dims is **3× smaller at the same nDCG**, but with far higher p50 than HNSW. Cutting to 512 / 256 dims costs 2.4 / 5.3 pts. ([b3a](results/b3a.json)) |
+| `b3b_costs` | 3.3: sizing at scale | Bytes per vector from B3a, scaled to 10M / 50M products × vectors × replicas. ([b3b](results/b3b.json)) |
+| `b4a_timeline` | 4.1: back-to-back write bursts | With no writes, search p99 stays at ~30 ms. With a price storm, a bulk feed and a second storm back to back, p99 is 466 ms during the writes and **284 ms in the five minutes after they stop** (~9× the 31 ms no-writes p99, ~10× that phase's own control; the two runs were 375 and 193 ms), then p99 rises to 240 ms again 10–20 min later, when compactions ran. In the one Strong pass, p99 during the feed reached 1.2 s, against 280–409 ms in the two Bounded passes. Write-phase p99s are understated: this run's load generator didn't count queueing time (fixed since). ([b4a](results/b4a.json)) |
+| no chart | 4.1: one write operation per pass | Six writes, each alone from a level start, run twice (forward, then reversed order) against no-writes controls (p99 28–33 ms by phase), with 30 min of search after each write. At 1% of the catalogue (4,479 rows), a price-only update at 150 rows/s, a full-row upsert and a delete by key raise p99 only while they run (69–111 ms for the price update), and none stalls search afterwards; neither does a trickle of 5 price updates a second for 10 min (p99 60–68 ms while it runs). **A 10% price update (45,000 rows at 150 rows/s for 5 min) stalls search once, 10.5–11 min after it ends**: one 30 s window reaches p99 **1.19 s** and 0.95 s. The timing matches Milvus's 10-minute idle timer sealing the segments the update left growing (the seal shows in the run's segment metrics, kept with the raw data rather than in the JSON). A flush right after a 1% update seems to bring the stall forward: windows of about 0.5 s and 1.03 s within 3 min of the flush. 0 failed queries. Repeat 1 ran in the evening and its control was noisy too (worst window 505 ms), so read slow windows against both repeats. ([b4d](results/b4d_single_ops.json)) |
+| `b4b_swap` | 4.3: alias swap under load | **0 failed queries** across the swap. Superseded by the isolated run below: this build shared the load generator's Python process, so its larger slowdown over the ~10 min build probably measured the harness in part. ([b4b](results/b4b.json)) |
+| no chart | 4.3: alias swap, build in its own process | One pass: 5 min of search, the HNSW_SQ8 re-index built by a separate process (every step timed), the alias switch, 15 min more. Search slowed **about 2×** during the first 5.5 min of the build (median of 5 s p50s), less than in B4b, which suggests part of B4b's slowdown was the test harness. The stalls look like Milvus's rather than the harness's: the load process stayed almost idle (2–3% of a core, in the raw monitor data), yet search nearly stopped for ~20 s during the insert and ~10 s at the end of compaction, with queries waiting up to 11 s from when they were due. 572 of the 9,224 queries during the build took over 1 s. The index step left the median unchanged but raised p99 to 116 ms (~4× the 29 ms baseline). Steps: insert 215 s, flush 3 s, compact 97 s, index 142 s, load under 1 s. Every query before the switch was answered by the old collection and every one after by the new one, with no mixed period; **0 failed of 33,259**. p99 was back to the baseline (28–29 ms) 5 min after the switch. With both copies loaded, memory peaked at 11.4 GiB of the 12 GiB cap. ([b4b_isolated](results/b4b_isolated.json)) |
+| — | 4.4: time to searchable | Under write load, Strong / Bounded / Eventually make a price change visible in about 0.2 s at the median (p99 0.3–0.5 s, polling every 0.25 s). Skipping not-yet-sealed data protects read latency, but **every updated product vanished from results**: median ~13 min until it came back, and 17% were still missing after 15 min. The hidden products come back all at once, about 11 min after the writes stop. **A flush right after the writes ends the blackout** (everything visible 16 s later); a compaction, mid-storm or after, doesn't help. ([b4c](results/b4c.json); flush/compact follow-up in [probes/](probes/probe_b4c_flush_compact.json)) |
+| `b5_reach` | 2.4: do business rules reach the page, and what do they cost? | **All margins, campaigns and hide flags are synthetic.** **Reach:** on a 10-result request, the same campaign boost behaves differently on the two layouts, and the direction depends on the weight: ×1.05 reaches 52% of pages on the plain layout (3 segments) and 43% on the one partitioned by category (14), ×1.5 reaches 65% and 95% (33% with no boost). The layouts differ in both segment count and partitioning, so neither is isolated. Asking for 200 results, they agree within 0.2 pts. **Cost (plain layout only):** ×1.5 over 200 results reaches 99.9% of pages by filling 93% of slots with campaign products, and nDCG falls from **0.637 to 0.263**; on a 10-result request it is 0.582. **Margin:** adding 0.1 × margin to the score lifts average margin@10 from 33% to 38% for −0.9 pts of nDCG; 0.2 × margin gives 43% for −3.9 pts. **Bury and hide (3 segments):** burying at ×0.9 leaves a buried item on 7% of pages (39% with no rule), ×0.7 on 0.1% or fewer. One segment wasn't tested; there a page-size request has no replacements to pull in. Hiding by flag or ID list never leaked, but a 10,000-ID list is **3.4× slower** at p50 than no filter, while a flag made no measurable difference. **Order:** with the same rules (campaign ×1.2, margin ≥ 0.4 ×1.1) applied in the application to the top 200, hybrid stays ahead of text. It is **not a like-for-like test of robustness**: the same weights filled 46% of text's slots with campaign products and 11% of hybrid's, because RRF scores are spread wider (text −11.9 ± 1.0 pts, hybrid −1.5 ± 0.4). The hybrid arms here are 200 deep, not B1a's 100. ([b5](results/b5.json)) |
+| `b6_lift` | R11: does the right user's profile help? | **No arm passes the full rule** (beat no profile, popularity and a stranger's profile), because nothing beats popularity on MRR. 5,000 users, one query each, the last purchase held out, weights tuned on 1,000 other users. MRR with no profile is 0.130. Differences are MRR against no profile unless stated; "moved" is the share of top-10 slots the arm changed, and arms that moved different amounts aren't comparable. **Brand boost** (moved 2.2%): +0.004 ± 0.002, nDCG +0.000 ± 0.003 (500 judged users). **Brand sparse vector** (moved 4.3%): +0.006 ± 0.002, nDCG −0.011 ± 0.005. For both, **a stranger's profile is close to no control**: it moves 0.3% and 0.5% of slots, because their brands rarely match. A user whose held-out purchase is in the same category moves 0.9% and 1.8%, and the own profile beats it by +0.004 ± 0.002 and +0.007 ± 0.003. **Price band** (moved 18.6%): +0.009 ± 0.003, but only +0.003 ± 0.003 over a stranger's, so the gain is not shown to be personal; nDCG −0.011 ± 0.006. **Brand + price** (moved 19.8%): +0.013 ± 0.003, +0.007 ± 0.003 over a stranger's (the brand half of that control barely acts), nDCG −0.012 ± 0.006. **User vector** in the query (moved 18.5%) or as a rerank (moved 9.7%): better than a stranger's (+0.005 ± 0.002, +0.004 ± 0.002) but not than no profile (−0.001 ± 0.003, +0.001 ± 0.002). **Popularity:** +0.118 ± 0.007 MRR and −0.079 ± 0.016 nDCG; its ratings are all-time, so it partly leaks the held-out purchase. **Which queries** (own over stranger, not adjusted for six arms and five strata): price band +0.009 ± 0.006 on specific queries (≤ 3 Exact brands) and +0.000 ± 0.003 on broad ones, brand + price +0.014 ± 0.006 and +0.004 ± 0.004; the other arms don't separate. The held-out brand is in only 6.1% of histories. The tuning run's segment count wasn't recorded (the test run had 2). Reviews stand in for purchases and users didn't issue the queries: only the differences mean anything. ([b6](results/b6.json)) |
+
+## Checklist
+
+A pre-launch checklist for vector search. Every row works by hand, on any engine, with no code from this repo. "Our evidence" points to the benchmark in this repo that shows what goes wrong when the check is skipped. Rows marked "field pattern" come from the author's field experience and aren't benchmarked.
+
+| # | Check | How to check by hand | Red flag | Fix | Our evidence |
+|---|---|---|---|---|---|
+| 1.1 | Your eval set is sampled from real query logs (head, torso, tail), is large enough to separate your candidates, and isn't worded by the team. | Sample ~1,000 queries from your logs. Rank your candidate configs on that set and on your PoC set, and bootstrap smaller subsets (50, 200) to find the size at which the winner holds: close candidates need more queries. | The PoC set's winner changes on the log sample, or subsets the size of your eval set disagree on the winner. | Size the eval set to the gap you need to see; sign off on the log sample; report differences with confidence intervals; keep team-written queries out of sign-off. | [B1a](results/b1a.json) |
+| 1.2 | You track relevance (nDCG on judged queries) separately from ANN recall. | Sweep one search parameter (ef, nprobe) and plot recall@10 against exact search next to nDCG@10. | You tune or sign off on recall alone, or the last recall points cost latency and buy no relevance. | Report both; choose search params on the relevance curve, not on recall. | [B1b](results/b1b.json) |
+| 1.3 | Your judgments cover what you retrieve (judged@10 ≥ 0.9), and gaps are filled by a judge you measured against human labels. | Compute judged@10 for every config you compare. Score an LLM judge against ~1,000 human-labelled pairs (Cohen's κ). Re-rank your configs with and without the fill. | judged@10 below 0.9, an unmeasured judge, or a fill that changes which config wins. | Fill the holes with a measured judge; report judged@10 next to every nDCG; state the judge's κ. | [B1c](results/b1c.json) |
+| 1.4 | Before launch, monitoring is in place for both kinds of drift: a shadow exact search on a sample of live queries (recall drift) and a scheduled golden-set nDCG run (relevance drift). | Ask: what alerts if recall against exact search drops on today's traffic, or if nDCG on a fixed judged set drops? Is that job scheduled? | No scheduled job, or a relevance alert that fires on unjudged results. | Schedule both checks; alert on nDCG only when judged@10 ≥ 0.9, otherwise send the new results for judging. | [B1b monitor](results/monitor/b1b_20261117T053908Z.json) (second run, compared with [the first](results/monitor/b1b_20261117T053842Z.json), re-scored at today's judgments) |
+| 2.1 | You benchmarked with the production filter mix, per selectivity bucket: recall against exact *filtered* search, p99, and how often a page comes back short. | Replay a day of production filters, bucket them by selectivity, and for each bucket measure recall against exact filtered search, p99, and the share of requests returning fewer than k results when ≥ k match. | Narrow filters return short pages or lose recall, while unfiltered numbers look fine. | Tune per bucket; prefer an index that handles narrow filters (graph indexes with filter-aware search, or brute force below a selectivity threshold); raise nprobe for IVF. | [B2](results/b2.json) |
+| 2.2 | Your partitioning or tuned layout doesn't tax the queries that don't use it, measured on a compacted, fully indexed collection. | Run the same unfiltered queries against the tuned and the plain layout, after compaction and indexing have finished, with a discarded warm pass. | Unfiltered p50 or p99 regresses on the tuned layout. | Measure after compaction; partition only if filtered traffic on that field dominates, and price in the unfiltered cost (we measured ~2× p50). The cost comes from the segment count partitioning leaves after compaction: check it, and keep the partition count low (4 partitions cost nothing measurable here). | [B2](results/b2.json) |
+| 2.3 | You know whether your facet counts are exact, and what they cost. | Compare facet counts from a group-by over all matches with counts derived from the top-k, and time search with and without facets. | Facets from the top-k presented as exact, or facet p99 several times search p99 with nobody budgeting for it. | Choose explicitly: exact (aggregation, budgeted), approximate (top-k, labelled), or precomputed. | [B2c](results/b2c.json) |
+| 2.4 | Business rules (boosting, merchandising, pinned or demoted items) were switched on when you scored relevance. | Score relevance with the production ranking rules applied, on every config you compare. For each rule, count how often its products reach the page at the result limit you really request, and repeat after a reindex or compaction. | Relevance was scored on raw retrieval only; a rule's effect changes with the result limit or the index layout; one weight is reused across score types. | Score the full pipeline. Apply rules over a fixed candidate depth, tune each weight against nDCG and per score type, and hide with a flag rather than a long ID list. In Milvus, a boost rescores only the `limit` candidates each segment returns. | [B5](results/b5.json) (synthetic margins and campaigns) |
+| 3.1 | Memory is measured as RAM, not "loaded bytes", and you know what is memory-mapped. | Split the engine's reported memory into resident RAM and memory-mapped bytes for each index variant. | A quantised index reports roughly the same memory as full precision. | Size on resident RAM; budget memory-mapped data as disk plus page cache. In Milvus, read `internal_cache_loaded_bytes` by `location`. | [B3a](results/b3a.json) |
+| 3.2 | Dims, dtype and quantisation are chosen on nDCG per GB, not on recall. | Build a small grid (dims × dtype × index), and plot RAM against judged nDCG with latency alongside. | The choice was made on recall, or on the full-precision default. | Pick the knee of the RAM–nDCG frontier, and check its latency. | [B3a](results/b3a.json) |
+| 3.3 | You've done the arithmetic at 10× catalogue × vectors per item × replicas. | Multiply measured bytes per vector by 10× your catalogue, by vectors per item, and by replicas. | The sizing still assumes the PoC's single vector and single replica. | Size for growth, replicas and HA before choosing the index. | [B3b](results/b3b.json) |
+| 3.4 | You've priced a full re-embed (hours and $) before choosing the model. | Measure embedding throughput on the hardware you'd use, then compute hours and cost for the whole catalogue. | Nobody knows how long a model change takes to roll out. | Budget the re-embed into the model choice; prefer models that allow dimension truncation. | [B3c](results/b3c.json) |
+| 4.1 | You load-tested reads at your real write rate, including back-to-back bursts, against a no-writes control, and kept measuring after the writes stopped. | Run fixed-QPS search while replaying your write pattern (daytime updates plus nightly feed), with a no-writes control and a long tail after the writes stop. | p99 stays high long after the writes stop, or only one burst on a freshly built index was ever tested. | Test stacked bursts. Consider spacing or batching bulk writes so compaction and indexing can catch up before the next burst (not tested here). | [B4a](results/b4a.json), [B4d](results/b4d_single_ops.json) |
+| 4.2 | You measured which update path is cheaper instead of assuming it, each from a level start. | Run the same storm as full-row upserts and as partial updates, each from a compacted, indexed, idle collection, in a balanced order. | The cheaper path was assumed, or measured in a fixed pass order. | Measure both, each from a level start, in ABBA order. | [B4a paths](results/b4a_paths.json) |
+| 4.3 | A model change is a new collection plus an alias swap, rehearsed under load (0 failed queries). | Build the new index beside the old one, swap an alias under load, and count failed queries and queries over 1 s. | In-place re-embedding of the live index, or a swap that has never been rehearsed. | Blue/green collections behind an alias; switch the query encoder at the same moment; build the new index on separate resources, because on shared nodes the insert and compaction stalled live search for ~10–20 s with no failed queries. | [B4b isolated](results/b4b_isolated.json) |
+| 4.4 | You measured how long a write takes to become searchable at your real write rate, and chose the consistency level, and whether reads skip not-yet-indexed data, on purpose. | During a write storm, update marker items and poll until each change is visible, under each consistency setting you might use. | Nobody knows the time to visibility, or an updated item disappears from results for minutes. | Set consistency from a measured freshness requirement; avoid skipping unsealed data for anything that updates in place, or flush right after each bulk update, off-peak: here the flush brought a short stall forward (30 s windows of up to ~1 s p99). | [B4c](results/b4c.json), [B4d](results/b4d_single_ops.json) |
+| 5.1 | A solution design document covering data residency, AI policy and HA/DR was approved early. | Can you point to the signed-off design doc? Does it cover HA/DR with a rehearsed restore, agreed RPO/RTO and the embedding model version stored with each backup? Does it cover RBAC (least privilege, separate read and write roles), per-service credentials, private networking, encryption and tenant isolation? | No sign-off, so the whole solution stalls, not just search. | Write and approve the design doc first. | field pattern |
+| 5.2 | "We already have X" was settled against written requirements, with both options tested. | Are the requirements written down, and were both options tested against them? | The decision rests on opinion or on an untested incumbent. | Write requirements first; run the same checks on both options. | field pattern |
+| 5.3 | A named team owns running it. | Is there a named team (search product, general devops, or specialist) on call for it? | Ownership is "whoever built the PoC". | Name the owning team before launch. | field pattern |
+| 5.4 | Procurement and legal started early, if a commercial product is involved. | Have procurement and legal started, with a date for completion? | They start after the technical sign-off. | Start them in parallel with the PoC. | field pattern |
+| 5.5 | The business case puts a number on the benefit. | Does the business case state revenue, CSAT, efficiency or cost saving in numbers? | "Better search" with no number. | Tie the case to a measured metric and a target. | field pattern |
+| 5.6 | A cross-functional team was formed at the start. | Is there a cross-functional team (product, engineering, data, legal) rather than a single champion? | One champion carries the project alone. | Form the team at kick-off. | field pattern |
+
+### README-only checks
+
+Production topics the talk has no time for. Same columns and rules; only R5 and R11 are benchmarked here. (R3 is now 2.4.)
+
+| # | Stage | Check | How to check by hand | Red flag | Fix | Our evidence |
+|---|---|---|---|---|---|---|
+| R1 | Before you start | You wrote down why lexical search plus filters isn't enough, with real queries it fails on, before choosing vector or hybrid. | Can you list real queries that lexical search with filters gets wrong? | Vector search chosen because it's new. | Collect failing queries first; consider hybrid. | not benchmarked |
+| R2 | PoC design | You tested at the result depth production uses (top-k and pages deep), not only the first page. | Run your eval at the page depth users actually reach. | Only the first 10 results were ever scored. | Evaluate at production depth. | not benchmarked |
+| R4 | PoC design | You chose a tenancy model (shared index plus tenant filter, partition per tenant, or collection per tenant) and tested it at production tenant count and skew. | Load the real number of tenants, including the largest, and measure recall and p99 per tenant. | Tested with a handful of equal-sized tenants. | Pick the model from measured skew. | not benchmarked |
+| R5 | PoC design | You measured latency at the application, split by stage (embedding, network, search, rerank), not only what the engine reports. | Time each stage in the application for the same requests. | Only engine-side latency is known. | Instrument every stage. | [showcase](results/showcase.json) `latency_split` |
+| R6 | Tuning | You considered laying data out physically by the dominant filter or sort field (clustering), and measured the effect. | Compare filtered latency with and without clustering on the dominant field. | Layout left at insert order without a test. | Cluster on the dominant field if it helps. | not benchmarked |
+| R7 | Going live | Deep pagination uses a stateful cursor or iterator, not growing offsets, so pages don't repeat or skip results while the data changes. | Page deep through a result set while writes run; check for repeats and gaps. | Offset pagination on changing data. | Use a cursor or iterator. | not benchmarked |
+| R8 | Going live | Autoscaling is configured and load-tested: it scales out before p99 breaks, and scaling in drops no queries. | Ramp load past capacity and back down; watch p99 and errors. | Autoscaling never exercised. | Load-test the scaling policy. | not benchmarked |
+| R9 | Keeping it running | End-to-end tracing covers every stage of a query (app → embedding → vector search → rerank), with per-stage latency and query logs. | Pick one slow request and find its per-stage timings. | You can't explain a slow request. | Add tracing across stages. | not benchmarked |
+| R10 | Keeping it running | Actual cost is tracked against the pre-launch sizing (3.3): per query, per tenant, idle capacity and the autoscaling floor. | Compare this month's bill with the sizing estimate. | Nobody compares cost with the estimate. | Track cost per query and per tenant. | not benchmarked |
+| R11 | PoC design | Personalisation is measured on real histories with the last purchase held out, and it beats no profile, a popularity ranking and the profile of a different user. You know on which queries it helps. | Hide each user's last purchase, search with their own profile and with a randomly chosen other user's, and compare both with no profile and a popularity ranking, on relevance as well as on the held-out item. Repeat by broad and specific queries. | A stranger's profile helps as much as the right one; relevance drops while the purchase proxy rises; a popularity signal wins by having seen the future. | Report each arm against its own controls, with paired intervals and a relevance guard, and tune weights on separate users. Check that the control profile acts at all: a random stranger's brands barely touch the page, so use a similar user. In Milvus, a Boost Ranker over the user's brands moved 2% of slots, with no measurable nDCG change. | [B6](results/b6.json) |
+
+## Licence and attribution
+
+Code: MIT ([`LICENSE`](LICENSE)). The data has its own terms:
+
+- **Shopping Queries Dataset (ESCI)**: Reddy et al., 2022, *Shopping Queries Dataset: A Large-Scale ESCI Benchmark for Improving Product Search*, Apache-2.0 ([amazon-science/esci-data](https://github.com/amazon-science/esci-data)). Queries, product titles and labels from it appear in `data/`, `results/` and `probes/`.
+- **Amazon Reviews 2023**: Hou et al., 2024, *Bridging Language and Items for Retrieval and Recommendation*, McAuley Lab, UC San Diego ([McAuley-Lab/Amazon-Reviews-2023](https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023)). The release states no licence, only attribution; its item metadata appears in some result files. Check the source's terms before reusing it.
+- **LLM judgments and paraphrases** were generated with Claude (Haiku 5.5 for judgments, Opus 5.5 for paraphrases and spot checks).
+- **Models**: [Qwen3-Embedding-0.6B](https://huggingface.co/Qwen/Qwen3-Embedding-0.6B) and SigLIP ViT-L-16-256 (`webli` weights, via [open_clip](https://github.com/mlfoundations/open_clip)), each under its own licence.
+- Margins, campaigns and hide flags in B5 are synthetic.

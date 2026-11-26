@@ -1,0 +1,399 @@
+{
+ "query_id": "114311",
+ "query": "xbox one x",
+ "synthetic": true,
+ "campaign": "bf26",
+ "n_products": 447880,
+ "n_on_sale": 22474,
+ "n_brands": 6323,
+ "limit": 200,
+ "ef": 512,
+ "n": 1000,
+ "n_eligible": 999,
+ "arms": [
+  {
+   "weight": null,
+   "ndcg@10": 1.0,
+   "judged@10": 1.0,
+   "returned": 10,
+   "results": [
+    {
+     "product_id": "B07MVWWB2H",
+     "title": "2019 Microsoft Xbox One X Robot White Special Edition 1TB Console (4K Ultra HD Blu-ray) With Wireless Controller And Fallout 76 Game Bundle",
+     "brand": "Microsoft",
+     "category": "Video Games",
+     "price": null,
+     "label": "E",
+     "label_source": "judge",
+     "image": "data/work/images/2H/B07MVWWB2H.jpg",
+     "on_sale": false
+    },
+    {
+     "product_id": "B082DRW2SR",
+     "title": "Microsoft - Xbox One X 1TB Gears 5 Limited Edition Arctic Blue Console with Xbox One X Vertical Stand, 1 Month Xbox Live Gold and Game Pass - Games Not Included (Renewed)",
+     "brand": "Microsoft",
+     "category": "Video Games",
+     "price": null,
+     "label": "E",
+     "label_source": "esci",
+     "image": "data/work/images/SR/B082DRW2SR.jpg",
+     "on_sale": false
+    },
+    {
+     "product_id": "B07MK3XH7V",
+     "title": "Microsoft Xbox One X Console w/ Accessories, 1TB HDD - White",
+     "brand": "Microsoft",
+     "category": "Video Games",
+     "price": 305.95,
+     "label": "E",
+     "label_source": "esci",
+     "image": "data/work/images/7V/B07MK3XH7V.jpg",
+     "on_sale": false
+    },
+    {
+     "product_id": "B07D5HJMKN",
+     "title": "Microsoft Xbox One X 1TB Black (Console Only) (Renewed)",
+     "brand": "Microsoft",
+     "category": "Video Games",
+     "price": 431.96,
+     "label": "E",
+     "label_source": "esci",
+     "image": "data/work/images/KN/B07D5HJMKN.jpg",
+     "on_sale": false
+    },
+    {
+     "product_id": "B08289XHRS",
+     "title": "Microsoft Xbox One X 1TB Console with Forza Horizon 4 Lego Speed Champions Bundle (1TB) - Xbox One",
+     "brand": "Microsoft",
+     "category": "Video Games",
+     "price": null,
+     "label": "E",
+     "label_source": "esci",
+     "image": "data/work/images/RS/B08289XHRS.jpg",
+     "on_sale": false
+    },
+    {
+     "product_id": "B07WDGB9P5",
+     "title": "Microsoft Xbox One X 1TB Console with Wireless Controller: Xbox One X Enhanced, HDR, Native 4K, Ultra HD (Renewed) (2017 Model)",
+     "brand": "Microsoft",
+     "category": "Video Games",
+     "price": 297.99,
+     "label": "E",
+     "label_source": "esci",
+     "image": "data/work/images/P5/B07WDGB9P5.jpg",
+     "on_sale": false
+    },
+    {
+     "product_id": "B01GW8VG7O",
+     "title": "Xbox One X 1TB Limited Edition Console - Project Scorpio Edition [Discontinued]",
+     "brand": "Microsoft",
+     "category": "Video Games",
+     "price": 293.99,
+     "label": "E",
+     "label_source": "esci",
+     "image": "data/work/images/7O/B01GW8VG7O.jpg",
+     "on_sale": false
+    },
+    {
+     "product_id": "B07MXQ47XV",
+     "title": "Microsoft Xbox One X Gold Rush Limited Edition 1TB Console with Wireless Controller - Xbox One X Enhanced, Native 4K Gaming, Ultra HDR",
+     "brand": "Microsoft",
+     "category": "Video Games",
+     "price": null,
+     "label": "E",
+     "label_source": "judge",
+     "image": "data/work/images/XV/B07MXQ47XV.jpg",
+     "on_sale": false
+    },
+    {
+     "product_id": "B07NHNPV12",
+     "title": "Xbox One X 1TB Console - Tom Clancy's The Division 2 Bundle (Discontinued)",
+     "brand": "Microsoft",
+     "category": "Video Games",
+     "price": 258.99,
+     "label": "E",
+     "label_source": "esci",
+     "image": "data/work/images/12/B07NHNPV12.jpg",
+     "on_sale": false
+    },
+    {
+     "product_id": "B07DS6XJLN",
+     "title": "Xbox One X 1TB Console - PLAYERUNKNOWN’S BATTLEGROUNDS Bundle [Digital Code] (Discontinued)",
+     "brand": "Microsoft",
+     "category": "Video Games",
+     "price": 728.52,
+     "label": "E",
+     "label_source": "esci",
+     "image": "data/work/images/LN/B07DS6XJLN.jpg",
+     "on_sale": false
+    }
+   ],
+   "all": {
+    "ndcg@10": 0.6367991317993265,
+    "reach": 0.3283283283283283,
+    "campaign_slots": 0.055,
+    "minus_off": null
+   }
+  },
+  {
+   "weight": 1.1,
+   "ndcg@10": 0.9312630902825906,
+   "judged@10": 1.0,
+   "returned": 10,
+   "results": [
+    {
+     "product_id": "B07MVWWB2H",
+     "title": "2019 Microsoft Xbox One X Robot White Special Edition 1TB Console (4K Ultra HD Blu-ray) With Wireless Controller And Fallout 76 Game Bundle",
+     "brand": "Microsoft",
+     "category": "Video Games",
+     "price": null,
+     "label": "E",
+     "label_source": "judge",
+     "image": "data/work/images/2H/B07MVWWB2H.jpg",
+     "on_sale": false
+    },
+    {
+     "product_id": "B082DRW2SR",
+     "title": "Microsoft - Xbox One X 1TB Gears 5 Limited Edition Arctic Blue Console with Xbox One X Vertical Stand, 1 Month Xbox Live Gold and Game Pass - Games Not Included (Renewed)",
+     "brand": "Microsoft",
+     "category": "Video Games",
+     "price": null,
+     "label": "E",
+     "label_source": "esci",
+     "image": "data/work/images/SR/B082DRW2SR.jpg",
+     "on_sale": false
+    },
+    {
+     "product_id": "B07MK3XH7V",
+     "title": "Microsoft Xbox One X Console w/ Accessories, 1TB HDD - White",
+     "brand": "Microsoft",
+     "category": "Video Games",
+     "price": 305.95,
+     "label": "E",
+     "label_source": "esci",
+     "image": "data/work/images/7V/B07MK3XH7V.jpg",
+     "on_sale": false
+    },
+    {
+     "product_id": "B07D5HJMKN",
+     "title": "Microsoft Xbox One X 1TB Black (Console Only) (Renewed)",
+     "brand": "Microsoft",
+     "category": "Video Games",
+     "price": 431.96,
+     "label": "E",
+     "label_source": "esci",
+     "image": "data/work/images/KN/B07D5HJMKN.jpg",
+     "on_sale": false
+    },
+    {
+     "product_id": "B08289XHRS",
+     "title": "Microsoft Xbox One X 1TB Console with Forza Horizon 4 Lego Speed Champions Bundle (1TB) - Xbox One",
+     "brand": "Microsoft",
+     "category": "Video Games",
+     "price": null,
+     "label": "E",
+     "label_source": "esci",
+     "image": "data/work/images/RS/B08289XHRS.jpg",
+     "on_sale": false
+    },
+    {
+     "product_id": "B07WDGB9P5",
+     "title": "Microsoft Xbox One X 1TB Console with Wireless Controller: Xbox One X Enhanced, HDR, Native 4K, Ultra HD (Renewed) (2017 Model)",
+     "brand": "Microsoft",
+     "category": "Video Games",
+     "price": 297.99,
+     "label": "E",
+     "label_source": "esci",
+     "image": "data/work/images/P5/B07WDGB9P5.jpg",
+     "on_sale": false
+    },
+    {
+     "product_id": "B01GW8VG7O",
+     "title": "Xbox One X 1TB Limited Edition Console - Project Scorpio Edition [Discontinued]",
+     "brand": "Microsoft",
+     "category": "Video Games",
+     "price": 293.99,
+     "label": "E",
+     "label_source": "esci",
+     "image": "data/work/images/7O/B01GW8VG7O.jpg",
+     "on_sale": false
+    },
+    {
+     "product_id": "B07XKRFW9R",
+     "title": "MXRC Silicone Rubber Cover Skin Case Anti-Slip Water Transfer Customize Camouflage for Xbox One/S/X Controller x 2 (Cartoon&Beast) + FPS PRO Extra Height Thumb Grips x 8",
+     "brand": "MXRC",
+     "category": "Video Games",
+     "price": null,
+     "label": "C",
+     "label_source": "judge",
+     "image": "data/work/images/9R/B07XKRFW9R.jpg",
+     "on_sale": true
+    },
+    {
+     "product_id": "B07MXQ47XV",
+     "title": "Microsoft Xbox One X Gold Rush Limited Edition 1TB Console with Wireless Controller - Xbox One X Enhanced, Native 4K Gaming, Ultra HDR",
+     "brand": "Microsoft",
+     "category": "Video Games",
+     "price": null,
+     "label": "E",
+     "label_source": "judge",
+     "image": "data/work/images/XV/B07MXQ47XV.jpg",
+     "on_sale": false
+    },
+    {
+     "product_id": "B07NHNPV12",
+     "title": "Xbox One X 1TB Console - Tom Clancy's The Division 2 Bundle (Discontinued)",
+     "brand": "Microsoft",
+     "category": "Video Games",
+     "price": 258.99,
+     "label": "E",
+     "label_source": "esci",
+     "image": "data/work/images/12/B07NHNPV12.jpg",
+     "on_sale": false
+    }
+   ],
+   "all": {
+    "ndcg@10": 0.6136721900954699,
+    "reach": 0.7797797797797797,
+    "campaign_slots": 0.253,
+    "minus_off": [
+     -0.02312694170385668,
+     0.004829386945824685
+    ]
+   }
+  },
+  {
+   "weight": 1.5,
+   "ndcg@10": 0.01,
+   "judged@10": 1.0,
+   "returned": 10,
+   "results": [
+    {
+     "product_id": "B07XKRFW9R",
+     "title": "MXRC Silicone Rubber Cover Skin Case Anti-Slip Water Transfer Customize Camouflage for Xbox One/S/X Controller x 2 (Cartoon&Beast) + FPS PRO Extra Height Thumb Grips x 8",
+     "brand": "MXRC",
+     "category": "Video Games",
+     "price": null,
+     "label": "C",
+     "label_source": "judge",
+     "image": "data/work/images/9R/B07XKRFW9R.jpg",
+     "on_sale": true
+    },
+    {
+     "product_id": "B078K7CPP9",
+     "title": "MXRC Silicone Rubber Cover Skin case Anti-Slip Water Transfer Customize Camouflage for Xbox One/S/X Controller x 4(Black & White & red & Blue) + FPS PRO Extra Height Thumb Grips x 8",
+     "brand": "MXRC",
+     "category": "Video Games",
+     "price": null,
+     "label": "C",
+     "label_source": "judge",
+     "image": "data/work/images/P9/B078K7CPP9.jpg",
+     "on_sale": true
+    },
+    {
+     "product_id": "B07D12RPHX",
+     "title": "Amazon Basics Xbox One Wired Controller - 9.8 Foot USB Cable, White, Version 2",
+     "brand": "Amazon Basics",
+     "category": "Video Games",
+     "price": null,
+     "label": "C",
+     "label_source": "judge",
+     "image": "data/work/images/HX/B07D12RPHX.jpg",
+     "on_sale": true
+    },
+    {
+     "product_id": "B08BZHPHBX",
+     "title": "Compatible for Xbox One Controller Quick Charger Charging Cable, Micro USB 2.0 Data Sync Cord Compatible for Xbox One S/X Controller (9.2FT)",
+     "brand": "Draw a dragon",
+     "category": "Video Games",
+     "price": null,
+     "label": "C",
+     "label_source": "judge",
+     "image": "data/work/images/BX/B08BZHPHBX.jpg",
+     "on_sale": true
+    },
+    {
+     "product_id": "B07CWJC79T",
+     "title": "Amazon Basics Xbox One Controller Thumb Grips And Trigger Extender Precision Pack - Black",
+     "brand": "Amazon Basics",
+     "category": "Video Games",
+     "price": null,
+     "label": "C",
+     "label_source": "judge",
+     "image": "data/work/images/9T/B07CWJC79T.jpg",
+     "on_sale": true
+    },
+    {
+     "product_id": "B072FRJWQH",
+     "title": "Amazon Basics Controller Battery Pack Charger For Xbox One S Console - White (Not compatible with Xbox One S All-Digital Edition Console)",
+     "brand": "Amazon Basics",
+     "category": "Video Games",
+     "price": null,
+     "label": "C",
+     "label_source": "judge",
+     "image": "data/work/images/QH/B072FRJWQH.jpg",
+     "on_sale": true
+    },
+    {
+     "product_id": "B07CWDT5N3",
+     "title": "Amazon Basics Xbox One Controller Thumb Grips - Pack of 2, Black",
+     "brand": "Amazon Basics",
+     "category": "Video Games",
+     "price": null,
+     "label": "C",
+     "label_source": "judge",
+     "image": "data/work/images/N3/B07CWDT5N3.jpg",
+     "on_sale": true
+    },
+    {
+     "product_id": "B08736JJ62",
+     "title": "Silicon Power 2TB Game Drive External Hard Drive A62, Compatible with PS5 PS4 Xbox One PC and Mac",
+     "brand": "SP Silicon Power",
+     "category": "Electronics",
+     "price": 67.97,
+     "label": "C",
+     "label_source": "judge",
+     "image": "data/work/images/62/B08736JJ62.jpg",
+     "on_sale": true
+    },
+    {
+     "product_id": "B01N1P0KFI",
+     "title": "Amazon Basics Dual Charging Station for Xbox One, Xbox One Standard, And Xbox One Elite Controllers - Black",
+     "brand": "Amazon Basics",
+     "category": "Video Games",
+     "price": null,
+     "label": "C",
+     "label_source": "judge",
+     "image": "data/work/images/FI/B01N1P0KFI.jpg",
+     "on_sale": true
+    },
+    {
+     "product_id": "B01MSHWI1B",
+     "title": "BlueFire Professional Stereo Gaming Headset for PS4, Xbox One Headphones with Mic and LED Lights for Playstation 4, Xbox One, PC (Red)",
+     "brand": "BlueFire",
+     "category": "Video Games",
+     "price": null,
+     "label": "C",
+     "label_source": "judge",
+     "image": "data/work/images/1B/B01MSHWI1B.jpg",
+     "on_sale": true
+    }
+   ],
+   "all": {
+    "ndcg@10": 0.26250701591267306,
+    "reach": 0.998998998998999,
+    "campaign_slots": 0.9307,
+    "minus_off": [
+     -0.3742921158866534,
+     0.017563585539477292
+    ]
+   }
+  }
+ ],
+ "spread": {
+  "weight": 1.5,
+  "below_0.1": 0.374,
+  "below_0.1_of_off_above_0.9": 0.12890625,
+  "n_off_above_0.9": 256
+ }
+}

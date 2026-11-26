@@ -1,0 +1,1531 @@
+{
+  "payload": {
+    "rows": [
+      {
+        "name": "f_1024_hnsw_fp32",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 2.0255653313387514
+      },
+      {
+        "name": "f_1024_hnsw_fp32",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 4.051130662677503
+      },
+      {
+        "name": "f_1024_hnsw_fp32",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 6.076695994016254
+      },
+      {
+        "name": "f_1024_hnsw_fp32",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 4.051130662677503
+      },
+      {
+        "name": "f_1024_hnsw_fp32",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 8.102261325355006
+      },
+      {
+        "name": "f_1024_hnsw_fp32",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 12.153391988032508
+      },
+      {
+        "name": "f_1024_hnsw_fp32",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 45.01256291863892
+      },
+      {
+        "name": "f_1024_hnsw_fp32",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 90.02512583727784
+      },
+      {
+        "name": "f_1024_hnsw_fp32",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 135.03768875591678
+      },
+      {
+        "name": "f_1024_hnsw_fp32",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 90.02512583727784
+      },
+      {
+        "name": "f_1024_hnsw_fp32",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 180.05025167455568
+      },
+      {
+        "name": "f_1024_hnsw_fp32",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 270.07537751183355
+      },
+      {
+        "name": "f_1024_hnsw_fp32",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 225.06281459319462
+      },
+      {
+        "name": "f_1024_hnsw_fp32",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 450.12562918638923
+      },
+      {
+        "name": "f_1024_hnsw_fp32",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 675.1884437795838
+      },
+      {
+        "name": "f_1024_hnsw_fp32",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 450.12562918638923
+      },
+      {
+        "name": "f_1024_hnsw_fp32",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 900.2512583727785
+      },
+      {
+        "name": "f_1024_hnsw_fp32",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 1350.3768875591677
+      },
+      {
+        "name": "f_1024_hnsw_fp16",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 1.1039533539117623
+      },
+      {
+        "name": "f_1024_hnsw_fp16",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 2.2079067078235246
+      },
+      {
+        "name": "f_1024_hnsw_fp16",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 3.311860061735287
+      },
+      {
+        "name": "f_1024_hnsw_fp16",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 2.2079067078235246
+      },
+      {
+        "name": "f_1024_hnsw_fp16",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 4.415813415647049
+      },
+      {
+        "name": "f_1024_hnsw_fp16",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 6.623720123470574
+      },
+      {
+        "name": "f_1024_hnsw_fp16",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 24.532296753594714
+      },
+      {
+        "name": "f_1024_hnsw_fp16",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 49.06459350718943
+      },
+      {
+        "name": "f_1024_hnsw_fp16",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 73.59689026078415
+      },
+      {
+        "name": "f_1024_hnsw_fp16",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 49.06459350718943
+      },
+      {
+        "name": "f_1024_hnsw_fp16",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 98.12918701437886
+      },
+      {
+        "name": "f_1024_hnsw_fp16",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 147.1937805215683
+      },
+      {
+        "name": "f_1024_hnsw_fp16",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 122.66148376797358
+      },
+      {
+        "name": "f_1024_hnsw_fp16",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 245.32296753594716
+      },
+      {
+        "name": "f_1024_hnsw_fp16",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 367.9844513039207
+      },
+      {
+        "name": "f_1024_hnsw_fp16",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 245.32296753594716
+      },
+      {
+        "name": "f_1024_hnsw_fp16",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 490.6459350718943
+      },
+      {
+        "name": "f_1024_hnsw_fp16",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 735.9689026078414
+      },
+      {
+        "name": "f_1024_hnsw_sq8",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 1.5647878333482184
+      },
+      {
+        "name": "f_1024_hnsw_sq8",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 3.1295756666964367
+      },
+      {
+        "name": "f_1024_hnsw_sq8",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 4.694363500044655
+      },
+      {
+        "name": "f_1024_hnsw_sq8",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 3.1295756666964367
+      },
+      {
+        "name": "f_1024_hnsw_sq8",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 6.259151333392873
+      },
+      {
+        "name": "f_1024_hnsw_sq8",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 9.38872700008931
+      },
+      {
+        "name": "f_1024_hnsw_sq8",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 34.77306296329374
+      },
+      {
+        "name": "f_1024_hnsw_sq8",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 69.54612592658748
+      },
+      {
+        "name": "f_1024_hnsw_sq8",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 104.31918888988123
+      },
+      {
+        "name": "f_1024_hnsw_sq8",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 69.54612592658748
+      },
+      {
+        "name": "f_1024_hnsw_sq8",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 139.09225185317496
+      },
+      {
+        "name": "f_1024_hnsw_sq8",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 208.63837777976246
+      },
+      {
+        "name": "f_1024_hnsw_sq8",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 173.86531481646873
+      },
+      {
+        "name": "f_1024_hnsw_sq8",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 347.73062963293745
+      },
+      {
+        "name": "f_1024_hnsw_sq8",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 521.5959444494061
+      },
+      {
+        "name": "f_1024_hnsw_sq8",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 347.73062963293745
+      },
+      {
+        "name": "f_1024_hnsw_sq8",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 695.4612592658749
+      },
+      {
+        "name": "f_1024_hnsw_sq8",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 1043.1918888988123
+      },
+      {
+        "name": "f_1024_rabitq",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 0.6599084118513888
+      },
+      {
+        "name": "f_1024_rabitq",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 1.3198168237027776
+      },
+      {
+        "name": "f_1024_rabitq",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 1.9797252355541664
+      },
+      {
+        "name": "f_1024_rabitq",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 1.3198168237027776
+      },
+      {
+        "name": "f_1024_rabitq",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 2.6396336474055553
+      },
+      {
+        "name": "f_1024_rabitq",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 3.9594504711083327
+      },
+      {
+        "name": "f_1024_rabitq",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 14.664631374475308
+      },
+      {
+        "name": "f_1024_rabitq",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 29.329262748950615
+      },
+      {
+        "name": "f_1024_rabitq",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 43.99389412342592
+      },
+      {
+        "name": "f_1024_rabitq",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 29.329262748950615
+      },
+      {
+        "name": "f_1024_rabitq",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 58.65852549790123
+      },
+      {
+        "name": "f_1024_rabitq",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 87.98778824685184
+      },
+      {
+        "name": "f_1024_rabitq",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 73.32315687237654
+      },
+      {
+        "name": "f_1024_rabitq",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 146.6463137447531
+      },
+      {
+        "name": "f_1024_rabitq",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 219.96947061712964
+      },
+      {
+        "name": "f_1024_rabitq",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 146.6463137447531
+      },
+      {
+        "name": "f_1024_rabitq",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 293.2926274895062
+      },
+      {
+        "name": "f_1024_rabitq",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 439.9389412342593
+      },
+      {
+        "name": "f_512_hnsw_fp32",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 1.1039442620791284
+      },
+      {
+        "name": "f_512_hnsw_fp32",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 2.207888524158257
+      },
+      {
+        "name": "f_512_hnsw_fp32",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 3.3118327862373858
+      },
+      {
+        "name": "f_512_hnsw_fp32",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 2.207888524158257
+      },
+      {
+        "name": "f_512_hnsw_fp32",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 4.415777048316514
+      },
+      {
+        "name": "f_512_hnsw_fp32",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 6.6236655724747715
+      },
+      {
+        "name": "f_512_hnsw_fp32",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 24.532094712869522
+      },
+      {
+        "name": "f_512_hnsw_fp32",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 49.064189425739045
+      },
+      {
+        "name": "f_512_hnsw_fp32",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 73.59628413860857
+      },
+      {
+        "name": "f_512_hnsw_fp32",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 49.064189425739045
+      },
+      {
+        "name": "f_512_hnsw_fp32",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 98.12837885147809
+      },
+      {
+        "name": "f_512_hnsw_fp32",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 147.19256827721713
+      },
+      {
+        "name": "f_512_hnsw_fp32",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 122.66047356434761
+      },
+      {
+        "name": "f_512_hnsw_fp32",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 245.32094712869522
+      },
+      {
+        "name": "f_512_hnsw_fp32",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 367.9814206930428
+      },
+      {
+        "name": "f_512_hnsw_fp32",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 245.32094712869522
+      },
+      {
+        "name": "f_512_hnsw_fp32",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 490.64189425739045
+      },
+      {
+        "name": "f_512_hnsw_fp32",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 735.9628413860856
+      },
+      {
+        "name": "f_512_hnsw_fp16",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 0.6431391801375369
+      },
+      {
+        "name": "f_512_hnsw_fp16",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 1.2862783602750738
+      },
+      {
+        "name": "f_512_hnsw_fp16",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 1.9294175404126106
+      },
+      {
+        "name": "f_512_hnsw_fp16",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 1.2862783602750738
+      },
+      {
+        "name": "f_512_hnsw_fp16",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 2.5725567205501476
+      },
+      {
+        "name": "f_512_hnsw_fp16",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 3.858835080825221
+      },
+      {
+        "name": "f_512_hnsw_fp16",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 14.291981780834153
+      },
+      {
+        "name": "f_512_hnsw_fp16",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 28.583963561668305
+      },
+      {
+        "name": "f_512_hnsw_fp16",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 42.875945342502455
+      },
+      {
+        "name": "f_512_hnsw_fp16",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 28.583963561668305
+      },
+      {
+        "name": "f_512_hnsw_fp16",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 57.16792712333661
+      },
+      {
+        "name": "f_512_hnsw_fp16",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 85.75189068500491
+      },
+      {
+        "name": "f_512_hnsw_fp16",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 71.45990890417076
+      },
+      {
+        "name": "f_512_hnsw_fp16",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 142.91981780834152
+      },
+      {
+        "name": "f_512_hnsw_fp16",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 214.37972671251228
+      },
+      {
+        "name": "f_512_hnsw_fp16",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 142.91981780834152
+      },
+      {
+        "name": "f_512_hnsw_fp16",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 285.83963561668304
+      },
+      {
+        "name": "f_512_hnsw_fp16",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 428.75945342502456
+      },
+      {
+        "name": "f_512_hnsw_sq8",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 0.8735719876975975
+      },
+      {
+        "name": "f_512_hnsw_sq8",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 1.747143975395195
+      },
+      {
+        "name": "f_512_hnsw_sq8",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 2.6207159630927923
+      },
+      {
+        "name": "f_512_hnsw_sq8",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 1.747143975395195
+      },
+      {
+        "name": "f_512_hnsw_sq8",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 3.49428795079039
+      },
+      {
+        "name": "f_512_hnsw_sq8",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 5.241431926185585
+      },
+      {
+        "name": "f_512_hnsw_sq8",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 19.412710837724386
+      },
+      {
+        "name": "f_512_hnsw_sq8",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 38.82542167544877
+      },
+      {
+        "name": "f_512_hnsw_sq8",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 58.23813251317316
+      },
+      {
+        "name": "f_512_hnsw_sq8",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 38.82542167544877
+      },
+      {
+        "name": "f_512_hnsw_sq8",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 77.65084335089755
+      },
+      {
+        "name": "f_512_hnsw_sq8",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 116.47626502634633
+      },
+      {
+        "name": "f_512_hnsw_sq8",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 97.06355418862195
+      },
+      {
+        "name": "f_512_hnsw_sq8",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 194.1271083772439
+      },
+      {
+        "name": "f_512_hnsw_sq8",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 291.19066256586586
+      },
+      {
+        "name": "f_512_hnsw_sq8",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 194.1271083772439
+      },
+      {
+        "name": "f_512_hnsw_sq8",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 388.2542167544878
+      },
+      {
+        "name": "f_512_hnsw_sq8",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 582.3813251317317
+      },
+      {
+        "name": "f_512_rabitq",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 0.3869902038492454
+      },
+      {
+        "name": "f_512_rabitq",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 0.7739804076984907
+      },
+      {
+        "name": "f_512_rabitq",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 1.160970611547736
+      },
+      {
+        "name": "f_512_rabitq",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 0.7739804076984907
+      },
+      {
+        "name": "f_512_rabitq",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 1.5479608153969815
+      },
+      {
+        "name": "f_512_rabitq",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 2.321941223095472
+      },
+      {
+        "name": "f_512_rabitq",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 8.599782307761007
+      },
+      {
+        "name": "f_512_rabitq",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 17.199564615522014
+      },
+      {
+        "name": "f_512_rabitq",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 25.79934692328302
+      },
+      {
+        "name": "f_512_rabitq",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 17.199564615522014
+      },
+      {
+        "name": "f_512_rabitq",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 34.39912923104403
+      },
+      {
+        "name": "f_512_rabitq",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 51.59869384656604
+      },
+      {
+        "name": "f_512_rabitq",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 42.99891153880504
+      },
+      {
+        "name": "f_512_rabitq",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 85.99782307761008
+      },
+      {
+        "name": "f_512_rabitq",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 128.99673461641513
+      },
+      {
+        "name": "f_512_rabitq",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 85.99782307761008
+      },
+      {
+        "name": "f_512_rabitq",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 171.99564615522016
+      },
+      {
+        "name": "f_512_rabitq",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 257.99346923283025
+      },
+      {
+        "name": "f_256_hnsw_fp32",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 0.6431391439671341
+      },
+      {
+        "name": "f_256_hnsw_fp32",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 1.2862782879342682
+      },
+      {
+        "name": "f_256_hnsw_fp32",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 1.9294174319014026
+      },
+      {
+        "name": "f_256_hnsw_fp32",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 1.2862782879342682
+      },
+      {
+        "name": "f_256_hnsw_fp32",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 2.5725565758685365
+      },
+      {
+        "name": "f_256_hnsw_fp32",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 3.858834863802805
+      },
+      {
+        "name": "f_256_hnsw_fp32",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 14.291980977047425
+      },
+      {
+        "name": "f_256_hnsw_fp32",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 28.58396195409485
+      },
+      {
+        "name": "f_256_hnsw_fp32",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 42.875942931142276
+      },
+      {
+        "name": "f_256_hnsw_fp32",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 28.58396195409485
+      },
+      {
+        "name": "f_256_hnsw_fp32",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 57.1679239081897
+      },
+      {
+        "name": "f_256_hnsw_fp32",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 85.75188586228455
+      },
+      {
+        "name": "f_256_hnsw_fp32",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 71.45990488523712
+      },
+      {
+        "name": "f_256_hnsw_fp32",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 142.91980977047425
+      },
+      {
+        "name": "f_256_hnsw_fp32",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 214.37971465571135
+      },
+      {
+        "name": "f_256_hnsw_fp32",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 142.91980977047425
+      },
+      {
+        "name": "f_256_hnsw_fp32",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 285.8396195409485
+      },
+      {
+        "name": "f_256_hnsw_fp32",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 428.7594293114227
+      },
+      {
+        "name": "f_256_hnsw_fp16",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 0.4127391801375368
+      },
+      {
+        "name": "f_256_hnsw_fp16",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 0.8254783602750736
+      },
+      {
+        "name": "f_256_hnsw_fp16",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 1.2382175404126106
+      },
+      {
+        "name": "f_256_hnsw_fp16",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 0.8254783602750736
+      },
+      {
+        "name": "f_256_hnsw_fp16",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 1.6509567205501472
+      },
+      {
+        "name": "f_256_hnsw_fp16",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 2.476435080825221
+      },
+      {
+        "name": "f_256_hnsw_fp16",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 9.171981780834152
+      },
+      {
+        "name": "f_256_hnsw_fp16",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 18.343963561668303
+      },
+      {
+        "name": "f_256_hnsw_fp16",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 27.515945342502455
+      },
+      {
+        "name": "f_256_hnsw_fp16",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 18.343963561668303
+      },
+      {
+        "name": "f_256_hnsw_fp16",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 36.68792712333661
+      },
+      {
+        "name": "f_256_hnsw_fp16",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 55.03189068500491
+      },
+      {
+        "name": "f_256_hnsw_fp16",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 45.85990890417076
+      },
+      {
+        "name": "f_256_hnsw_fp16",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 91.71981780834152
+      },
+      {
+        "name": "f_256_hnsw_fp16",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 137.57972671251227
+      },
+      {
+        "name": "f_256_hnsw_fp16",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 91.71981780834152
+      },
+      {
+        "name": "f_256_hnsw_fp16",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 183.43963561668303
+      },
+      {
+        "name": "f_256_hnsw_fp16",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 275.15945342502454
+      },
+      {
+        "name": "f_256_hnsw_sq8",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 0.5279413634232384
+      },
+      {
+        "name": "f_256_hnsw_sq8",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 1.0558827268464768
+      },
+      {
+        "name": "f_256_hnsw_sq8",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 1.5838240902697152
+      },
+      {
+        "name": "f_256_hnsw_sq8",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 1.0558827268464768
+      },
+      {
+        "name": "f_256_hnsw_sq8",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 2.1117654536929535
+      },
+      {
+        "name": "f_256_hnsw_sq8",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 3.1676481805394303
+      },
+      {
+        "name": "f_256_hnsw_sq8",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 11.732030298294186
+      },
+      {
+        "name": "f_256_hnsw_sq8",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 23.46406059658837
+      },
+      {
+        "name": "f_256_hnsw_sq8",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 35.19609089488255
+      },
+      {
+        "name": "f_256_hnsw_sq8",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 23.46406059658837
+      },
+      {
+        "name": "f_256_hnsw_sq8",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 46.92812119317674
+      },
+      {
+        "name": "f_256_hnsw_sq8",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 70.3921817897651
+      },
+      {
+        "name": "f_256_hnsw_sq8",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 58.66015149147093
+      },
+      {
+        "name": "f_256_hnsw_sq8",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 117.32030298294185
+      },
+      {
+        "name": "f_256_hnsw_sq8",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 175.98045447441277
+      },
+      {
+        "name": "f_256_hnsw_sq8",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 117.32030298294185
+      },
+      {
+        "name": "f_256_hnsw_sq8",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 234.6406059658837
+      },
+      {
+        "name": "f_256_hnsw_sq8",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 351.96090894882553
+      },
+      {
+        "name": "f_256_rabitq",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 0.2568732805662231
+      },
+      {
+        "name": "f_256_rabitq",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 0.5137465611324462
+      },
+      {
+        "name": "f_256_rabitq",
+        "n_products": 450000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 0.7706198416986693
+      },
+      {
+        "name": "f_256_rabitq",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 0.5137465611324462
+      },
+      {
+        "name": "f_256_rabitq",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 1.0274931222648924
+      },
+      {
+        "name": "f_256_rabitq",
+        "n_products": 450000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 1.5412396833973385
+      },
+      {
+        "name": "f_256_rabitq",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 5.708295123693847
+      },
+      {
+        "name": "f_256_rabitq",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 11.416590247387694
+      },
+      {
+        "name": "f_256_rabitq",
+        "n_products": 10000000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 17.12488537108154
+      },
+      {
+        "name": "f_256_rabitq",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 11.416590247387694
+      },
+      {
+        "name": "f_256_rabitq",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 22.833180494775387
+      },
+      {
+        "name": "f_256_rabitq",
+        "n_products": 10000000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 34.24977074216308
+      },
+      {
+        "name": "f_256_rabitq",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 1,
+        "gb": 28.541475618469235
+      },
+      {
+        "name": "f_256_rabitq",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 2,
+        "gb": 57.08295123693847
+      },
+      {
+        "name": "f_256_rabitq",
+        "n_products": 50000000,
+        "vectors": 1,
+        "replicas": 3,
+        "gb": 85.6244268554077
+      },
+      {
+        "name": "f_256_rabitq",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 1,
+        "gb": 57.08295123693847
+      },
+      {
+        "name": "f_256_rabitq",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 2,
+        "gb": 114.16590247387694
+      },
+      {
+        "name": "f_256_rabitq",
+        "n_products": 50000000,
+        "vectors": 2,
+        "replicas": 3,
+        "gb": 171.2488537108154
+      }
+    ],
+    "source": "b3a bytes_per_vector (Milvus internal_cache_loaded_bytes in RAM, location=memory, / rows; mmap excluded)",
+    "sample": false
+  },
+  "meta": {
+    "git_sha": "20cd57a51daf70a2d001299e0c44c19cf89ea7e1",
+    "git_dirty": true,
+    "milvus_version": null,
+    "python": "3.13.13",
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "cpu": "Apple M5",
+    "mem_gb": 34.4,
+    "timestamp_utc": "2026-11-16T18:06:43Z",
+    "sample": false
+  }
+}

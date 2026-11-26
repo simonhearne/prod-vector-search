@@ -1,0 +1,107 @@
+{
+ "configs": [
+  "dense_text",
+  "dense_image",
+  "hybrid_rrf",
+  "text_image_rrf"
+ ],
+ "n_queries": 1000,
+ "judgments": {
+  "rows": 49267,
+  "sha": "955696df0b6a",
+  "prompt": "esci-v1"
+ },
+ "rrf_k": 60,
+ "per_arm": 100,
+ "unjudged_in_top10": 0,
+ "ndcg@10": {
+  "dense_text": 0.6364934971930484,
+  "dense_image": 0.6597786988911811,
+  "hybrid_rrf": 0.6661721022144664,
+  "text_image_rrf": 0.705032365605691
+ },
+ "paired_new_minus": {
+  "dense_text": [
+   0.06853886841264352,
+   0.01198619206734886
+  ],
+  "dense_image": [
+   0.045253666714511254,
+   0.011927158153687188
+  ],
+  "hybrid_rrf": [
+   0.038860263391225225,
+   0.012736521075444896
+  ]
+ },
+ "draw_power_3": {
+  "winner": 2,
+  "winner_right": 0.52975,
+  "order_right": 0.2871,
+  "winner_share": [
+   0.03995,
+   0.4303,
+   0.52975
+  ]
+ },
+ "draw_power_4": {
+  "50": {
+   "winner": 3,
+   "winner_right": 0.87595,
+   "order_right": 0.2615,
+   "winner_share": [
+    0.0012,
+    0.0416,
+    0.08125,
+    0.87595
+   ]
+  },
+  "200": {
+   "winner": 3,
+   "winner_right": 0.999,
+   "order_right": 0.52905,
+   "winner_share": [
+    0.0,
+    0.00015,
+    0.00085,
+    0.999
+   ]
+  }
+ },
+ "ties_image_first": {
+  "ndcg@10": 0.7054186222199118,
+  "paired_new_minus_image": [
+   0.04563992332873096,
+   0.011644129701189943
+  ],
+  "draw_power_50": {
+   "winner": 3,
+   "winner_right": 0.87925,
+   "order_right": 0.2622,
+   "winner_share": [
+    0.00135,
+    0.03625,
+    0.08315,
+    0.87925
+   ]
+  }
+ },
+ "wording_effect": {
+  "dense_text": [
+   0.028008724416228876,
+   0.042393575868294064
+  ],
+  "dense_image": [
+   -0.05189837884066363,
+   0.04608073517121074
+  ],
+  "hybrid_rrf": [
+   -0.027272034797655175,
+   0.04309474270571736
+  ],
+  "text_image_rrf": [
+   -0.02727185555494445,
+   0.04193425906141441
+  ]
+ }
+}

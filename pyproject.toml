@@ -1,0 +1,37 @@
+[project]
+name = "vector-search-ecom"
+version = "0.1.0"
+description = "Data, benchmarks and results for 'Lessons from deploying vector search in production'"
+license = "MIT"
+requires-python = ">=3.12"
+dependencies = [
+    "pymilvus>=3.0.1",
+    "pandas",
+    "pyarrow",
+    "numpy",
+    "tqdm",
+    "requests",
+    "sentence-transformers",
+    "open_clip_torch",
+    "torch",
+    "pillow",
+    "anthropic",
+    "pydantic",
+    "matplotlib",
+    "huggingface_hub",
+    "scipy",
+]
+
+[dependency-groups]
+dev = ["pytest"]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+markers = [
+    "integration: needs a running Milvus at MILVUS_URI",
+    "slow: loads embedding models",
+]

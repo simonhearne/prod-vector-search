@@ -1,0 +1,50 @@
+{
+  "payload": {
+    "search_only": {
+      "latency": {
+        "p50": 3.0957289854995906,
+        "p95": 8.291942003415897,
+        "p99": 13.45929993316531,
+        "mean": 3.9407062598038465,
+        "n": 1000
+      }
+    },
+    "search_plus_facets": {
+      "latency": {
+        "p50": 8.999353973194957,
+        "p95": 44.337948644533746,
+        "p99": 59.19921632972544,
+        "mean": 15.83804062078707,
+        "n": 1000
+      }
+    },
+    "facets_from_topk": {
+      "latency": {
+        "p50": 3.097333072219044,
+        "p95": 7.702389627229419,
+        "p99": 21.500841790111735,
+        "mean": 3.998624471249059,
+        "n": 1000
+      }
+    },
+    "facet_accuracy_topk": {
+      "category": 0.8,
+      "brand": 0.18
+    },
+    "n": 1000,
+    "ef": 192,
+    "price_drift_restored": 0,
+    "sample": false
+  },
+  "meta": {
+    "git_sha": "743f7df8078c979b0de8f3eaea56e42366bf86a2",
+    "git_dirty": true,
+    "milvus_version": "3.0.3",
+    "python": "3.13.13",
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "cpu": "Apple M5",
+    "mem_gb": 34.4,
+    "timestamp_utc": "2026-11-16T17:21:43Z",
+    "sample": false
+  }
+}

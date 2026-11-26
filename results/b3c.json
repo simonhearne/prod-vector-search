@@ -1,0 +1,47 @@
+{
+  "payload": {
+    "rows": [
+      {
+        "setup": "local mps text",
+        "items_per_s": 20.5834510916955,
+        "n": 450000,
+        "hours": 6.072839750882781,
+        "usd": 0.0
+      },
+      {
+        "setup": "local mps text",
+        "items_per_s": 20.5834510916955,
+        "n": 10000000,
+        "hours": 134.95199446406178,
+        "usd": 0.0
+      },
+      {
+        "setup": "local mps image",
+        "items_per_s": 16.605967650356632,
+        "n": 450000,
+        "hours": 7.527414398962501,
+        "usd": 0.0
+      },
+      {
+        "setup": "local mps image",
+        "items_per_s": 16.605967650356632,
+        "n": 10000000,
+        "hours": 167.2758755325,
+        "usd": 0.0
+      }
+    ],
+    "usd_per_hour": 0.0,
+    "note": "usd_per_hour=0 means local hardware (cost not priced)"
+  },
+  "meta": {
+    "git_sha": "20cd57a51daf70a2d001299e0c44c19cf89ea7e1",
+    "git_dirty": true,
+    "milvus_version": null,
+    "python": "3.13.13",
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "cpu": "Apple M5",
+    "mem_gb": 34.4,
+    "timestamp_utc": "2026-11-16T18:06:43Z",
+    "sample": false
+  }
+}

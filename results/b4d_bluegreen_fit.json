@@ -1,0 +1,31 @@
+{
+  "payload": {
+    "rss_one_gib": 7.24,
+    "rss_both_gib": 9.72,
+    "peak_gib": 11.21,
+    "cap_gib": 12.0,
+    "fit_line_gib": 10.8,
+    "tripped": false,
+    "error": null,
+    "build_s": 522,
+    "fits": false,
+    "verdict": "9.7 GiB used with both copies loaded; 90% of the 12.0 GiB cap is 10.8 GiB; peak 11.2 GiB during the build",
+    "after": {
+      "prod_tuned": "447,880 rows, matches products.parquet",
+      "load_state": "Loaded",
+      "alias": "prod_tuned",
+      "green_exists": false
+    }
+  },
+  "meta": {
+    "git_sha": "60979b4f5db17078fe4ac09af8e830e618af7f59",
+    "git_dirty": true,
+    "milvus_version": "3.0.3",
+    "python": "3.13.13",
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "cpu": "Apple M5",
+    "mem_gb": 34.4,
+    "timestamp_utc": "2026-11-26T07:25:24Z",
+    "sample": false
+  }
+}

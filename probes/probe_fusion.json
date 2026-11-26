@@ -1,0 +1,131 @@
+{
+ "collection": "prod_naive",
+ "n_queries": 1000,
+ "n_judged": 966,
+ "judgments": {
+  "rows": 49267,
+  "sha": "955696df0b6a",
+  "prompt": "esci-v1"
+ },
+ "rrf_100_same_top10_as_b1a": 1.0,
+ "exact_top5": {
+  "rrf_10": 3.109730848861284,
+  "rrf_100": 3.1780538302277432,
+  "weighted_0.3": 3.1977225672877845,
+  "weighted_0.5": 3.148033126293996,
+  "weighted_0.7": 3.113871635610766,
+  "bm25": 2.87888198757764,
+  "dense_text": 2.9968944099378882
+ },
+ "zero_exact_top5": {
+  "rrf_10": 0.09420289855072464,
+  "rrf_100": 0.10144927536231885,
+  "weighted_0.3": 0.10351966873706005,
+  "weighted_0.5": 0.11387163561076605,
+  "weighted_0.7": 0.11283643892339544,
+  "bm25": 0.13043478260869565,
+  "dense_text": 0.12732919254658384
+ },
+ "matches_best_arm": {
+  "rrf_10": 0.7018633540372671,
+  "rrf_100": 0.7049689440993789,
+  "weighted_0.3": 0.7453416149068323,
+  "weighted_0.5": 0.7246376811594203,
+  "weighted_0.7": 0.7153209109730849
+ },
+ "beats_best_arm": {
+  "rrf_10": 0.053830227743271224,
+  "rrf_100": 0.10973084886128365,
+  "weighted_0.3": 0.09316770186335403,
+  "weighted_0.5": 0.09213250517598344,
+  "weighted_0.7": 0.08178053830227744
+ },
+ "paired_exact_minus_rrf_10": {
+  "rrf_100": [
+   0.06832298136645963,
+   0.04342051583224175
+  ],
+  "weighted_0.3": [
+   0.08799171842650104,
+   0.046002647921839064
+  ],
+  "weighted_0.5": [
+   0.038302277432712216,
+   0.04929197958236079
+  ],
+  "weighted_0.7": [
+   0.004140786749482402,
+   0.051834884235773426
+  ]
+ },
+ "paired_zero_minus_rrf_10": {
+  "rrf_100": [
+   0.007246376811594203,
+   0.012990532743848164
+  ],
+  "weighted_0.3": [
+   0.009316770186335404,
+   0.013605205586412575
+  ],
+  "weighted_0.5": [
+   0.019668737060041408,
+   0.014444147673172408
+  ],
+  "weighted_0.7": [
+   0.018633540372670808,
+   0.015145840648833108
+  ]
+ },
+ "oracle_best_arm_exact_top5": 3.4358178053830226,
+ "top10_overlap": {
+  "mean": 3.693,
+  "zero_share": 0.134
+ },
+ "shown": {
+  "chromebooks laptops": {
+   "rrf_10": "CECEC",
+   "rrf_100": "EEEEE",
+   "weighted_0.3": "EEEEE",
+   "weighted_0.5": "EEEEE",
+   "weighted_0.7": "EEEEE",
+   "bm25": "CCCCC",
+   "dense_text": "EEEEE"
+  },
+  "radios de comunicacion": {
+   "rrf_10": "EIEII",
+   "rrf_100": "CCSEC",
+   "weighted_0.3": "CCSCE",
+   "weighted_0.5": "CCSCS",
+   "weighted_0.7": "CCSCS",
+   "bm25": "IIICC",
+   "dense_text": "EEEEE"
+  },
+  "mens river sandles": {
+   "rrf_10": "EIIEE",
+   "rrf_100": "EIIEE",
+   "weighted_0.3": "IIIII",
+   "weighted_0.5": "IIIII",
+   "weighted_0.7": "IEEEE",
+   "bm25": "IIIII",
+   "dense_text": "EEEES"
+  },
+  "nurse accessories for work": {
+   "rrf_10": "ESEEE",
+   "rrf_100": "ESEEE",
+   "weighted_0.3": "EEESE",
+   "weighted_0.5": "EEEEE",
+   "weighted_0.7": "EEEEE",
+   "bm25": "ESSSI",
+   "dense_text": "EEEEE"
+  },
+  "cabinet chrome handles": {
+   "rrf_10": "SEEIE",
+   "rrf_100": "SEEEE",
+   "weighted_0.3": "ESEEE",
+   "weighted_0.5": "EISSI",
+   "weighted_0.7": "SISES",
+   "bm25": "EEEEE",
+   "dense_text": "SISSS"
+  }
+ }
+}
